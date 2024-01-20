@@ -4,20 +4,28 @@ table 50101 Departamento
 
     fields
     {
-        field(1; "Nombre del departamento"; Text[50])
+        field(1; "ID"; Integer)
+        {
+            AutoIncrement = true;
+        }
+        field(2; "NOMBRE"; Text[50])
         {
             DataClassification = ToBeClassified;
-
         }
-        field(2; "Despacho asignado"; Text[50])
+        field(3; "DESPACHO"; Text[50])
         {
+            DataClassification = ToBeClassified;
+        }
 
+        field(4; "idProfesorDirector"; Integer)
+        {
+            TableRelation = "Profesor";
         }
     }
 
     keys
     {
-        key(pk1; "Nombre del departamento")
+        key(pk1; "ID")
         {
             Clustered = true;
         }

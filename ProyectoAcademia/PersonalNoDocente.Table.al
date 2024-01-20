@@ -4,31 +4,33 @@ table 50104 Personal
 
     fields
     {
-        field(1; "Nombre del personal"; Text[100])
+        field(1; "ID"; Text[100])
         {
             DataClassification = ToBeClassified;
 
         }
-        field(2; "Dirrección del personal"; Text[100])
+
+        field(2; "NOMBRE"; Text[100])
         {
-            DataClassification = ToBeClassified;
 
         }
-        field(3; "Salario del personal"; Decimal)
+        field(3; "DIRECCIÓN"; Text[100])
         {
-            DataClassification = ToBeClassified;
 
         }
-        field(4; "Puesto del personal"; Text[100]) // Con options???
+        field(4; "SALARIO"; Decimal)
         {
-            DataClassification = ToBeClassified;
+
+        }
+        field(5; "PUESTO"; Text[100]) // Con options???
+        {
 
         }
     }
 
     keys
     {
-        key(pk1; "Nombre del personal")
+        key(pk1; "ID")
         {
             Clustered = true;
         }

@@ -4,30 +4,49 @@ table 50100 Profesor
 
     fields
     {
-        field(1; "Nombre del profesor"; Text[100])
+        field(1; "ID"; Integer)
+        {
+            AutoIncrement = true;
+
+        }
+
+        field(2; "ID departamento"; Integer)
+        {
+            TableRelation = "Departamento";
+
+        }
+
+
+        field(3; "NOMBRE"; Text[100])
+        {
+
+
+        }
+        field(4; "DIRECCIÓN"; Text[100])
+        {
+
+        }
+
+        field(5; "FECHA DE CONTRATACION"; Date)
+        {
+
+        }
+
+        field(6; "SALARIO"; Decimal)
+        {
+
+        }
+        field(7;"DepartamentoAsignado"; Text[100])
         {
             DataClassification = ToBeClassified;
-
-        }
-        field(2; "Direccion del profesor"; Text[100])
-        {
-
+            TableRelation = "Departamento";
         }
 
-        field(3; "Fecha de contratacion"; Date)
-        {
-
-        }
-
-        field(4; "Salario del profesor"; Decimal)
-        {
-
-        }
     }
 
     keys
     {
-        key(pk1; "Nombre del profesor")
+        key(pk1; "ID")
         {
             Clustered = true;
         }

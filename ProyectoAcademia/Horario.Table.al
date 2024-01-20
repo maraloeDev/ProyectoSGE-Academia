@@ -4,24 +4,32 @@ table 50106 Horario
 
     fields
     {
-        field(1; "Dia de la semana"; Option)
+        field(1; "ID"; Text[50])
         {
-            OptionMembers = "Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo";
             DataClassification = ToBeClassified;
         }
-        field(2; "Hora de inicio"; Time)
+
+        field(2; "DIA DE LA SEMANA"; Text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+
+        field(3; "HORA DE INICIO"; Time)
         {
 
         }
-        field(3; "Hora de fin"; Time)
+        field(4; "HORA DE FIN"; Time)
         {
+        }
 
+        field(5; "ID DEL CURSO"; Text[50])
+        {
+            TableRelation = cursos."ID";
         }
     }
-
     keys
     {
-        key(pk1; "Dia de la semana")
+        key(pk1; "ID")
         {
             Clustered = true;
         }

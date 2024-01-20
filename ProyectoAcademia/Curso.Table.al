@@ -4,30 +4,45 @@ table 50102 cursos
 
     fields
     {
-        field(1; "Nombre"; Text[50])
+        field(1; "ID"; Text[50])
         {
             DataClassification = ToBeClassified;
-
+        }
+        field(2; "NOMBRE"; Text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(3; "DESCRIPCION"; Text[100])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(4; "HORAS"; Time)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(5; "TARIFA"; Decimal)
+        {
+            DataClassification = ToBeClassified;
         }
 
-        field(2; "Descripcion"; Text[100])
+        field(6; "idImpartidor"; Text[50])
         {
-
+            TableRelation = Profesor.ID;
         }
-        field(3; "Horas Totales"; Time)
+        field(7; idOfertador; Text[50])
         {
-
+            TableRelation = Departamento.ID;
         }
 
-        field(4; "Tarifa del laboratorio"; Text[100])
+        field(8; "idHorario"; Text[50])
         {
-
+            TableRelation = Horario.ID;
         }
     }
 
     keys
     {
-        key(pk1; "Nombre")
+        key(pk1; "ID")
         {
             Clustered = true;
         }
