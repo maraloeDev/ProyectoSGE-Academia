@@ -1,31 +1,16 @@
 table 50104 Personal
 {
     DataClassification = ToBeClassified;
+    Caption = 'Personal';
 
     fields
     {
-        field(1; "ID"; Text[100])
-        {
-            DataClassification = ToBeClassified;
+        field(1; "ID"; Text[100]) { DataClassification = ToBeClassified; }
 
-        }
-
-        field(2; "NOMBRE"; Text[100])
-        {
-
-        }
-        field(3; "DIRECCIÓN"; Text[100])
-        {
-
-        }
-        field(4; "SALARIO"; Decimal)
-        {
-
-        }
-        field(5; "PUESTO"; Text[100])
-        {
-
-        }
+        field(2; "NOMBRE"; Text[100]) { }
+        field(3; "DIRECCIÓN"; Text[100]) { }
+        field(4; "SALARIO"; Decimal) { }
+        field(5; "PUESTO"; Text[100]) { }
     }
 
     keys
