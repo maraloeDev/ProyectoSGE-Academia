@@ -29,9 +29,9 @@ table 50107 Estudiante
         {
 
         }
-        field(7; "idMatricula"; Date)
+        field(7; "idMatricula"; Integer)
         {
-            TableRelation = MatriculaAlumno."ID";
+            TableRelation = Matricula."ID";
 
         }
     }

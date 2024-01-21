@@ -22,7 +22,7 @@ table 50104 Personal
         {
 
         }
-        field(5; "PUESTO"; Text[100]) // Con options???
+        field(5; "PUESTO"; Text[100])
         {
 
         }

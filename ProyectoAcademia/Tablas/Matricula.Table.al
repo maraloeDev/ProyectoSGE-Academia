@@ -1,4 +1,4 @@
-table 50105 MatriculaAlumno
+table 50105 Matricula
 {
     DataClassification = ToBeClassified;
 
