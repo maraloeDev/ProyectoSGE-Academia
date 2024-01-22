@@ -9,7 +9,7 @@ table 50101 Departamento
         field(2; "NOMBRE"; Text[50]) { }
         field(3; "DESPACHO"; Text[50]) { }
 
-        field(4; "idProfesorDirector"; Integer) { TableRelation = "Profesor";Editable = false; }
+        field(4; "PROF. DIRECTO"; Integer) { TableRelation = "Profesor".NOMBRE; }
     }
 
     keys

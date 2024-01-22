@@ -26,10 +26,9 @@ page 50101 "Departamento"
                     ApplicationArea = All;
                 }
 
-                field("idProfesorDirector"; Rec.idProfesorDirector)
+                field("PROF. DIRECTOR"; Rec.NOMBRE)
                 {
                     ApplicationArea = All;
-                    Editable = false;
                 }
             }
         }

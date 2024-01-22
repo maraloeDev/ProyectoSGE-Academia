@@ -16,7 +16,7 @@ page 50104 "Personal"
                 field("ID"; Rec."ID")
                 {
                     ApplicationArea = All;
-                    Editable = false; 
+                    Editable = false;
                 }
                 field("NOMBRE"; Rec."NOMBRE")
 
@@ -35,6 +35,10 @@ page 50104 "Personal"
                 }
 
                 field("PUESTO"; Rec."PUESTO")
+                {
+                    ApplicationArea = All;
+                }
+                field("PROFESOR JEFE"; Rec."PROFESOR JEFE")
                 {
                     ApplicationArea = All;
                 }

@@ -11,7 +11,7 @@ page 50105 "Matricula"
         {
             repeater(General)
             {
-                field("ID"; Rec.ID)
+                field("ID"; FORMAT(Rec."IDESTUDIANTE" + '-' + Rec."IDCURSO"))
                 {
                     ApplicationArea = All;
                     Editable = false;
@@ -22,16 +22,14 @@ page 50105 "Matricula"
                     ApplicationArea = All;
                 }
 
-                field("IDESTUDIANTE"; Rec."IDESTUDIANTE")
+                field("ESTUDIANTE"; Rec."ESTUDIANTE")
                 {
                     ApplicationArea = All;
-                    Editable = false;
                 }
 
-                field("IDCURSO"; Rec."IDCURSO")
+                field("CURSO"; Rec."CURSO")
                 {
                     ApplicationArea = All;
-                    Editable = false;
                 }
 
             }

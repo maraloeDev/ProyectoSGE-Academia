@@ -11,7 +11,6 @@ table 50107 Estudiante
         field(4; "DIRECCION"; Text[100]) { }
         field(5; "TELEFONO"; Integer) { }
         field(6; "FECHA DE NACIMIENTO"; Date) { }
-        field(7; "idMatricula"; Integer) { TableRelation = Matricula."ID"; }
     }
 
     keys

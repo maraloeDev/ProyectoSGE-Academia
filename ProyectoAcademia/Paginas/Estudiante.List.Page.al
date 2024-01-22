@@ -46,13 +46,6 @@ page 50107 "Estudiante"
                     ApplicationArea = All;
                 }
 
-                field("idMatricula"; Rec.idMatricula)
-                {
-                    ApplicationArea = All;
-                    Editable = false;
-                }
-
-
             }
         }
     }

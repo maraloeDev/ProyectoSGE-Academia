@@ -18,6 +18,10 @@ page 50106 "Horario"
                     Editable = false;
                 }
 
+                field("DESCRIPCIÓN"; Rec."DESCRIPCIÓN")
+                {
+                    ApplicationArea = All;
+                }
 
                 field("DIA DE LA SEMANA"; Rec."DIA DE LA SEMANA")
                 {

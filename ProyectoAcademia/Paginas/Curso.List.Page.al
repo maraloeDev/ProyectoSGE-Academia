@@ -43,21 +43,17 @@ page 50102 "Cursos"
 
                 }
 
-                field("idImpartidor: "; Rec.idImpartidor)
+                field("PROF. IMPARTIDOR: "; Rec.NOMBRE)
                 {
                     ApplicationArea = All;
-                    Editable = false;
-
                 }
 
-                field("idOfertador: "; Rec.idOfertador)
+                field("CURSO OFERTADOR: "; Rec.NOMBRE)
                 {
                     ApplicationArea = All;
-                    Editable = false;
-
                 }
 
-                field("idHorario"; Rec.idHorario)
+                field("HORARIO: "; Rec.DESCRIPCION)
                 {
                     ApplicationArea = All;
                     Editable = false;
