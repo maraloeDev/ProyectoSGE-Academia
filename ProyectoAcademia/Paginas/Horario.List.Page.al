@@ -3,7 +3,7 @@ page 50103 "Horario/Detalle List"
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = Detalle;
+    SourceTable = Horario;
     layout
     {
         area(Content)

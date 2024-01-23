@@ -1,4 +1,4 @@
-tableextension 50100 "Curso Extension" extends Curso
+tableextension 50100 "CursoExtension" extends Curso
 {
     fields
     {

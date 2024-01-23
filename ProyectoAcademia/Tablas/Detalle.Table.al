@@ -6,8 +6,8 @@ table 50102 "Detalle"
     {
         field(1; "Id. Detalle"; Integer) { DataClassification = ToBeClassified; }
         field(3; "Dia Semana"; Text[50]) { }
-        field(4; "Hora Inicial"; Time) { }
-        field(5; "Hora Fin"; Time) { }
+        field(4; "Hora Inicial"; Integer) { }
+        field(5; "Hora Fin"; Integer) { }
         field(6; "Id. Horario"; Integer) { TableRelation = Horario."Id. Horario"; }
     }
     keys

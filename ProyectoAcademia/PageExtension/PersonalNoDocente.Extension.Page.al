@@ -1,4 +1,4 @@
-pageextension 50105 "Personal No Docente Extension List" extends "Personal No Docente List"
+pageextension 50105 "Personal No Docente Ext. List" extends "Personal No Docente List"
 {
     layout
     {

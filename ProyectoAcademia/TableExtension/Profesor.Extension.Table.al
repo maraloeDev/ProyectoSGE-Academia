@@ -14,13 +14,13 @@ tableextension 50107 "Profesor Extension" extends "Profesor"
         {
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count(PersonalNoDocente."Id. Personal" where("Id. Prof. Jefe" = field("Id. Profesor")));
+            CalcFormula = count(PersonalNoDocente where("Id. Prof. Jefe" = field("Id. Profesor")));
         }
         field(50102; "Cantidad Cursos Imp."; Integer)
         {
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count(Curso."Id. Curso" where("Id. Prof. Impart." = field("Id. Profesor")));
+            CalcFormula = count(Curso where("Id. Prof. Impart." = field("Id. Profesor")));
         }
     }
 }
