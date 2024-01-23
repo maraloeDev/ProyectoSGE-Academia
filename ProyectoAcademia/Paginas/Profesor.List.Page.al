@@ -1,46 +1,40 @@
-page 50100 "Profesor"
+page 50106 "Profesor List"
 {
-
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Profesor;
-
     layout
     {
         area(Content)
         {
             repeater(GroupName)
             {
-                field("ID"; Rec."ID")
+                field("ID: "; Rec."Id. Profesor")
                 {
                     ApplicationArea = All;
                     Editable = false;
                 }
-                field("NOMBRE"; Rec."NOMBRE")
+                field("NOMBRE: "; Rec."Nombre Profesor")
 
                 {
                     ApplicationArea = All;
                 }
-                field("DIRECCIÓN"; Rec."DIRECCIÓN")
+                field("DIRECCIÓN: "; Rec."Dirección Profesor")
                 {
                     ApplicationArea = All;
                 }
-                field("FECHA DE CONTRATACION"; Rec."FECHA DE CONTRATACION")
+                field("FECHA DE CONTRATACION: "; Rec."Fecha Contratación")
                 {
                     ApplicationArea = All;
                 }
-                field("SALARIO"; Rec."SALARIO")
+                field("SALARIO: "; Rec."Salario Profesor")
                 {
                     ApplicationArea = All;
                 }
-                field("DEPARTAMENTO ASIGNADO"; Rec."DEPART. ASIGNADO")
+                field("DEPARTAMENTO ASIGNADO: "; Rec."Nombre Deprt. Asign.")
                 {
                     ApplicationArea = All;
-                }
-                field("Nº AYUDANTES"; Rec."Nº AYUDANTES")
-                {
-
                 }
             }
         }

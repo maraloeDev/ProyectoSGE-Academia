@@ -1,19 +1,26 @@
-tableextension 50100 "Profesor" extends "Profesor"
+tableextension 50107 "Profesor Extension" extends "Profesor"
 {
     fields
     {
-        field(50100; "Nº AYUDANTES"; Integer)
+        field(50100; "Nombre Deprt. Asign."; Text[50])
         {
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count(Personal.ID where("PROFESOR JEFE" = field(NOMBRE)));
+            CalcFormula = lookup(Departamento."Nombre Depart." where("Id. Depart." = field("Id. Depart. Asign.")));
         }
 
-        field(50101; "Nº CURSOS IMPART."; Integer)
+        // Campos calculados y filtros
+        field(50101; "Cantidad Ayudantes"; Integer)
         {
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count(cursos.ID where("PROF. IMPARTIDOR" = field(NOMBRE)));
+            CalcFormula = count(PersonalNoDocente."Id. Personal" where("Id. Prof. Jefe" = field("Id. Profesor")));
+        }
+        field(50102; "Cantidad Cursos Imp."; Integer)
+        {
+            Editable = false;
+            FieldClass = FlowField;
+            CalcFormula = count(Curso."Id. Curso" where("Id. Prof. Impart." = field("Id. Profesor")));
         }
     }
 }

@@ -1,47 +1,35 @@
-page 50106 "Horario"
+page 50103 "Horario/Detalle List"
 {
-
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = Horario;
-
+    SourceTable = Detalle;
     layout
     {
         area(Content)
         {
             repeater(Repeater)
             {
-                field(ID; Rec.ID)
+                field("ID: "; Rec."Id. Detalle")
                 {
                     ApplicationArea = All;
                     Editable = false;
                 }
-
-                field("DESCRIPCIÓN"; Rec."DESCRIPCIÓN")
+                field("DÍA DE LA SEMANA: "; Rec."Dia Semana")
                 {
                     ApplicationArea = All;
                 }
-
-                field("DIA DE LA SEMANA"; Rec."DIA DE LA SEMANA")
+                field("HORA DE INICIO: "; Rec."Hora Inicial")
                 {
                     ApplicationArea = All;
                 }
-
-                field("HORA DE INICIO"; Rec."HORA DE INICIO")
+                field("HORA DE FIN: "; Rec."Hora Fin")
                 {
                     ApplicationArea = All;
                 }
-
-                field("HORA DE FIN"; Rec."HORA DE FIN")
+                field("CURSO: "; Rec."Nombre Curso")
                 {
                     ApplicationArea = All;
-                }
-
-                field("ID DEL CURSO"; Rec."ID DEL CURSO")
-                {
-                    ApplicationArea = All;
-                    Editable = false;
                 }
             }
         }

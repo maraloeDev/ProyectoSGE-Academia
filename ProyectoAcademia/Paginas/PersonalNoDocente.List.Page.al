@@ -1,49 +1,42 @@
-page 50104 "Personal"
+page 50105 "Personal No Docente List"
 {
-
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = Personal;
-
+    SourceTable = PersonalNoDocente;
     layout
     {
         area(Content)
         {
             repeater(GroupName)
             {
-
-                field("ID"; Rec."ID")
+                field("ID: "; Rec."Id. Personal")
                 {
                     ApplicationArea = All;
                     Editable = false;
                 }
-                field("NOMBRE"; Rec."NOMBRE")
-
+                field("NOMBRE: "; Rec."Nombre Personal")
                 {
                     ApplicationArea = All;
                 }
-
-                field("DIRECCIÓN"; Rec."DIRECCIÓN")
+                field("DIRECCIÓN: "; Rec."Dirección Personal")
                 {
                     ApplicationArea = All;
                 }
-
-                field("SALARIO"; Rec."SALARIO")
+                field("SALARIO: "; Rec."Salario Personal")
                 {
                     ApplicationArea = All;
                 }
-
-                field("PUESTO"; Rec."PUESTO")
+                field("PUESTO: "; Rec."Puesto Personal")
                 {
                     ApplicationArea = All;
                 }
-                field("PROFESOR JEFE"; Rec."PROFESOR JEFE")
+                field("PROFESOR JEFE: "; Rec."Nombre Prof. Jefe")
                 {
                     ApplicationArea = All;
                 }
             }
         }
-
     }
+
 }

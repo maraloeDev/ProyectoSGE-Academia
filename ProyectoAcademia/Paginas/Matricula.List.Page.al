@@ -1,4 +1,4 @@
-page 50105 "Matricula"
+page 50104 "Matricula List"
 {
     PageType = List;
     ApplicationArea = All;
@@ -11,23 +11,23 @@ page 50105 "Matricula"
         {
             repeater(General)
             {
-                field("ID"; FORMAT(Rec."IDESTUDIANTE" + '-' + Rec."IDCURSO"))
+                field("ID: "; Rec."Id. Matricula")
                 {
                     ApplicationArea = All;
                     Editable = false;
                 }
 
-                field("FECHA Y HORA"; Rec."FECHA Y HORA")
+                field("FECHAHORA MATRICULACIÓN: "; Rec."FechaHora Matricula")
                 {
                     ApplicationArea = All;
                 }
 
-                field("ESTUDIANTE"; Rec."ESTUDIANTE")
+                field("ESTUDIANTE: "; Rec."Nombre Estudiante Mtrldo.")
                 {
                     ApplicationArea = All;
                 }
 
-                field("CURSO"; Rec."CURSO")
+                field("CURSO: "; Rec."Nombre Curso Mtrldo.")
                 {
                     ApplicationArea = All;
                 }
