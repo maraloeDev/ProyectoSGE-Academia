@@ -1,22 +1,19 @@
-table 50100 Profesor
+table 50107 "Profesor"
 {
     DataClassification = ToBeClassified;
     Caption = 'Profesor';
-
     fields
     {
-        field(1; "ID"; Integer) { AutoIncrement = true; }
-        field(2; "ID departamento"; Integer) { TableRelation = "Departamento"; }
-        field(3; "NOMBRE"; Text[100]) { }
-        field(4; "DIRECCIÓN"; Text[100]) { }
-        field(5; "FECHA DE CONTRATACION"; Date) { }
-        field(6; "SALARIO"; Decimal) { }
-        field(7; "DEPART. ASIGNADO"; Text[100]) { DataClassification = ToBeClassified; TableRelation = "Departamento"; }
+        field(1; "Id. Profesor"; Integer) { AutoIncrement = true; }
+        field(2; "Nombre Profesor"; Text[50]) { }
+        field(3; "Dirección Profesor"; Text[50]) { }
+        field(4; "Fecha Contratación"; Date) { }
+        field(5; "Salario Profesor"; Decimal) { }
+        field(6; "Id. Depart. Asign."; Integer) { TableRelation = Departamento."Id. Depart."; }
     }
-
     keys
     {
-        key(pk1; "ID")
+        key(pk1; "Id. Profesor")
         {
             Clustered = true;
         }

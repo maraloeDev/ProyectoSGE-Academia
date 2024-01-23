@@ -1,24 +1,28 @@
-table 50104 Personal
+table 50108 "PersonalNoDocente"
 {
     DataClassification = ToBeClassified;
-    Caption = 'Personal';
-
+    Caption = 'Personal No Docente';
     fields
     {
-        field(1; "ID"; Text[100]) { DataClassification = ToBeClassified; }
-
-        field(2; "NOMBRE"; Text[100]) { }
-        field(3; "DIRECCIÓN"; Text[100]) { }
-        field(4; "SALARIO"; Decimal) { }
-        field(5; "PUESTO"; Text[100]) { }
-        field(6; "PROFESOR JEFE"; Text[100]) { TableRelation = Profesor.NOMBRE; }
+        field(1; "Id. Personal"; Integer) { DataClassification = ToBeClassified; }
+        field(2; "Nombre Personal"; Text[50]) { }
+        field(3; "Dirección Personal"; Text[50]) { }
+        field(4; "Salario Personal"; Decimal) { }
+        field(5; "Puesto Personal"; Text[50]) { }
+        field(6; "Id. Prof. Jefe"; Integer) { TableRelation = Profesor."Id. Profesor"; }
     }
-
     keys
     {
-        key(pk1; "ID")
+        key(pk1; "Id. Personal")
         {
             Clustered = true;
         }
     }
+    /*
+    trigger OnValidate()
+    begin
+        if "Puesto Personal" = 'Ayudante' then
+            field(6).Mandatory := true;
+    end if;
+    */
 }

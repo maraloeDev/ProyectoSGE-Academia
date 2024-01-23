@@ -1,21 +1,17 @@
-table 50105 Matricula
+table 50105 "Matricula"
 {
     DataClassification = ToBeClassified;
-    Caption = 'Matricula';
-
+    Caption = 'Matricula de los alumnos';
     fields
     {
-        field(1; "ID"; Text[50]) { DataClassification = ToBeClassified; }
-        field(2; "FECHA Y HORA"; DateTime) { }
-        field(3; "ESTUDIANTE"; Text[50]) { TableRelation = "Estudiante".NOMBRE; }
-        field(4; "IDESTUDIANTE"; Text[50]) { TableRelation = "Estudiante".ID; }
-        field(5; "CURSO"; Text[50]) { TableRelation = "cursos".DESCRIPCION; }
-        field(6; "IDCURSO"; Text[50]) { TableRelation = "cursos".ID; }
+        field(1; "Id. Matricula"; Integer) { DataClassification = ToBeClassified; }
+        field(2; "FechaHora Matricula"; DateTime) { }
+        field(3; "Id. Estudte. Matrldo."; Integer) { TableRelation = Estudiante."Id. Estudiante"; }
+        field(5; "Id. Curso Matrldo."; Integer) { TableRelation = Curso."Id. Curso"; }
     }
-
     keys
     {
-        key(pk1; "ID")
+        key(pk1; "Id. Matricula")
         {
             Clustered = true;
         }

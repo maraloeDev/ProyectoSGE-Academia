@@ -1,24 +1,18 @@
-table 50106 Horario
+table 50104 "Horario"
 {
     DataClassification = ToBeClassified;
-    Caption = 'Horario';
-
+    Caption = 'Horario del curso';
     fields
     {
-        field(1; "ID"; Text[50]) { DataClassification = ToBeClassified; }
+        field(1; "Id. Horario"; Integer) { DataClassification = ToBeClassified; }
 
-        field(2; "DESCRIPCIÓN"; Text[50]) { }
+        field(2; "Id. Curso"; Integer) { TableRelation = Curso."Id. Curso"; }
 
-        field(3; "DIA DE LA SEMANA"; Text[50]) { }
-
-        field(4; "HORA DE INICIO"; Time) { }
-        field(5; "HORA DE FIN"; Time) { }
-
-        field(6; "ID DEL CURSO"; Text[50]) { TableRelation = cursos."ID"; }
+        field(6; "Id. Detalle"; Integer) { TableRelation = Detalle."Id. Detalle"; }
     }
     keys
     {
-        key(pk1; "ID")
+        key(pk1; "Id. Horario")
         {
             Clustered = true;
         }

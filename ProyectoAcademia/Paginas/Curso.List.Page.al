@@ -1,63 +1,39 @@
-page 50102 "Cursos"
+page 50100 "Cursos List"
 {
     PageType = List;
-
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = cursos;
-
+    SourceTable = Curso;
     layout
     {
         area(content)
         {
             repeater(General)
             {
-                field("ID: "; Rec.ID)
+                field("ID: "; Rec."Id. Curso")
                 {
                     ApplicationArea = All;
                     Editable = false;
-
                 }
-
-                field("NOMBRE: "; Rec.Nombre)
-                {
-                    ApplicationArea = All;
-
-                }
-
-                field("DESCRIPCIÓN: "; Rec.Descripcion)
-                {
-                    ApplicationArea = All;
-
-                }
-
-                field("HORAS: "; Rec.Horas)
-                {
-                    ApplicationArea = All;
-
-                }
-
-                field("TARIFA: "; Rec.TARIFA)
-                {
-                    ApplicationArea = All;
-
-                }
-
-                field("PROF. IMPARTIDOR: "; Rec.NOMBRE)
+                field("DESCRIPCIÓN: "; Rec."Descripción Curso")
                 {
                     ApplicationArea = All;
                 }
-
-                field("CURSO OFERTADOR: "; Rec.NOMBRE)
+                field("HORAS TOTALES: "; Rec."Horas Totales")
                 {
                     ApplicationArea = All;
                 }
-
-                field("HORARIO: "; Rec.DESCRIPCION)
+                field("TARIFA DEL CURSO: "; Rec."Tarifa Curso")
                 {
                     ApplicationArea = All;
-                    Editable = false;
-
+                }
+                field("DEPART. OFERTADOR: "; Rec."Nombre Depart. Ofer.")
+                {
+                    ApplicationArea = All;
+                }
+                field("PROF. IMPARTIDOR: "; Rec."Nombre Prof. Imp.")
+                {
+                    ApplicationArea = All;
                 }
             }
         }
