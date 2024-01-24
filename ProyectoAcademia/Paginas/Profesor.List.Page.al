@@ -32,10 +32,12 @@ page 50106 "Profesor List"
                 {
                     ApplicationArea = All;
                 }
+                /*
                 field("DEPARTAMENTO ASIGNADO: "; Rec."Nombre Deprt. Asign.")
                 {
                     ApplicationArea = All;
                 }
+                */
             }
         }
     }

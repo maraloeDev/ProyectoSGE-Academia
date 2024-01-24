@@ -27,6 +27,7 @@ page 50100 "Cursos List"
                 {
                     ApplicationArea = All;
                 }
+                /*
                 field("DEPART. OFERTADOR: "; Rec."Nombre Depart. Ofer.")
                 {
                     ApplicationArea = All;
@@ -35,6 +36,7 @@ page 50100 "Cursos List"
                 {
                     ApplicationArea = All;
                 }
+                */
             }
         }
     }

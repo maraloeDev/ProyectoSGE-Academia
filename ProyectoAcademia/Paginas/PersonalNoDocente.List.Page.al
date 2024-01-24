@@ -31,10 +31,12 @@ page 50105 "Personal No Docente List"
                 {
                     ApplicationArea = All;
                 }
+                /*
                 field("PROFESOR JEFE: "; Rec."Nombre Prof. Jefe")
                 {
                     ApplicationArea = All;
                 }
+                */
             }
         }
     }
