@@ -4,7 +4,7 @@ table 50104 "Horario"
     Caption = 'Horario del curso';
     fields
     {
-        field(1; "Id. Horario"; Integer) { DataClassification = ToBeClassified; }
+        field(1; "Id. Horario"; Integer) { AutoIncrement = true; Editable = false; }
 
         field(2; "Id. Curso"; Integer) { TableRelation = Curso."Id. Curso"; }
 

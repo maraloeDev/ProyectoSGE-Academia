@@ -4,7 +4,7 @@ table 50103 Estudiante
     Caption = 'Estudiante';
     fields
     {
-        field(1; "Id. Estudiante"; Integer) { DataClassification = ToBeClassified; }
+        field(1; "Id. Estudiante"; Integer) { AutoIncrement = true; Editable = false; }
         field(2; "Nombre Estudiante"; Text[50]) { }
         field(3; "Sexo Extudiante"; Option) { OptionMembers = "Masculino","Femenino"; }
         field(4; "Dirección Estudiante"; Text[50]) { }

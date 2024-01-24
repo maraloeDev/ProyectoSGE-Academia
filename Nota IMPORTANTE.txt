@@ -1,0 +1,1 @@
+Las carpetas TableExtension y PageExtension, portan las extensiones de los campos calculados, extensiones que no conseguimos hacer funcionar debido a un error, estas tienen campos que se utilizan en las paginas, por lo que los excel son ejemplos donde los campos de las extensiones fueron comentados, proyecto el cual pasamos como ProyectoAcademia_SinExtensiones.zip.

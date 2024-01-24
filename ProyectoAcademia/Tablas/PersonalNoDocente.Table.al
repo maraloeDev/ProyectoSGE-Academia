@@ -4,7 +4,7 @@ table 50108 "PersonalNoDocente"
     Caption = 'Personal No Docente';
     fields
     {
-        field(1; "Id. Personal"; Integer) { DataClassification = ToBeClassified; }
+        field(1; "Id. Personal"; Integer) { AutoIncrement = true; }
         field(2; "Nombre Personal"; Text[50]) { }
         field(3; "Dirección Personal"; Text[50]) { }
         field(4; "Salario Personal"; Decimal) { }

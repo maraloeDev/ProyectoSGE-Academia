@@ -4,7 +4,7 @@ table 50100 "Curso"
     Caption = 'Curso';
     fields
     {
-        field(1; "Id. Curso"; Integer) { DataClassification = ToBeClassified; AutoIncrement = true; }
+        field(1; "Id. Curso"; Integer) { AutoIncrement = true; Editable = false; }
         field(3; "Descripción Curso"; Text[50]) { }
         field(4; "Horas Totales"; Integer) { }
         field(5; "Tarifa Curso"; Decimal) { }

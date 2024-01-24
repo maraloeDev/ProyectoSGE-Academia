@@ -4,7 +4,7 @@ table 50102 "Detalle"
     Caption = 'Detalle del horario';
     fields
     {
-        field(1; "Id. Detalle"; Integer) { DataClassification = ToBeClassified; }
+        field(1; "Id. Detalle"; Integer) { AutoIncrement = true; }
         field(3; "Dia Semana"; Text[50]) { }
         field(4; "Hora Inicial"; Integer) { }
         field(5; "Hora Fin"; Integer) { }
