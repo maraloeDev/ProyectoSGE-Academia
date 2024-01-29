@@ -27,8 +27,15 @@ page 50100 "Cursos List"
                 {
                     ApplicationArea = All;
                 }
-                /*
+                field("ID DEPART. OFERT.: "; Rec."Id. Depart. Ofert.")
+                {
+                    ApplicationArea = All;
+                }
                 field("DEPART. OFERTADOR: "; Rec."Nombre Depart. Ofer.")
+                {
+                    ApplicationArea = All;
+                }
+                field("ID PROF. IMPART.: "; Rec."Id. Prof. Impart.")
                 {
                     ApplicationArea = All;
                 }
@@ -36,7 +43,6 @@ page 50100 "Cursos List"
                 {
                     ApplicationArea = All;
                 }
-                */
             }
         }
     }

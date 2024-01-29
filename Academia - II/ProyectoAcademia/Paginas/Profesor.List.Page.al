@@ -16,7 +16,6 @@ page 50106 "Profesor List"
                     Editable = false;
                 }
                 field("NOMBRE: "; Rec."Nombre Profesor")
-
                 {
                     ApplicationArea = All;
                 }
@@ -29,6 +28,10 @@ page 50106 "Profesor List"
                     ApplicationArea = All;
                 }
                 field("SALARIO: "; Rec."Salario Profesor")
+                {
+                    ApplicationArea = All;
+                }
+                field("ID DEPART. ASIGN.: "; Rec."Id. Depart. Asign.")
                 {
                     ApplicationArea = All;
                 }

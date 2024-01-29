@@ -27,6 +27,10 @@ page 50103 "Horario/Detalle List"
                 {
                     ApplicationArea = All;
                 }
+                field("ID CURSO: "; Rec."Id. Curso")
+                {
+                    ApplicationArea = All;
+                }
                 field("CURSO: "; Rec."Nombre Curso")
                 {
                     ApplicationArea = All;
