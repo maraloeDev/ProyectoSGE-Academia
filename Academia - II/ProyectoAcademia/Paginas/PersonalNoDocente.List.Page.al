@@ -3,7 +3,7 @@ page 50105 "Personal No Docente List"
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = PersonalNoDocente;
+    SourceTable = "Non-teaching staff";
     layout
     {
         area(Content)

@@ -1,20 +1,20 @@
-table 50107 "Profesor"
+table 50107 "teacher"
 {
     DataClassification = ToBeClassified;
-    Caption = 'Profesor';
+    Caption = 'TEACHER', comment = 'ESP="PROFRESOR"';
     fields
     {
         field(1; "Id. Profesor"; Integer) { AutoIncrement = true; }
-        field(2; "Nombre Profesor"; Text[50]) { }
-        field(3; "Dirección Profesor"; Text[50]) { }
-        field(4; "Fecha Contratación"; Date) { }
-        field(5; "Salario Profesor"; Decimal) { }
-        field(6; "Id. Depart. Asign."; Integer) { TableRelation = Departamento."Id. Depart."; }
+        field(2; "Nombre Profesor"; Text[50]) { Caption = 'TEACHER ID', comment = 'ESP="ID DEL PROFESOR"'; }
+        field(3; "Dirección Profesor"; Text[50]) { Caption = 'TEACHER ADDRESS', comment = 'ESP="DIRECCION DEL PROFESOR"'; }
+        field(4; "Fecha Contratación"; Date) { Caption = 'DATE OF HIRE', comment = 'ESP="FECHA DE CONTRATACION"'; }
+        field(5; "Salario Profesor"; Decimal) { Caption = 'TEACHER SALARY', comment = 'ESP="SALARIO DEL PROFESOR"'; }
+        field(6; "Id. Depart. Asign."; Integer) { TableRelation = Departament."Id. Depart."; }
         field(7; "Nombre Deprt. Asign."; Text[50])
         {
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = lookup(Departamento."Nombre Depart." where("Id. Depart." = field("Id. Depart. Asign.")));
+            CalcFormula = lookup(Departament."Nombre Depart." where("Id. Depart." = field("Id. Depart. Asign.")));
         }
 
         // Campos calculados y filtros  
@@ -22,13 +22,13 @@ table 50107 "Profesor"
         {
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count(PersonalNoDocente where("Id. Prof. Jefe" = field("Id. Profesor")));
+            CalcFormula = count("Non-teaching staff" where("Id. Prof. Jefe" = field("Id. Profesor")));
         }
         field(9; "Cantidad Cursos Imp."; Integer)
         {
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count(Curso where("Id. Prof. Impart." = field("Id. Profesor")));
+            CalcFormula = count(course where("Id. Prof. Impart." = field("Id. Profesor")));
         }
     }
     keys

@@ -3,7 +3,7 @@ page 50101 "Departament List"
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = Departamento;
+    SourceTable = Departament;
     Caption = 'Departament', comment = 'ESP="Departamento"';
 
     layout

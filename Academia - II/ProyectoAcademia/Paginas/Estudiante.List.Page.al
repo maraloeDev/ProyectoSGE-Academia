@@ -3,7 +3,7 @@ page 50102 "Student List"
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = Estudiante;
+    SourceTable = Student;
     layout
     {
         area(content)

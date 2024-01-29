@@ -1,9 +1,9 @@
-page 50100 "Curse List"
+page 50100 "Course List"
 {
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = Curso;
+    SourceTable = course;
     layout
     {
         area(content)
