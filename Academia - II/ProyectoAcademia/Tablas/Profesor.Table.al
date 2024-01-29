@@ -17,7 +17,7 @@ table 50107 "Profesor"
             CalcFormula = lookup(Departamento."Nombre Depart." where("Id. Depart." = field("Id. Depart. Asign.")));
         }
 
-        // Campos calculados y filtros
+        // Campos calculados y filtros  
         field(8; "Cantidad Ayudantes"; Integer)
         {
             Editable = false;
