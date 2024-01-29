@@ -13,7 +13,7 @@ table 50101 Departamento
             FieldClass = FlowField;
             CalcFormula = lookup(Profesor."Nombre Profesor" where("Id. Profesor" = field("Id. Prof. Jefe")));
         }
-        field(6; "Promedio Tarifas"; Integer)
+        field(6; "Promedio Tarifas"; Decimal)
         {
             Editable = false;
             FieldClass = FlowField;
