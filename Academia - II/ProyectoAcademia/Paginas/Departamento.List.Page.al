@@ -23,12 +23,14 @@ page 50101 "Departamento List"
                 {
                     ApplicationArea = All;
                 }
-                /*
                 field("PROF. JEFE:"; Rec."Nombre Prof. Jefe")
                 {
                     ApplicationArea = All;
                 }
-                */
+                field("PROMEDIO TARIFAS: "; Rec."Promedio Tarifas")
+                {
+                    ApplicationArea = all;
+                }
             }
         }
     }

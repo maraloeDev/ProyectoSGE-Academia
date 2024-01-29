@@ -10,6 +10,11 @@ table 50108 "PersonalNoDocente"
         field(4; "Salario Personal"; Decimal) { }
         field(5; "Puesto Personal"; Text[50]) { }
         field(6; "Id. Prof. Jefe"; Integer) { TableRelation = Profesor."Id. Profesor"; }
+        field(7; "Nombre Prof. Jefe"; Text[50])
+        {
+            FieldClass = FlowField;
+            CalcFormula = lookup(Profesor."Nombre Profesor" where("Id. Profesor" = field("Id. Prof. Jefe")));
+        }
     }
     keys
     {

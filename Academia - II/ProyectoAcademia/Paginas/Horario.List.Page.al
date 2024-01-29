@@ -15,7 +15,6 @@ page 50103 "Horario/Detalle List"
                     ApplicationArea = All;
                     Editable = false;
                 }
-                /*
                 field("DÍA DE LA SEMANA: "; Rec."Dia Semana")
                 {
                     ApplicationArea = All;
@@ -32,7 +31,6 @@ page 50103 "Horario/Detalle List"
                 {
                     ApplicationArea = All;
                 }
-                */
             }
         }
     }

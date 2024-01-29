@@ -21,17 +21,17 @@ page 50104 "Matricula List"
                 {
                     ApplicationArea = All;
                 }
-                /*
-                                field("ESTUDIANTE: "; Rec."Nombre Estudiante Mtrldo.")
-                                {
-                                    ApplicationArea = All;
-                                }
 
-                                field("CURSO: "; Rec."Nombre Curso Mtrldo.")
-                                {
-                                    ApplicationArea = All;
-                                }
-                */
+                field("ESTUDIANTE: "; Rec."Nombre Estudiante Mtrldo.")
+                {
+                    ApplicationArea = All;
+                }
+
+                field("CURSO: "; Rec."Nombre Curso Mtrldo.")
+                {
+                    ApplicationArea = All;
+                }
+
             }
         }
     }
