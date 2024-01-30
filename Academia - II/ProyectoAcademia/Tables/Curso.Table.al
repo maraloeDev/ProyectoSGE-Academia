@@ -4,11 +4,20 @@ table 50100 "Course"
     Caption = 'Course', comment = 'ESP="CURSO"';
     fields
     {
-        field(1; "Id. Curso"; Integer) { AutoIncrement = true; Editable = false; }
-        field(3; "Descripción Curso"; Text[50]) { Caption = 'CURSE DESCRIPTION', comment = 'ESP="DESCRIPCION DEL CURSO"'; }
-        field(4; "Horas Totales"; Integer) { Caption = 'TOTAL HOURS', comment = 'ESP="HORAS TOTALES"'; }
-        field(5; "Tarifa Curso"; Decimal) { Caption = 'COURSE RATE', comment = 'ESP="TARIFA DEL CURSO"'; }
-        field(6; "Id. Prof. Impart."; Integer) { TableRelation = teacher."Id. Profesor"; }
+        field(1; "Course No."; Integer)
+        {
+            Caption = 'Course No.', comment = 'ESP="HORAS TOTALES"';
+            AutoIncrement = true;
+            Editable = false;
+        }
+        field(3; "Course description"; Text[50]) { Caption = 'Course description', comment = 'ESP="DESCRIPCION DEL CURSO"'; }
+        field(4; "Horas Totales"; Integer) { Caption = 'Total hours', comment = 'ESP="HORAS TOTALES"'; }
+        field(5; "Course rate"; Decimal) { Caption = 'Course rate', comment = 'ESP="TARIFA DEL CURSO"'; }
+        field(6; "Head Department No."; Integer)
+        {
+            Caption = 'Head Department No.', comment = 'ESP="TARIFA DEL CURSO"';
+            TableRelation = teacher."Id. Profesor";
+        }
         field(7; "Id. Depart. Ofert."; Integer) { TableRelation = Departament."Id. Depart."; }
         field(8; "Nombre Depart. Ofer."; Text[50])
         {
