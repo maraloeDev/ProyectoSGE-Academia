@@ -3,7 +3,7 @@ page 50106 "Profesor List"
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = teacher;
+    SourceTable = Teacher;
     layout
     {
         area(Content)

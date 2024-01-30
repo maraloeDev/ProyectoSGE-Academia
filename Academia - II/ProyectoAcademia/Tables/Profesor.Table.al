@@ -1,4 +1,4 @@
-table 50107 "teacher"
+table 50107 "Teacher"
 {
     DataClassification = ToBeClassified;
     Caption = 'TEACHER', comment = 'ESP="PROFRESOR"';

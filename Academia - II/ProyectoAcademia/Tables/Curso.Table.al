@@ -1,7 +1,7 @@
-table 50100 "course"
+table 50100 "Course"
 {
     DataClassification = ToBeClassified;
-    Caption = 'COURSE', comment = 'ESP="CURSO"';
+    Caption = 'Course', comment = 'ESP="CURSO"';
     fields
     {
         field(1; "Id. Curso"; Integer) { AutoIncrement = true; Editable = false; }

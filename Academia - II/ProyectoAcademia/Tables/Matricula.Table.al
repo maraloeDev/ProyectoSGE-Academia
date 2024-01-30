@@ -1,4 +1,4 @@
-table 50105 "tuition"
+table 50105 "Registration"
 {
     DataClassification = ToBeClassified;
     Caption = 'TUITION', comment = 'ESP="MATRICULA"';

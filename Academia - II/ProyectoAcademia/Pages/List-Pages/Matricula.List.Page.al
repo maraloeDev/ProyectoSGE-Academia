@@ -3,7 +3,7 @@ page 50104 "Matricula List"
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = tuition;
+    SourceTable = Registration;
 
     layout
     {

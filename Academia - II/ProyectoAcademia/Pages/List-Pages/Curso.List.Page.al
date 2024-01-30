@@ -3,7 +3,7 @@ page 50100 "Course List"
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = course;
+    SourceTable = Course;
     layout
     {
         area(content)
