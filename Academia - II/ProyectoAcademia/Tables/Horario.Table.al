@@ -6,7 +6,7 @@ table 50104 "Schedule"
     {
         field(1; "Id. Horario"; Integer) { AutoIncrement = true; Editable = false; }
 
-        field(2; "Id. Curso"; Integer) { TableRelation = course."Id. Curso"; }
+        field(2; "Id. Curso"; Integer) { TableRelation = course."Course No."; }
 
         field(3; "Id. Detalle"; Integer) { TableRelation = Detail."Id. Detalle"; }
         field(50100; "Dia Semana"; Text[50])
@@ -31,7 +31,7 @@ table 50104 "Schedule"
         {
             Caption = 'COURSE NAME', comment = 'ESP="NOMBRE DEL CURSO"';
             FieldClass = FlowField;
-            CalcFormula = lookup(course."Descripción Curso" where("Id. Curso" = field("Id. Curso")));
+            CalcFormula = lookup(course."Description course" where("Course No." = field("Id. Curso")));
         }
     }
     keys

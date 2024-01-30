@@ -28,7 +28,7 @@ table 50107 "Teacher"
         {
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count(course where("Id. Prof. Impart." = field("Id. Profesor")));
+            CalcFormula = count(course where("Teacher No." = field("Id. Profesor")));
         }
     }
     keys
