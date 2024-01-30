@@ -4,30 +4,39 @@ table 50104 "Schedule"
     Caption = 'SCHEDULE', comment = 'ESP="HORARIO"';
     fields
     {
-        field(1; "Id. Horario"; Integer) { AutoIncrement = true; Editable = false; }
+        field(1; "Schedule.Id"; Integer)
+        {
+            Caption = 'SCHEDULE .ID', comment = 'ESP="ID HORARIO"';
+            AutoIncrement = true;
+            Editable = false;
+        }
 
-        field(2; "Id. Curso"; Integer) { TableRelation = course."Course No."; }
+        field(2; "Id. Curso"; Integer)
+        {
+            Caption = 'EnglishText', comment = 'ESP="CODIGO DEL CURSO"';
+            TableRelation = course."Course No.";
+        }
 
-        field(3; "Id. Detalle"; Integer) { TableRelation = Detail."Id. Detalle"; }
-        field(50100; "Dia Semana"; Text[50])
+        field(3; "Id. Detalle"; Integer) { TableRelation = Detail."Detail No."; }
+        field(50100; "Weekday"; Text[50])
         {
             Caption = 'WEEKDAY ', comment = 'ESP="DIA DE LA SEMANA"';
             FieldClass = FlowField;
-            CalcFormula = lookup(Detail."Dia Semana" where("Id. Detalle" = field("Id. Detalle")));
+            CalcFormula = lookup(Detail."Weekday" where("Detail No." = field("Id. Detalle")));
         }
-        field(4; "Hora Inicial"; Integer)
+        field(4; "Start Time"; Integer)
         {
             Caption = 'START TIME', comment = 'ESP="HORA INICIAL"';
             FieldClass = FlowField;
-            CalcFormula = lookup(Detail."Hora Inicial" where("Id. Detalle" = field("Id. Detalle")));
+            CalcFormula = lookup(Detail."Start Time" where("Detail No." = field("Id. Detalle")));
         }
-        field(5; "Hora Fin"; Integer)
+        field(5; "End Time"; Integer)
         {
             Caption = 'END TIME', comment = 'ESP="HORA FINAL"';
             FieldClass = FlowField;
-            CalcFormula = lookup(Detail."Hora Fin" where("Id. Detalle" = field("Id. Detalle")));
+            CalcFormula = lookup(Detail."End Time" where("Detail No." = field("Id. Detalle")));
         }
-        field(6; "Nombre Curso"; Text[50])
+        field(6; "Course Name"; Text[50])
         {
             Caption = 'COURSE NAME', comment = 'ESP="NOMBRE DEL CURSO"';
             FieldClass = FlowField;
@@ -36,7 +45,7 @@ table 50104 "Schedule"
     }
     keys
     {
-        key(pk1; "Id. Horario")
+        key(pk1; "Schedule.Id")
         {
             Clustered = true;
         }

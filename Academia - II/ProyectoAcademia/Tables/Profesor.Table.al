@@ -4,17 +4,29 @@ table 50107 "Teacher"
     Caption = 'TEACHER', comment = 'ESP="PROFRESOR"';
     fields
     {
-        field(1; "Id. Profesor"; Integer) { AutoIncrement = true; }
-        field(2; "Nombre Profesor"; Text[50]) { Caption = 'TEACHER ID', comment = 'ESP="ID DEL PROFESOR"'; }
-        field(3; "Dirección Profesor"; Text[50]) { Caption = 'TEACHER ADDRESS', comment = 'ESP="DIRECCION DEL PROFESOR"'; }
-        field(4; "Fecha Contratación"; Date) { Caption = 'DATE OF HIRE', comment = 'ESP="FECHA DE CONTRATACION"'; }
-        field(5; "Salario Profesor"; Decimal) { Caption = 'TEACHER SALARY', comment = 'ESP="SALARIO DEL PROFESOR"'; }
-        field(6; "Id. Depart. Asign."; Integer) { TableRelation = Departament."Id. Depart."; }
-        field(7; "Nombre Deprt. Asign."; Text[50])
+        field(1; "Teacher .Id"; Integer)
         {
+            Caption = 'TEACHER ID', comment = 'ESP="ID DEL PROFESOR"';
+            AutoIncrement = true;
+        }
+        field(2; "Teacher Name"; Text[50])
+        {
+            Caption = 'TEACHER NAME', comment = 'ESP="NOMBRE DEL PROFESOR"';
+        }
+        field(3; "Teacher Address"; Text[50]) { Caption = 'TEACHER ADDRESS', comment = 'ESP="DIRECCION DEL PROFESOR"'; }
+        field(4; "Date of Hire"; Date) { Caption = 'DATE OF HIRE', comment = 'ESP="FECHA DE CONTRATACION"'; }
+        field(5; "Teacher Salary"; Decimal) { Caption = 'TEACHER SALARY', comment = 'ESP="SALARIO DEL PROFESOR"'; }
+        field(6; "Id. Depart. Asign."; Integer)
+        {
+            Caption = 'ID. DEPART. ASIGN.', comment = 'ESP="ID. DEPARTAMENTO ASIGNADO"';
+            TableRelation = Department."Department No.";
+        }
+        field(7; "Name Deprt. Asign."; Text[50])
+        {
+            Caption = 'NAME DEPRT. ASIGN.', comment = 'ESP="NOMBRE DEPARTAMENTO ASIGNADO"';
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = lookup(Departament."Nombre Depart." where("Id. Depart." = field("Id. Depart. Asign.")));
+            CalcFormula = lookup(Department."Department name" where("Department No." = field("Id. Depart. Asign.")));
         }
 
         // Campos calculados y filtros  
@@ -22,18 +34,18 @@ table 50107 "Teacher"
         {
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count("Non-teaching staff" where("Id. Prof. Jefe" = field("Id. Profesor")));
+            CalcFormula = count("Non-teaching staff" where("Head Studies .Id" = field("Teacher .Id")));
         }
         field(9; "Cantidad Cursos Imp."; Integer)
         {
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count(course where("Teacher No." = field("Id. Profesor")));
+            CalcFormula = count(course where("Teacher No." = field("Teacher .Id")));
         }
     }
     keys
     {
-        key(pk1; "Id. Profesor")
+        key(pk1; "Teacher .Id")
         {
             Clustered = true;
         }
