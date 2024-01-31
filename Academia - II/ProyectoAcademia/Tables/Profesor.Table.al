@@ -30,14 +30,16 @@ table 50107 "Teacher"
         }
 
         // Campos calculados y filtros  
-        field(8; "Cantidad Ayudantes"; Integer)
+        field(8; "Number of assistants"; Integer)
         {
+            Caption = 'NUMBER OF ASSISTANTS', comment = 'ESP="NUMERO DE ASISTENTES"';
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = count("Non-teaching staff" where("Head Studies .Id" = field("Teacher .Id")));
         }
-        field(9; "Cantidad Cursos Imp."; Integer)
+        field(9; "Number of courses given"; Integer)
         {
+            Caption = 'NUMBER OF COURSES GIVEN', comment = 'ESP="NUMERO DE CURSOS IMPARTIDOS"';
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = count(course where("Teacher No." = field("Teacher .Id")));

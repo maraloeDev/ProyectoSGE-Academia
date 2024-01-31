@@ -6,13 +6,13 @@ table 50100 "Course"
     {
         field(1; "Course No."; Integer)
         {
-            Caption = 'COURSE NO.', comment = 'ESP="HORAS TOTALES"';
+            Caption = 'COURSE NO.', comment = 'ESP="ID DEL CURSO"';
             AutoIncrement = true;
             Editable = false;
         }
-        field(3; "Description course"; Text[50])
+        field(3; "Course Description"; Text[50])
         {
-            Caption = 'DESCRIPTION COURSE', comment = 'ESP="DESCRIPCION DEL CURSO"';
+            Caption = 'COURSE DESCRIPTION ', comment = 'ESP="DESCRIPCION DEL CURSO"';
         }
         field(4; "Total hours"; Integer)
         {
@@ -29,12 +29,12 @@ table 50100 "Course"
         }
         field(7; "Course provider No."; Integer)
         {
-            Caption = 'Course provider No.', comment = 'ESP="TARIFA DEL CURSO"';
+            Caption = 'COURSE PROVIDER NO.', comment = 'ESP="TARIFA DEL CURSO"';
             TableRelation = Department."Department No.";
         }
         field(8; "Course provider name"; Text[50])
         {
-            Caption = 'Course provider name', comment = 'ESP="NOMBRE DEPARTAMENTO OFERTADO"';
+            Caption = 'COURSE PROVIDER NAME', comment = 'ESP="NOMBRE DEPARTAMENTO OFERTADO"';
             FieldClass = FlowField;
             CalcFormula = lookup(Department."Department name" where("Department No." = field("Course provider No.")));
         }

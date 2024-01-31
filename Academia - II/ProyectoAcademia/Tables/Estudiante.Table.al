@@ -4,7 +4,7 @@ table 50103 Student
     Caption = 'STUDENT', comment = 'ESP="ESTUDIANTE"';
     fields
     {
-        field(1; "Student .No"; Integer)
+        field(1; "Student No."; Integer)
         {
             Caption = 'STUDENT.ID', comment = 'ESP="ID. ESTUDIANTE"';
             AutoIncrement = true;
@@ -34,6 +34,9 @@ table 50103 Student
     }
     keys
     {
-        key(pk1; "Student .No") { Clustered = true; }
+        key(pk1; "Student No.")
+        {
+            Clustered = true;
+        }
     }
 }

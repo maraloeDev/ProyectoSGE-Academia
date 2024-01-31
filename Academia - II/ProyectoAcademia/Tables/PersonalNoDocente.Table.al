@@ -4,11 +4,28 @@ table 50108 "Non-teaching staff"
     Caption = 'NON-TEACHING STAFF', comment = 'ESP="PERSONAL NO DOCENTE"';
     fields
     {
-        field(1; "Personal .Id"; Integer) { AutoIncrement = true; }
-        field(2; "Personal Name"; Text[50]) { Caption = 'STAFF NAME', comment = 'ESP="NOMBRE DEL PERSONAL"'; }
-        field(3; "Personal Managment"; Text[50]) { Caption = 'STAFF MANAGEMENT', comment = 'ESP="DIRECCION DEL PERSONAL"'; }
-        field(4; "Personal Salary"; Decimal) { Caption = 'STAFF SALARY', comment = 'ESP="SALARIO DEL PERSONAL"'; }
-        field(5; "Personal Position"; Text[50]) { Caption = 'STAFF POSITION', comment = 'ESP="PUESTO DEL PERSONAL"'; }
+        field(1; "Staff .Id"; Integer)
+        {
+
+            AutoIncrement = true;
+            Caption = 'STAFF ID', comment = 'ESP="ID. DEL PERSONAL"';
+        }
+        field(2; "Staff Name"; Text[50])
+        {
+            Caption = 'STAFF NAME', comment = 'ESP="NOMBRE DEL PERSONAL"';
+        }
+        field(3; "Staff Managment"; Text[50])
+        {
+            Caption = 'STAFF MANAGEMENT', comment = 'ESP="DIRECCION DEL PERSONAL"';
+        }
+        field(4; "Staff Salary"; Decimal)
+        {
+            Caption = 'STAFF SALARY', comment = 'ESP="SALARIO DEL PERSONAL"';
+        }
+        field(5; "Staff Position"; Text[50])
+        {
+            Caption = 'STAFF POSITION', comment = 'ESP="PUESTO DEL PERSONAL"';
+        }
         field(6; "Head Studies .Id"; Integer)
         {
             Caption = 'HEAD OF STUDIES ID', comment = 'ESP="ID. JEFE DE ESTUDIOS"';
@@ -23,7 +40,7 @@ table 50108 "Non-teaching staff"
     }
     keys
     {
-        key(pk1; "Personal .Id")
+        key(pk1; "Staff .Id")
         {
             Clustered = true;
         }

@@ -1,46 +1,43 @@
-page 50101 "Departament List"
+page 50101 "Department Page"
 {
     PageType = List;
-    ApplicationArea = All;
-    UsageCategory = Lists;
-    SourceTable = Departament;
-    Caption = 'Departament', comment = 'ESP="Departamento"';
+    SourceTable = Department;
+    Caption = 'DEPARTMENT PAGE', comment = 'ESP="PÁGINA DEL DEPARTAMENTO"';
 
     layout
     {
         area(content)
         {
-            repeater(General)
+            group(General)
             {
-                field("ID: "; Rec."Id. Depart.")
+                field("Department No."; Rec."Department No.")
                 {
                     ApplicationArea = All;
-                    Editable = false;
-
+                    Caption = 'DEPARTMENT NO.', comment = 'ESP="NOMBRE DEL DEPARTAMENTO"';
                 }
-                field("NOMBRE: "; Rec."Nombre Depart.")
+                field("Department name"; Rec."Department name")
                 {
                     ApplicationArea = All;
-                    Caption = 'NAME', comment = 'ESP="NOMBRE"';
+                    Caption = 'DEPARTMENT NAME', comment = 'ESP="NOMBRE DEL DEPARTAMENTO"';
                 }
-                field("DESPACHO: "; Rec."Despacho Asign.")
+                field("Assigned office"; Rec."Assigned office")
                 {
                     ApplicationArea = All;
-                    Caption = 'OFFICE', comment = 'ESP="DESPACHO"';
+                    Caption = 'ASSIGNED OFFICE', comment = 'ESP="DESPACHO ASIGNADO"';
                 }
-                field("ID PROF. JEFE:"; Rec."Id. Prof. Jefe")
+                field("Id. professor. head"; Rec."Id. professor. head")
                 {
                     ApplicationArea = All;
                 }
-                field("PROF. JEFE:"; Rec."Nombre Prof. Jefe")
+                field("Name  professor. head"; Rec."Name  professor. head")
                 {
                     ApplicationArea = All;
-                    Caption = 'HEAD PROFESSOR', comment = 'ESP="PROF. JEFE"';
+                    Caption = 'NAME OF THE HEAD PROFESSOR', comment = 'ESP="NOMBRE DEL PROFESOR JEFE"';
                 }
-                field("PROMEDIO TARIFAS: "; Rec."Promedio Tarifas")
+                field("Average fees"; Rec."Average fees")
                 {
-                    ApplicationArea = all;
-                    Caption = 'AVERAGE RATES', comment = 'ESP="PROMEDIO TARIFAS"';
+                    ApplicationArea = All;
+                    Caption = 'AVERAGE FEES', comment = 'ESP="PROMEDIO DE TARIFAS"';
                 }
             }
         }

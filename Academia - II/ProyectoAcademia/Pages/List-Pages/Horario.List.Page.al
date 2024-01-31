@@ -1,39 +1,49 @@
-page 50103 "Horario/Detalle List"
+page 50103 "Schedule Page"
 {
     PageType = List;
-    ApplicationArea = All;
-    UsageCategory = Lists;
     SourceTable = Schedule;
+    Caption = 'SCHEDULE PAGE', comment = 'ESP="PÁGINA DEL HORARIO"';
+
     layout
     {
-        area(Content)
+        area(content)
         {
-            repeater(Repeater)
+            group(General)
             {
-                field("ID: "; Rec."Id. Detalle")
+                field("Schedule No."; Rec."Schedule No.")
                 {
                     ApplicationArea = All;
-                    Editable = false;
+                    Caption = 'SCHEDULE No.', comment = 'ESP="ID HORARIO"';
                 }
-                field("DÍA DE LA SEMANA: "; Rec."Dia Semana")
+                field("Course No."; Rec."Course No.")
                 {
                     ApplicationArea = All;
+                    Caption = 'COURSE NO.', comment = 'ESP="CODIGO DEL CURSO"';
                 }
-                field("HORA DE INICIO: "; Rec."Hora Inicial")
+                field("Detail No."; Rec."Detail No.")
                 {
                     ApplicationArea = All;
+                    Caption = 'DETAIL NO.', comment = 'ESP="ID DETALLE"';
                 }
-                field("HORA DE FIN: "; Rec."Hora Fin")
+                field("Weekday"; Rec."Weekday")
                 {
                     ApplicationArea = All;
+                    Caption = 'WEEKDAY ', comment = 'ESP="DIA DE LA SEMANA"';
                 }
-                field("ID CURSO: "; Rec."Id. Curso")
+                field("Start Time"; Rec."Start Time")
                 {
                     ApplicationArea = All;
+                    Caption = 'START TIME', comment = 'ESP="HORA INICIAL"';
                 }
-                field("CURSO: "; Rec."Nombre Curso")
+                field("End Time"; Rec."End Time")
                 {
                     ApplicationArea = All;
+                    Caption = 'END TIME', comment = 'ESP="HORA FINAL"';
+                }
+                field("Course Name"; Rec."Course Name")
+                {
+                    ApplicationArea = All;
+                    Caption = 'COURSE NAME', comment = 'ESP="NOMBRE DEL CURSO"';
                 }
             }
         }

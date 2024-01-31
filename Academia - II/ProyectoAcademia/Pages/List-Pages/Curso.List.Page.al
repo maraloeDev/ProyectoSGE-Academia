@@ -1,51 +1,55 @@
-page 50100 "Course List"
+page 50100 "Course Page"
 {
     PageType = List;
-    ApplicationArea = All;
-    UsageCategory = Lists;
     SourceTable = Course;
+    Caption = 'COURSE PAGE', comment = 'ESP="PÁGINA DEL CURSO"';
+
     layout
     {
         area(content)
         {
-            repeater(General)
+            group(General)
             {
-                field("ID: "; Rec."Course No.")
+                field("Course No."; Rec."Course No.")
                 {
-                    ApplicationArea = All;
                     Editable = false;
-                    Caption = 'Id del curso';
+                    ApplicationArea = All;
+                    Caption = 'COURSE NO.', comment = 'ESP="ID DEL CURSO"';
                 }
-                field("DESCRIPCIÓN: "; Rec."Description course")
+                field("Course Description"; Rec."Course Description")
                 {
                     ApplicationArea = All;
-                    Caption = 'Descripción del curso';
+                    Caption = 'COURSE DESCRIPTION ', comment = 'ESP="DESCRIPCIÓN DEL CURSO"';
                 }
-                field("HORAS TOTALES: "; Rec."Total hours")
+                field("Total hours"; Rec."Total hours")
                 {
                     ApplicationArea = All;
-                    Caption = 'Horas totales del curso';
+                    Caption = 'TOTAL HOURS', comment = 'ESP="HORAS TOTALES"';
                 }
-                field("TARIFA DEL CURSO: "; Rec."Course fee")
+                field("Course fee"; Rec."Course fee")
                 {
                     ApplicationArea = All;
-                    Caption = 'Tarifa del curso';
+                    Caption = 'COURSE FEE', comment = 'ESP="TARIFA DEL CURSO"';
                 }
-                field("ID DEPART. OFERT.: "; Rec."Course provider No.")
+                field("Teacher No."; Rec."Teacher No.")
                 {
                     ApplicationArea = All;
+                    Caption = 'TEACHER NO.', comment = 'ESP="PROFESOR QUE IMPARTE EL CURSO"';
                 }
-                field("DEPART. OFERTADOR: "; Rec."Course provider name")
+                field("Course provider No."; Rec."Course provider No.")
                 {
                     ApplicationArea = All;
+                    Caption = 'COURSE PROVIDER NO.', comment = 'ESP="TARIFA DEL CURSO"';
                 }
-                field("ID PROF. IMPART.: "; Rec."Teacher No.")
+                field("Course provider name"; Rec."Course provider name")
                 {
                     ApplicationArea = All;
+                    Caption = 'COURSE PROVIDER NAME', comment = 'ESP="NOMBRE DEPARTAMENTO OFERTADO"';
                 }
-                field("PROF. IMPARTIDOR: "; Rec."Teacher name")
+                field("Teacher name"; Rec."Teacher name")
                 {
                     ApplicationArea = All;
+                    Caption = 'DEPARTMENT HEAD NAME', comment = 'ESP="NOMBRE DEL PROFESOR QUE IMPARTE EL CURSO"';
                 }
             }
         }
