@@ -1,4 +1,4 @@
-table 50108 "Non-teaching staff"
+table 50106 "Non-teaching staff"
 {
     DataClassification = ToBeClassified;
     Caption = 'NON-TEACHING STAFF', comment = 'ESP="PERSONAL NO DOCENTE"';

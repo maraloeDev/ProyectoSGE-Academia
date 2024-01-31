@@ -1,4 +1,4 @@
-table 50102 "Detail"
+table 50103 "Detail"
 {
     DataClassification = ToBeClassified;
     Caption = 'DETAIL', comment = 'ESP="DETALLE"';

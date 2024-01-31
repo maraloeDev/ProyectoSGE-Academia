@@ -1,5 +1,6 @@
 page 50100 "Course Page"
 {
+
     PageType = List;
     SourceTable = Course;
     Caption = 'COURSE PAGE', comment = 'ESP="PÁGINA DEL CURSO"';
