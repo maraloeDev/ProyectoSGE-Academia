@@ -1,8 +1,8 @@
-page 50102 "Student Page"
+page 50102 "Student List"
 {
     PageType = List;
     SourceTable = Student;
-    Caption = 'STUDENT PAGE', comment = 'ESP="PÁGINA DEL ESTUDIANTE"';
+    Caption = 'STUDENT LIST', comment = 'ESP="LISTA DE ESTUDIANTES"';
 
     layout
     {

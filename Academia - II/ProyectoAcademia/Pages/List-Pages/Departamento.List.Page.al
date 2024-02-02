@@ -1,8 +1,8 @@
-page 50101 "Department Page"
+page 50101 "Department List"
 {
     PageType = List;
     SourceTable = Department;
-    Caption = 'DEPARTMENT PAGE', comment = 'ESP="PÁGINA DEL DEPARTAMENTO"';
+    Caption = 'DEPARTMENT LIST', comment = 'ESP="LISTA DE DEPARTAMENTOS"';
 
     layout
     {

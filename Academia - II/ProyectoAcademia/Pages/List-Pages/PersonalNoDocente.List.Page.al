@@ -1,8 +1,8 @@
-page 50105 "Non-teaching staff Page"
+page 50105 "Non-teaching staff List"
 {
     PageType = Card;
     SourceTable = "Non-teaching staff";
-    Caption = 'NON-TEACHING STAFF PAGE', comment = 'ESP="PÁGINA DEL PERSONAL NO DOCENTE"';
+    Caption = 'NON-TEACHING STAFF LIST', comment = 'ESP="LISTA DE PERSONAL NO DOCENTE"';
 
     layout
     {

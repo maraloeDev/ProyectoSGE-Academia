@@ -1,8 +1,8 @@
-page 50104 "Registration Page"
+page 50104 "Registration List"
 {
     PageType = Card;
     SourceTable = Registration;
-    Caption = 'REGISTRATION PAGE', comment = 'ESP="PÁGINA DE MATRICULA"';
+    Caption = 'REGISTRATION LIST', comment = 'ESP="LISTA DE MATRICULAS"';
 
     layout
     {

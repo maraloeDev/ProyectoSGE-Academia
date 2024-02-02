@@ -1,9 +1,9 @@
-page 50100 "Course Page"
+page 50100 "Course List"
 {
 
     PageType = List;
     SourceTable = Course;
-    Caption = 'COURSE PAGE', comment = 'ESP="PÁGINA DEL CURSO"';
+    Caption = 'COURSE LIST', comment = 'ESP="LISTA DE CURSOS"';
 
     layout
     {

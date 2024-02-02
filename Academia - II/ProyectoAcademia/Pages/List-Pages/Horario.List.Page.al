@@ -1,8 +1,8 @@
-page 50103 "Schedule Page"
+page 50103 "Schedule List"
 {
     PageType = List;
     SourceTable = Schedule;
-    Caption = 'SCHEDULE PAGE', comment = 'ESP="PÁGINA DEL HORARIO"';
+    Caption = 'SCHEDULE LIST', comment = 'ESP="LISTA DE HORARIOS"';
 
     layout
     {

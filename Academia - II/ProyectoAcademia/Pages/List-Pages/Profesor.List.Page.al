@@ -1,8 +1,8 @@
-page 50107 "Teacher Page"
+page 50107 "Teacher List"
 {
     PageType = Card;
     SourceTable = Teacher;
-    Caption = 'TEACHER PAGE', comment = 'ESP="PÁGINA DEL PROFESOR"';
+    Caption = 'TEACHER LIST', comment = 'ESP="LISTA DE PROFESORES"';
 
     layout
     {
