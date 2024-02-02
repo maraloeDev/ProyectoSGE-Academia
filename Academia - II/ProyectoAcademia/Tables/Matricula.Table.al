@@ -1,40 +1,40 @@
 table 50105 "Registration"
 {
     DataClassification = ToBeClassified;
-    Caption = 'REGISTRATION', comment = 'ESP="MATRICULA"';
+    Caption = 'Registration', comment = 'ESP="Matricula"';
     fields
     {
         field(1; "Registration No."; Integer)
         {
-            Caption = 'REGUSTRATION NO.', comment = 'ESP="REGISTRO No."';
+            Caption = 'Registration No.', comment = 'ESP=Registro No."';
             AutoIncrement = true;
         }
         field(2; "Date/Time Registration"; DateTime)
         {
-            Caption = 'DATE/TIME OF REGISTRATION', comment = 'ESP="FECHA / HORA DE LA MATRICULA"';
+            Caption = 'Date/Time Registration', comment = 'ESP="Fecha/Hora de Matricula"';
         }
-        field(3; "Id. Student. Enrolled."; Integer)
+        field(3; "No. Student. Enrolled."; Integer)
         {
 
-            Caption = 'ID.STUDENT ENROLLED', comment = 'ESP="ID. ESTUDIANTE MATRICULADO"';
+            Caption = 'No. Student. Enrolled.', comment = 'ESP="No. Estudiante Matriculado"';
             TableRelation = student."Student No.";
         }
-        field(5; "Id. Course Enrolled."; Integer)
+        field(5; "No. Course Enrolled."; Integer)
         {
-            Caption = 'ID. COURSE ENROLLED', comment = 'ESP="ID. CURSO MATRICULADO"';
+            Caption = 'No. Course Enrolled.', comment = 'ESP="No. Curso Matriculado"';
             TableRelation = course."Course No.";
         }
         field(6; "Name Student Enrolled"; Text[50])
         {
             Caption = 'NAME OF ENROLLED STUDENT ', comment = 'ESP="NOMBRE DEL ESTUDIANTE MATRICULADO"';
             FieldClass = FlowField;
-            CalcFormula = lookup(student."Student Name" where("Student No." = field("Id. Student. Enrolled.")));
+            CalcFormula = lookup(student."Student Name" where("Student No." = field("No. Student. Enrolled.")));
         }
         field(7; "Name Enrolled Course"; Text[50])
         {
             Caption = 'NAME OF ENROLLED COURSE', comment = 'ESP="NOMBRE DEL CURSO MATRICULADO"';
             FieldClass = FlowField;
-            CalcFormula = lookup(course."Course Description" where("Course No." = field("Id. Course Enrolled.")));
+            CalcFormula = lookup(course."Course Description" where("Course No." = field("No. Course Enrolled.")));
         }
     }
     keys

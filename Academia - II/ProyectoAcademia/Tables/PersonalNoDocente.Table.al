@@ -1,46 +1,46 @@
 table 50106 "Non-teaching staff"
 {
     DataClassification = ToBeClassified;
-    Caption = 'NON-TEACHING STAFF', comment = 'ESP="PERSONAL NO DOCENTE"';
+    Caption = 'Non-teaching staff', comment = 'ESP="Personal no docente"';
     fields
     {
-        field(1; "Staff .Id"; Integer)
+        field(1; "Staff .No"; Integer)
         {
 
+            Caption = 'Staff .No', comment = 'ESP="Personal .No"';
             AutoIncrement = true;
-            Caption = 'STAFF ID', comment = 'ESP="ID. DEL PERSONAL"';
         }
         field(2; "Staff Name"; Text[50])
         {
-            Caption = 'STAFF NAME', comment = 'ESP="NOMBRE DEL PERSONAL"';
+            Caption = 'Staff Name', comment = 'ESP="Nombre del Personal"';
         }
         field(3; "Staff Managment"; Text[50])
         {
-            Caption = 'STAFF MANAGEMENT', comment = 'ESP="DIRECCION DEL PERSONAL"';
+            Caption = 'Staff Managment', comment = 'ESP="Dirección del Personal"';
         }
         field(4; "Staff Salary"; Decimal)
         {
-            Caption = 'STAFF SALARY', comment = 'ESP="SALARIO DEL PERSONAL"';
+            Caption = 'Staff Salary', comment = 'ESP="Salario del Personal"';
         }
         field(5; "Staff Position"; Text[50])
         {
-            Caption = 'STAFF POSITION', comment = 'ESP="PUESTO DEL PERSONAL"';
+            Caption = 'Staff Position', comment = 'ESP="Staff Position"';
         }
-        field(6; "Head Studies .Id"; Integer)
+        field(6; "Head Studies .No"; Integer)
         {
-            Caption = 'HEAD OF STUDIES ID', comment = 'ESP="ID. JEFE DE ESTUDIOS"';
-            TableRelation = teacher."Teacher .Id";
+            Caption = 'Head Studies .No', comment = 'ESP="Jefe de Estudios .No"';
+            TableRelation = teacher."Teacher .No";
         }
         field(7; "Head Studies Name"; Text[50])
         {
-            Caption = 'HEAD OF STUDIES NAME', comment = 'ESP="NOMBRE DEL JEFE DE ESTUDIOS"';
+            Caption = 'Head Studies Name', comment = 'ESP="Nombre del Jefe de Estudios"';
             FieldClass = FlowField;
-            CalcFormula = lookup(teacher."Teacher Name" where("Teacher .Id" = field("Head Studies .Id")));
+            CalcFormula = lookup(teacher."Teacher Name" where("Teacher .No" = field("Head Studies .No")));
         }
     }
     keys
     {
-        key(pk1; "Staff .Id")
+        key(pk1; "Staff .No")
         {
             Clustered = true;
         }

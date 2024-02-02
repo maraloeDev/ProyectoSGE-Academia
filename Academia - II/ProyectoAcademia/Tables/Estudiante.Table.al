@@ -1,35 +1,35 @@
 table 50102 "Student"
 {
     DataClassification = ToBeClassified;
-    Caption = 'STUDENT', comment = 'ESP="ESTUDIANTE"';
+    Caption = 'Student', comment = 'ESP="Estudiante"';
     fields
     {
         field(1; "Student No."; Integer)
         {
-            Caption = 'STUDENT.ID', comment = 'ESP="ID. ESTUDIANTE"';
+            Caption = 'Student No.', comment = 'ESP="Estudiante No."';
             AutoIncrement = true;
             Editable = false;
         }
         field(2; "Student Name"; Text[50])
         {
-            Caption = 'STUDENT NAME', comment = 'ESP="NOMBRE DEL ESTUDIANTE"';
+            Caption = 'Student Name', comment = 'ESP="Nombre del Estudiante"';
         }
-        field(3; "Student Sex"; Option)
+        field(3; "Student Gender"; Option)
         {
-            Caption = 'STUDENT SEX', comment = 'ESP="SEXO DEL ESTUDIANTE"';
+            Caption = 'Student Gender', comment = 'ESP="Genero del Estudiante"';
             OptionMembers = "Masculino","Femenino";
         }
         field(4; "Adress Student"; Text[50])
         {
-            Caption = 'STUDENT ADDRESS', comment = 'ESP="DIRECCIÓN DEL ESTUDIANTE"';
+            Caption = 'Adress Student', comment = 'ESP="Dirección del Estudiante"';
         }
         field(5; "Phone. Student"; Integer)
         {
-            Caption = 'STUDENT PHONE', comment = 'ESP="TELÉFONO DEL ESTUDIANTE"';
+            Caption = 'Phone. Student', comment = 'ESP="Teléfono del Estudiante"';
         }
         field(6; "Birthdate"; Date)
         {
-            Caption = 'STUDENT BIRTHDATE', comment = 'ESP="FECHA DE NACIMIENTO DEL ESTUDIANTE"';
+            Caption = 'Birthdate', comment = 'ESP="Fecha de Nacimiento del Estudiante"';
         }
     }
     keys
