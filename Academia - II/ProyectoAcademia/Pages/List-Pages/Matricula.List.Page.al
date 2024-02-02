@@ -3,6 +3,8 @@ page 50104 "Registration List"
     PageType = Card;
     SourceTable = Registration;
     Caption = 'REGISTRATION LIST', comment = 'ESP="LISTA DE MATRICULAS"';
+    ApplicationArea = All;
+    UsageCategory = Lists;
 
     layout
     {

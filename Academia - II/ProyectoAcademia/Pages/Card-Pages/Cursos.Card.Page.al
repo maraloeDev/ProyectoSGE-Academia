@@ -39,22 +39,23 @@ page 50108 "Curso : Tipos de cursos"
         }
     }
 
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                ApplicationArea = All;
+    /* actions
+     {
+         area(Processing)
+         {
+             action(ActionName)
+             {
+                 ApplicationArea = All;
 
-                trigger OnAction()
-                begin
+                 trigger OnAction()
+                 begin
 
-                end;
-            }
-        }
-    }
+                 end;
+             }
+         }
+     }
 
-    var
-        myInt: Integer;
+     var
+         myInt: Integer;
+         */
 }

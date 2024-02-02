@@ -3,6 +3,8 @@ page 50102 "Student List"
     PageType = List;
     SourceTable = Student;
     Caption = 'STUDENT LIST', comment = 'ESP="LISTA DE ESTUDIANTES"';
+    ApplicationArea = All;
+    UsageCategory = Lists;
 
     layout
     {

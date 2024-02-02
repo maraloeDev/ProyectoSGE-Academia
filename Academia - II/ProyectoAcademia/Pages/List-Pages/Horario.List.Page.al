@@ -3,6 +3,8 @@ page 50103 "Schedule List"
     PageType = List;
     SourceTable = Schedule;
     Caption = 'SCHEDULE LIST', comment = 'ESP="LISTA DE HORARIOS"';
+    ApplicationArea = All;
+    UsageCategory = Lists;
 
     layout
     {

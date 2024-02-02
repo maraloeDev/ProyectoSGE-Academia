@@ -3,6 +3,8 @@ page 50105 "Non-teaching staff List"
     PageType = Card;
     SourceTable = "Non-teaching staff";
     Caption = 'NON-TEACHING STAFF LIST', comment = 'ESP="LISTA DE PERSONAL NO DOCENTE"';
+    ApplicationArea = All;
+    UsageCategory = Lists;
 
     layout
     {

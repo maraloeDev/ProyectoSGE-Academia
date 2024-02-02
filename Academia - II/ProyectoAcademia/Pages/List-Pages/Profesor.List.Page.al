@@ -3,6 +3,8 @@ page 50107 "Teacher List"
     PageType = Card;
     SourceTable = Teacher;
     Caption = 'TEACHER LIST', comment = 'ESP="LISTA DE PROFESORES"';
+    ApplicationArea = All;
+    UsageCategory = Lists;
 
     layout
     {
