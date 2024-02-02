@@ -1,29 +1,29 @@
 table 50103 "Detail"
 {
     DataClassification = ToBeClassified;
-    Caption = 'DETAIL', comment = 'ESP="DETALLE"';
+    Caption = 'Detail', comment = 'ESP="Detalle"';
     fields
     {
         field(1; "Detail No."; Integer)
         {
             AutoIncrement = true;
-            Caption = 'DETAIL ID', comment = 'ESP="ID. DETALLE"';
+            Caption = 'Detail No.', comment = 'ESP="Detalle No."';
         }
         field(3; "Weekday"; Text[50])
         {
-            Caption = 'WEEKDAY', comment = 'ESP="DIA DE LA SEMANA"';
+            Caption = 'Weekday', comment = 'ESP="Dia de la semana"';
         }
         field(4; "Start Time"; Integer)
         {
-            Caption = 'START TIME', comment = 'ESP="HORA INICIAL"';
+            Caption = 'Start Time', comment = 'ESP="Hora Inicio"';
         }
         field(5; "End Time"; Integer)
         {
-            Caption = 'END TIME', comment = 'ESP="HORA FINAL"';
+            Caption = 'End Time', comment = 'ESP="Hora Fin"';
         }
-        field(6; "Schedule Id"; Integer)
+        field(6; "Schedule .No"; Integer)
         {
-            Caption = 'ID.SCHEDULE', comment = 'ESP="ID.HORARIO"';
+            Caption = 'Schedule .No', comment = 'ESP="Horario No."';
             TableRelation = schedule."Schedule No.";
         }
     }
