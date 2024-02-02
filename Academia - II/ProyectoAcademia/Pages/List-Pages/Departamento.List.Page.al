@@ -10,34 +10,35 @@ page 50101 "Department Page"
         {
             group(General)
             {
-                field("Department No."; Rec."Department No.")
+                field("No."; Rec."Department No.")
                 {
+                    Caption = 'No.', comment = 'ESP="No."';
                     ApplicationArea = All;
-                    Caption = 'DEPARTMENT NO.', comment = 'ESP="NOMBRE DEL DEPARTAMENTO"';
                 }
-                field("Department name"; Rec."Department name")
+                field("NAME"; Rec."Department name")
                 {
+                    Caption = 'NAME', comment = 'ESP="NOMBRE"';
                     ApplicationArea = All;
-                    Caption = 'DEPARTMENT NAME', comment = 'ESP="NOMBRE DEL DEPARTAMENTO"';
                 }
-                field("Assigned office"; Rec."Assigned office")
+                field("ASSIGNED OFFICE"; Rec."Assigned office")
                 {
-                    ApplicationArea = All;
                     Caption = 'ASSIGNED OFFICE', comment = 'ESP="DESPACHO ASIGNADO"';
-                }
-                field("Id. professor. head"; Rec."Id. professor. head")
-                {
                     ApplicationArea = All;
                 }
-                field("Name  professor. head"; Rec."Name  professor. head")
+                field("HEAD DEPARTMENT No."; Rec."Id. professor. head")
                 {
+                    Caption = 'HEAD DEPARTMENT No.', comment = 'ESP="No. JEFE DEPARTAMENTO"';
                     ApplicationArea = All;
-                    Caption = 'NAME OF THE HEAD PROFESSOR', comment = 'ESP="NOMBRE DEL PROFESOR JEFE"';
                 }
-                field("Average fees"; Rec."Average fees")
+                field("HEAD DEPARTMENT NAME"; Rec."Name  professor. head")
                 {
+                    Caption = 'HEAD DEPARTMENT NAME', comment = 'ESP="NOMBRE JEFE DEPARTAMENTO"';
                     ApplicationArea = All;
-                    Caption = 'AVERAGE FEES', comment = 'ESP="PROMEDIO DE TARIFAS"';
+                }
+                field("AVERAGE FEES"; Rec."Average fees")
+                {
+                    Caption = 'AVERAGE FEES', comment = 'ESP="PROMEDIO TARIFAS"';
+                    ApplicationArea = All;
                 }
             }
         }

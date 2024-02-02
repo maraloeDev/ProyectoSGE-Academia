@@ -10,40 +10,40 @@ page 50103 "Schedule Page"
         {
             group(General)
             {
-                field("Schedule No."; Rec."Schedule No.")
+                field("SCHEDULE No."; Rec."Schedule No.")
                 {
+                    Caption = 'No.', comment = 'ESP="No."';
                     ApplicationArea = All;
-                    Caption = 'SCHEDULE No.', comment = 'ESP="ID HORARIO"';
                 }
-                field("Course No."; Rec."Course No.")
+                field("DETAIL No."; Rec."Detail No.")
                 {
+                    Caption = 'DETAIL No.', comment = 'ESP="No. DETALLE"';
                     ApplicationArea = All;
-                    Caption = 'COURSE NO.', comment = 'ESP="CODIGO DEL CURSO"';
                 }
-                field("Detail No."; Rec."Detail No.")
+                field("WEEKDAY"; Rec."Weekday")
                 {
+                    Caption = 'WEEKDAY', comment = 'ESP="DÍAS DE LA SEMANA"';
                     ApplicationArea = All;
-                    Caption = 'DETAIL NO.', comment = 'ESP="ID DETALLE"';
                 }
-                field("Weekday"; Rec."Weekday")
+                field("START TIME"; Rec."Start Time")
                 {
-                    ApplicationArea = All;
-                    Caption = 'WEEKDAY ', comment = 'ESP="DIA DE LA SEMANA"';
-                }
-                field("Start Time"; Rec."Start Time")
-                {
-                    ApplicationArea = All;
                     Caption = 'START TIME', comment = 'ESP="HORA INICIAL"';
-                }
-                field("End Time"; Rec."End Time")
-                {
                     ApplicationArea = All;
+                }
+                field("END TIME"; Rec."End Time")
+                {
                     Caption = 'END TIME', comment = 'ESP="HORA FINAL"';
-                }
-                field("Course Name"; Rec."Course Name")
-                {
                     ApplicationArea = All;
-                    Caption = 'COURSE NAME', comment = 'ESP="NOMBRE DEL CURSO"';
+                }
+                field("COURSE No."; Rec."Course No.")
+                {
+                    Caption = 'COURSE No.', comment = 'ESP="No. CURSO"';
+                    ApplicationArea = All;
+                }
+                field("COURSE NAME"; Rec."Course Name")
+                {
+                    Caption = 'COURSE NAME', comment = 'ESP="NOMBRE CURSO"';
+                    ApplicationArea = All;
                 }
             }
         }

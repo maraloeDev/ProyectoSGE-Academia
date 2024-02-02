@@ -10,35 +10,35 @@ page 50104 "Registration Page"
         {
             group(General)
             {
-                field("Registration No."; Rec."Registration No.")
+                field("No."; Rec."Registration No.")
                 {
                     ApplicationArea = All;
-                    Caption = 'REGUSTRATION NO.', comment = 'ESP="REGISTRO No."';
+                    Caption = 'No.', comment = 'ESP="No."';
                 }
-                field("Date/Time Registration"; Rec."Date/Time Registration")
+                field("DATE/TIME REGISTRATION"; Rec."Date/Time Registration")
                 {
                     ApplicationArea = All;
-                    Caption = 'DATE/TIME OF REGISTRATION', comment = 'ESP="FECHA / HORA DE LA MATRICULA"';
+                    Caption = 'DATE/TIME REGISTRATION', comment = 'ESP="FECHA MATRICULA"';
                 }
-                field("Id. Student. Enrolled."; Rec."Id. Student. Enrolled.")
+                field("No. STUDENT ENROLLED"; Rec."Id. Student. Enrolled.")
                 {
                     ApplicationArea = All;
-                    Caption = 'ID.STUDENT ENROLLED', comment = 'ESP="ID. ESTUDIANTE MATRICULADO"';
+                    Caption = 'No. STUDENT ENROLLED', comment = 'ESP="No. ESTUDIANTE MATRLADO."';
                 }
-                field("Id. Course Enrolled."; Rec."Id. Course Enrolled.")
+                field("No. COURSE ENROLLED"; Rec."Id. Course Enrolled.")
                 {
                     ApplicationArea = All;
-                    Caption = 'ID. COURSE ENROLLED', comment = 'ESP="ID. CURSO MATRICULADO"';
+                    Caption = 'No. COURSE ENROLLED', comment = 'ESP="No. CURSO MATRLADO."';
                 }
-                field("Name Student Enrolled"; Rec."Name Student Enrolled")
+                field("NAME ENROLLED STUDENT"; Rec."Name Student Enrolled")
                 {
                     ApplicationArea = All;
-                    Caption = 'NAME OF ENROLLED STUDENT ', comment = 'ESP="NOMBRE DEL ESTUDIANTE MATRICULADO"';
+                    Caption = 'NAME ENROLLED STUDENT', comment = 'ESP="NOMBRE ESTUDIANTE MATRLADO."';
                 }
-                field("Name Enrolled Course"; Rec."Name Enrolled Course")
+                field("NAME ENROLLED COURSE"; Rec."Name Enrolled Course")
                 {
                     ApplicationArea = All;
-                    Caption = 'NAME OF ENROLLED COURSE', comment = 'ESP="NOMBRE DEL CURSO MATRICULADO"';
+                    Caption = 'NAME ENROLLED COURSE', comment = 'ESP="NOMBRE CURSO MATRLADO."';
                 }
             }
         }

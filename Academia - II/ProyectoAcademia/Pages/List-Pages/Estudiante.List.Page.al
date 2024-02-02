@@ -10,35 +10,35 @@ page 50102 "Student Page"
         {
             group(General)
             {
-                field("Student No."; Rec."Student No.")
+                field("No."; Rec."Student No.")
                 {
+                    Caption = 'No.', comment = 'ESP="No."';
                     ApplicationArea = All;
-                    Caption = 'STUDENT.ID', comment = 'ESP="ID. ESTUDIANTE"';
                 }
-                field("Student Name"; Rec."Student Name")
+                field("NAME"; Rec."Student Name")
                 {
+                    Caption = 'NAME', comment = 'ESP="ESTUDIANTE"';
                     ApplicationArea = All;
-                    Caption = 'STUDENT NAME', comment = 'ESP="NOMBRE DEL ESTUDIANTE"';
                 }
-                field("Student Sex"; Rec."Student Sex")
+                field("GENDER"; Rec."Student Sex")
                 {
+                    Caption = 'GENDER', comment = 'ESP="GENERO"';
                     ApplicationArea = All;
-                    Caption = 'STUDENT SEX', comment = 'ESP="SEXO DEL ESTUDIANTE"';
                 }
-                field("Adress Student"; Rec."Adress Student")
+                field("ADDRESS"; Rec."Adress Student")
                 {
+                    Caption = 'ADDRESS', comment = 'ESP="DIRECCIÓN"';
                     ApplicationArea = All;
-                    Caption = 'STUDENT ADDRESS', comment = 'ESP="DIRECCIÓN DEL ESTUDIANTE"';
                 }
-                field("Phone. Student"; Rec."Phone. Student")
+                field("PHONE"; Rec."Phone. Student")
                 {
+                    Caption = 'PHONE', comment = 'ESP="TELÉFONO"';
                     ApplicationArea = All;
-                    Caption = 'STUDENT PHONE', comment = 'ESP="TELÉFONO DEL ESTUDIANTE"';
                 }
-                field("Birthdate"; Rec."Birthdate")
+                field("BIRTHDATE"; Rec."Birthdate")
                 {
+                    Caption = 'BIRTHDATE', comment = 'ESP="FECHA DE NACIMIENTO"';
                     ApplicationArea = All;
-                    Caption = 'STUDENT BIRTHDATE', comment = 'ESP="FECHA DE NACIMIENTO DEL ESTUDIANTE"';
                 }
             }
         }

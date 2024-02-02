@@ -10,40 +10,40 @@ page 50105 "Non-teaching staff Page"
         {
             group(General)
             {
-                field("Staff .Id"; Rec."Staff .Id")
+                field("No."; Rec."Staff .Id")
                 {
                     ApplicationArea = All;
-                    Caption = 'STAFF ID', comment = 'ESP="ID. DEL PERSONAL"';
+                    Caption = 'No.', comment = 'ESP="No."';
                 }
-                field("Staff Name"; Rec."Staff Name")
+                field("NAME"; Rec."Staff Name")
                 {
                     ApplicationArea = All;
-                    Caption = 'STAFF NAME', comment = 'ESP="NOMBRE DEL PERSONAL"';
+                    Caption = 'NAME', comment = 'ESP="NOMBRE"';
                 }
-                field("Staff Managment"; Rec."Staff Managment")
+                field("MANAGEMENT"; Rec."Staff Managment")
                 {
                     ApplicationArea = All;
-                    Caption = 'STAFF MANAGEMENT', comment = 'ESP="DIRECCION DEL PERSONAL"';
+                    Caption = 'MANAGEMENT', comment = 'ESP="DIRECCION"';
                 }
-                field("Staff Salary"; Rec."Staff Salary")
+                field("SALARY"; Rec."Staff Salary")
                 {
                     ApplicationArea = All;
-                    Caption = 'STAFF SALARY', comment = 'ESP="SALARIO DEL PERSONAL"';
+                    Caption = 'SALARY', comment = 'ESP="SALARIO"';
                 }
-                field("Staff Position"; Rec."Staff Position")
+                field("POSITION"; Rec."Staff Position")
                 {
                     ApplicationArea = All;
-                    Caption = 'STAFF POSITION', comment = 'ESP="PUESTO DEL PERSONAL"';
+                    Caption = 'POSITION', comment = 'ESP="PUESTO"';
                 }
-                field("Head Studies .Id"; Rec."Head Studies .Id")
+                field("HEAD DEPARTMENT No."; Rec."Head Studies .Id")
                 {
                     ApplicationArea = All;
-                    Caption = 'HEAD OF STUDIES ID', comment = 'ESP="ID. JEFE DE ESTUDIOS"';
+                    Caption = 'HEAD DEPARTMENT No.', comment = 'ESP="No. JEFE DE DEPART."';
                 }
-                field("Head Studies Name"; Rec."Head Studies Name")
+                field("HEAD DEPARTMENT NAME"; Rec."Head Studies Name")
                 {
                     ApplicationArea = All;
-                    Caption = 'HEAD OF STUDIES NAME', comment = 'ESP="NOMBRE DEL JEFE DE ESTUDIOS"';
+                    Caption = 'HEAD DEPARTMENT NAME', comment = 'ESP="NOMBRE JEFE DE DEPART."';
                 }
             }
         }

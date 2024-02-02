@@ -10,50 +10,50 @@ page 50107 "Teacher Page"
         {
             group(General)
             {
-                field("Teacher .Id"; Rec."Teacher .Id")
+                field("No."; Rec."Teacher .Id")
                 {
                     ApplicationArea = All;
-                    Caption = 'TEACHER ID', comment = 'ESP="ID DEL PROFESOR"';
+                    Caption = 'No.', comment = 'ESP="No."';
                 }
-                field("Teacher Name"; Rec."Teacher Name")
+                field("NAME"; Rec."Teacher Name")
                 {
                     ApplicationArea = All;
-                    Caption = 'TEACHER NAME', comment = 'ESP="NOMBRE DEL PROFESOR"';
+                    Caption = 'NAME', comment = 'ESP="NOMBRE"';
                 }
-                field("Teacher Address"; Rec."Teacher Address")
+                field("ADDRESS"; Rec."Teacher Address")
                 {
                     ApplicationArea = All;
-                    Caption = 'TEACHER ADDRESS', comment = 'ESP="DIRECCION DEL PROFESOR"';
+                    Caption = 'ADDRESS', comment = 'ESP="DIRECCIÓN';
                 }
                 field("Date of Hire"; Rec."Date of Hire")
                 {
                     ApplicationArea = All;
                     Caption = 'DATE OF HIRE', comment = 'ESP="FECHA DE CONTRATACION"';
                 }
-                field("Teacher Salary"; Rec."Teacher Salary")
+                field("SALARY"; Rec."Teacher Salary")
                 {
                     ApplicationArea = All;
-                    Caption = 'TEACHER SALARY', comment = 'ESP="SALARIO DEL PROFESOR"';
+                    Caption = 'SALARY', comment = 'ESP="SALARIO"';
                 }
-                field("Id. Depart. Asign."; Rec."Id. Depart. Asign.")
+                field("No. DEPART. ASIGN."; Rec."Id. Depart. Asign.")
                 {
                     ApplicationArea = All;
-                    Caption = 'ID. DEPART. ASIGN.', comment = 'ESP="ID. DEPARTAMENTO ASIGNADO"';
+                    Caption = 'No. DEPART. ASIGN.', comment = 'ESP="No. DEPARTAMENTO ASIGNADO"';
                 }
-                field("Name Deprt. Asign."; Rec."Name Deprt. Asign.")
+                field("NAME DEPRT. ASIGN."; Rec."Name Deprt. Asign.")
                 {
                     ApplicationArea = All;
                     Caption = 'NAME DEPRT. ASIGN.', comment = 'ESP="NOMBRE DEPARTAMENTO ASIGNADO"';
                 }
-                field("Number of assistants"; Rec."Number of assistants")
+                field("NUMBER ASSISTANTS"; Rec."Number of assistants")
                 {
                     ApplicationArea = All;
-                    Caption = 'NUMBER OF ASSISTANTS', comment = 'ESP="NUMERO DE ASISTENTES"';
+                    Caption = 'NUMBER ASSISTANTS', comment = 'ESP="NÚMERO DE ASISTENTES"';
                 }
-                field("Number of courses given"; Rec."Number of courses given")
+                field("NUMBER COURSES GIVEN"; Rec."Number of courses given")
                 {
                     ApplicationArea = All;
-                    Caption = 'NUMBER OF COURSES GIVEN', comment = 'ESP="NUMERO DE CURSOS IMPARTIDOS"';
+                    Caption = 'NUMBER COURSES GIVEN', comment = 'ESP="NÚMERO CURSOS IMPARTIDOS"';
                 }
             }
         }
