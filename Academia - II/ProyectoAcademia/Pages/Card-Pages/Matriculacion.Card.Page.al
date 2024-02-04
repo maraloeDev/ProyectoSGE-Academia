@@ -4,14 +4,14 @@ page 50106 "Matricula: Registro de Alumno"
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = Student;
-
+    Caption = 'Registration', comment = 'ESP="Matricula: Registro de Alumno"';
     layout
     {
         area(Content)
         {
             group(Student)
             {
-                Caption = 'Registration', comment = 'ESP="Registro"';
+                Caption = 'Student', comment = 'ESP="Estudiante"';
                 field("No."; Rec."No.")
                 {
                     Caption = 'No.', comment = 'ESP="No."';
@@ -44,15 +44,13 @@ page 50106 "Matricula: Registro de Alumno"
                     ApplicationArea = All;
                 }
             }
-            part("Curso a "; "Course List")
+            part("Courso"; "Course List")
             {
-                Caption = 'Birthdate', comment = 'ESP="Fecha de nacimiento"';
+                Caption = 'Courso', comment = 'ESP="Curso"';
                 ApplicationArea = All;
             }
-
         }
     }
-
     actions
     {
         area(Processing)
