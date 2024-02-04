@@ -10,40 +10,40 @@ page 50105 "Non-teaching staff List"
         {
             group(General)
             {
-                field("No."; Rec."Staff .Id")
+                field("No."; Rec."No.")
                 {
-                    ApplicationArea = All;
                     Caption = 'No.', comment = 'ESP="No."';
-                }
-                field("NAME"; Rec."Staff Name")
-                {
                     ApplicationArea = All;
+                }
+                field("NAME"; Rec."Name")
+                {
                     Caption = 'NAME', comment = 'ESP="NOMBRE"';
-                }
-                field("MANAGEMENT"; Rec."Staff Managment")
-                {
                     ApplicationArea = All;
+                }
+                field("MANAGEMENT"; Rec."Managment")
+                {
                     Caption = 'MANAGEMENT', comment = 'ESP="DIRECCION"';
-                }
-                field("SALARY"; Rec."Staff Salary")
-                {
                     ApplicationArea = All;
+                }
+                field("SALARY"; Rec."Salary")
+                {
                     Caption = 'SALARY', comment = 'ESP="SALARIO"';
-                }
-                field("POSITION"; Rec."Staff Position")
-                {
                     ApplicationArea = All;
+                }
+                field("POSITION"; Rec."Position")
+                {
                     Caption = 'POSITION', comment = 'ESP="PUESTO"';
-                }
-                field("HEAD DEPARTMENT No."; Rec."Head Studies .Id")
-                {
                     ApplicationArea = All;
+                }
+                field("HEAD DEPARTMENT No."; Rec."Head Studies No.")
+                {
                     Caption = 'HEAD DEPARTMENT No.', comment = 'ESP="No. JEFE DE DEPART."';
+                    ApplicationArea = All;
                 }
                 field("HEAD DEPARTMENT NAME"; Rec."Head Studies Name")
                 {
-                    ApplicationArea = All;
                     Caption = 'HEAD DEPARTMENT NAME', comment = 'ESP="NOMBRE JEFE DE DEPART."';
+                    ApplicationArea = All;
                 }
             }
         }

@@ -4,42 +4,43 @@ table 50105 "Registration"
     Caption = 'Registration', comment = 'ESP="Matricula"';
     fields
     {
-        field(1; "Registration No."; Integer)
+        field(1; "No."; Integer)
         {
-            Caption = 'Registration No.', comment = 'ESP=Registro No."';
+            Caption = 'No.', comment = 'ESP="No."';
             AutoIncrement = true;
         }
         field(2; "Date/Time Registration"; DateTime)
         {
-            Caption = 'Date/Time Registration', comment = 'ESP="Fecha/Hora de Matricula"';
+            Caption = 'Date/Time Registration', comment = 'ESP="Fecha Matriculación"';
         }
-        field(3; "No. Student. Enrolled."; Integer)
+        // Estudiante: Estudiante matricula
+        field(3; "No. Student Enrolled"; Integer)
         {
-
-            Caption = 'No. Student. Enrolled.', comment = 'ESP="No. Estudiante Matriculado"';
-            TableRelation = student."Student No.";
-        }
-        field(5; "No. Course Enrolled."; Integer)
-        {
-            Caption = 'No. Course Enrolled.', comment = 'ESP="No. Curso Matriculado"';
-            TableRelation = course."Course No.";
+            Caption = 'No. Student Enrolled', comment = 'ESP="No. Estudiante Matrlado."';
+            TableRelation = Student."No.";
         }
         field(6; "Name Student Enrolled"; Text[50])
         {
-            Caption = 'NAME OF ENROLLED STUDENT ', comment = 'ESP="NOMBRE DEL ESTUDIANTE MATRICULADO"';
+            Caption = 'Name Student Enrolled', comment = 'ESP="Nombre Estudiante Matrlado."';
             FieldClass = FlowField;
-            CalcFormula = lookup(student."Student Name" where("Student No." = field("No. Student. Enrolled.")));
+            CalcFormula = lookup(Student."Name" where("No." = field("No. Student Enrolled")));
+        }
+        // Curso: Curso matriculado
+        field(5; "No. Course Enrolled"; Integer)
+        {
+            Caption = 'No. Course Enrolled', comment = 'ESP="No. Curso Matriculado"';
+            TableRelation = Course."No.";
         }
         field(7; "Name Enrolled Course"; Text[50])
         {
-            Caption = 'NAME OF ENROLLED COURSE', comment = 'ESP="NOMBRE DEL CURSO MATRICULADO"';
+            Caption = 'Name Enrolled Course', comment = 'ESP="Nombre Curso Matriculado"';
             FieldClass = FlowField;
-            CalcFormula = lookup(course."Course Description" where("Course No." = field("No. Course Enrolled.")));
+            CalcFormula = lookup(Course."Description" where("No." = field("No. Course Enrolled")));
         }
     }
     keys
     {
-        key(pk1; "Registration No.")
+        key(pk1; "No.")
         {
             Clustered = true;
         }

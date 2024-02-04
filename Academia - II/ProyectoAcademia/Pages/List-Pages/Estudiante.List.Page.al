@@ -10,27 +10,27 @@ page 50102 "Student List"
         {
             group(General)
             {
-                field("No."; Rec."Student No.")
+                field("No."; Rec."No.")
                 {
                     Caption = 'No.', comment = 'ESP="No."';
                     ApplicationArea = All;
                 }
-                field("NAME"; Rec."Student Name")
+                field("NAME"; Rec."Name")
                 {
                     Caption = 'NAME', comment = 'ESP="ESTUDIANTE"';
                     ApplicationArea = All;
                 }
-                field("GENDER"; Rec."Student Sex")
+                field("GENDER"; Rec."Gender")
                 {
                     Caption = 'GENDER', comment = 'ESP="GENERO"';
                     ApplicationArea = All;
                 }
-                field("ADDRESS"; Rec."Adress Student")
+                field("ADDRESS"; Rec."Adress")
                 {
                     Caption = 'ADDRESS', comment = 'ESP="DIRECCIÓN"';
                     ApplicationArea = All;
                 }
-                field("PHONE"; Rec."Phone. Student")
+                field("PHONE"; Rec."Phone")
                 {
                     Caption = 'PHONE', comment = 'ESP="TELÉFONO"';
                     ApplicationArea = All;

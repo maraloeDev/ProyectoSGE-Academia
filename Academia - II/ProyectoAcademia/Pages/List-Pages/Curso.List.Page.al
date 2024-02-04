@@ -11,13 +11,13 @@ page 50100 "Course List"
         {
             group(General)
             {
-                field("No."; Rec."Course No.")
+                field("No."; Rec."No.")
                 {
                     Caption = 'No.', comment = 'ESP="No."';
                     Editable = false;
                     ApplicationArea = All;
                 }
-                field("DESCRIPTION"; Rec."Course Description")
+                field("DESCRIPTION"; Rec."Description")
                 {
                     Caption = 'DESCRIPTION', comment = 'ESP="DESCRIPCIÓN"';
                     ApplicationArea = All;
@@ -37,9 +37,9 @@ page 50100 "Course List"
                     Caption = 'TEACHER No.', comment = 'ESP="No. PROFESOR"';
                     ApplicationArea = All;
                 }
-                field("DEPART. HEAD NAME"; Rec."Teacher name")
+                field("TEACHER NAME"; Rec."Teacher Name")
                 {
-                    Caption = 'DEPART. HEAD NAME', comment = 'ESP="NOMBRE PROFESOR IMPRT.';
+                    Caption = 'TEACHER NAME', comment = 'ESP="NOMBRE PROFESOR';
                     ApplicationArea = All;
                 }
                 field("COURSE PROV. No."; Rec."Course provider No.")

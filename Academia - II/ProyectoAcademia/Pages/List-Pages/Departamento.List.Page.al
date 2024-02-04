@@ -10,12 +10,12 @@ page 50101 "Department List"
         {
             group(General)
             {
-                field("No."; Rec."Department No.")
+                field("No."; Rec."No.")
                 {
                     Caption = 'No.', comment = 'ESP="No."';
                     ApplicationArea = All;
                 }
-                field("NAME"; Rec."Department name")
+                field("NAME"; Rec."Name")
                 {
                     Caption = 'NAME', comment = 'ESP="NOMBRE"';
                     ApplicationArea = All;
@@ -25,12 +25,12 @@ page 50101 "Department List"
                     Caption = 'ASSIGNED OFFICE', comment = 'ESP="DESPACHO ASIGNADO"';
                     ApplicationArea = All;
                 }
-                field("HEAD DEPARTMENT No."; Rec."Id. professor. head")
+                field("HEAD DEPARTMENT No."; Rec."Head Professor No.")
                 {
                     Caption = 'HEAD DEPARTMENT No.', comment = 'ESP="No. JEFE DEPARTAMENTO"';
                     ApplicationArea = All;
                 }
-                field("HEAD DEPARTMENT NAME"; Rec."Name  professor. head")
+                field("HEAD DEPARTMENT NAME"; Rec."Head Professor Name")
                 {
                     Caption = 'HEAD DEPARTMENT NAME', comment = 'ESP="NOMBRE JEFE DEPARTAMENTO"';
                     ApplicationArea = All;

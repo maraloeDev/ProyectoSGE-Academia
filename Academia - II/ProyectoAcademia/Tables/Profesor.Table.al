@@ -4,50 +4,60 @@ table 50107 "Teacher"
     Caption = 'Teacher', comment = 'ESP="Profesor"';
     fields
     {
-        field(1; "Teacher .No"; Integer)
+        field(1; "No."; Integer)
         {
-            Caption = 'Teacher .No', comment = 'ESP="Porfesor .No"';
+            Caption = 'No.', comment = 'ESP="No."';
             AutoIncrement = true;
         }
-        field(2; "Teacher Name"; Text[50])
+        field(2; "Name"; Text[50])
         {
-            Caption = 'Teacher Name', comment = 'ESP="Nombre del Profesor"';
+            Caption = 'Name', comment = 'ESP="Nombre"';
         }
-        field(3; "Teacher Address"; Text[50]) { Caption = 'Teacher Address', comment = 'ESP="Dirección del profesor"'; }
-        field(4; "Date of Hire"; Date) { Caption = 'Date of Hire', comment = 'ESP="Fecha de contratación"'; }
-        field(5; "Teacher Salary"; Decimal) { Caption = 'Teacher Salary', comment = 'ESP="Salario del profesor"'; }
+        field(3; "Address"; Text[50])
+        {
+            Caption = 'Address', comment = 'ESP="Dirección"';
+        }
+        field(4; "Date of Hire"; Date)
+        {
+            Caption = 'Date of Hire', comment = 'ESP="Fecha de contratación"';
+        }
+        field(5; "Salary"; Decimal)
+        {
+            Caption = 'Salary', comment = 'ESP="Salario"';
+        }
+        // Departamento: Departamento donde pertenece
         field(6; "No. Depart. Asign."; Integer)
         {
-            Caption = 'No. Depart. Asign.', comment = 'ESP="No. Departamento Asignado"';
-            TableRelation = Department."Department No.";
+            Caption = 'No. Depart. Asign.', comment = 'ESP="No. Departamento Asign."';
+            TableRelation = Department."No.";
         }
         field(7; "Name Deprt. Asign."; Text[50])
         {
-            Caption = 'Name Deprt. Asign.', comment = 'ESP="Nombre Departamento Asignado"';
+            Caption = 'Name Deprt. Asign.', comment = 'ESP="Nombre Departamento Asign."';
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = lookup(Department."Department name" where("Department No." = field("No. Depart. Asign.")));
+            CalcFormula = lookup(Department."Name" where("No." = field("No. Depart. Asign.")));
         }
-
-        // Campos calculados y filtros  
+        // Número de asistentes de un profesor 
         field(8; "Number of assistants"; Integer)
         {
             Caption = 'Number of assistants', comment = 'ESP="Número de asistentes"';
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count("Non-teaching staff" where("Head Studies .No" = field("Teacher .No")));
+            CalcFormula = count("Non-teaching staff" where("Head Studies No." = field("No.")));
         }
+        // Número de cursos que imparte 
         field(9; "Number of courses given"; Integer)
         {
-            Caption = 'Number of courses given', comment = 'ESP="Número de cursos impartidos"';
+            Caption = 'Number of courses given', comment = 'ESP="Número Cursos Impart."';
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count(course where("Teacher No." = field("Teacher .No")));
+            CalcFormula = count(Course where("Teacher No." = field("No.")));
         }
     }
     keys
     {
-        key(pk1; "Teacher .No")
+        key(pk1; "No.")
         {
             Clustered = true;
         }

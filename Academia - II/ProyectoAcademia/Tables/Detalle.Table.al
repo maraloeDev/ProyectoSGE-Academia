@@ -4,15 +4,16 @@ table 50103 "Detail"
     Caption = 'Detail', comment = 'ESP="Detalle"';
     fields
     {
-        field(1; "Detail No."; Integer)
+        field(1; "No."; Integer)
         {
             AutoIncrement = true;
-            Caption = 'Detail No.', comment = 'ESP="Detalle No."';
+            Caption = 'No.', comment = 'ESP="No."';
         }
         field(3; "Weekday"; Text[50])
         {
-            Caption = 'Weekday', comment = 'ESP="Dia de la semana"';
+            Caption = 'Weekday', comment = 'ESP="Dia Semana"';
         }
+        // Horas
         field(4; "Start Time"; Integer)
         {
             Caption = 'Start Time', comment = 'ESP="Hora Inicio"';
@@ -21,6 +22,7 @@ table 50103 "Detail"
         {
             Caption = 'End Time', comment = 'ESP="Hora Fin"';
         }
+        // Horario
         field(6; "Schedule .No"; Integer)
         {
             Caption = 'Schedule .No', comment = 'ESP="Horario No."';
@@ -29,7 +31,7 @@ table 50103 "Detail"
     }
     keys
     {
-        key(pk1; "Detail No.")
+        key(pk1; "No.")
         {
             Clustered = true;
         }

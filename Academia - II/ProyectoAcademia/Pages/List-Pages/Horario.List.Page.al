@@ -10,7 +10,7 @@ page 50103 "Schedule List"
         {
             group(General)
             {
-                field("SCHEDULE No."; Rec."Schedule No.")
+                field("SCHEDULE No."; Rec."No.")
                 {
                     Caption = 'No.', comment = 'ESP="No."';
                     ApplicationArea = All;

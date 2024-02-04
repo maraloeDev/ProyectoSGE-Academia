@@ -10,35 +10,35 @@ page 50104 "Registration List"
         {
             group(General)
             {
-                field("No."; Rec."Registration No.")
+                field("No."; Rec."No.")
                 {
-                    ApplicationArea = All;
                     Caption = 'No.', comment = 'ESP="No."';
+                    ApplicationArea = All;
                 }
                 field("DATE/TIME REGISTRATION"; Rec."Date/Time Registration")
                 {
-                    ApplicationArea = All;
                     Caption = 'DATE/TIME REGISTRATION', comment = 'ESP="FECHA MATRICULA"';
-                }
-                field("No. STUDENT ENROLLED"; Rec."Id. Student. Enrolled.")
-                {
                     ApplicationArea = All;
+                }
+                field("No. STUDENT ENROLLED"; Rec."No. Student Enrolled")
+                {
                     Caption = 'No. STUDENT ENROLLED', comment = 'ESP="No. ESTUDIANTE MATRLADO."';
-                }
-                field("No. COURSE ENROLLED"; Rec."Id. Course Enrolled.")
-                {
                     ApplicationArea = All;
+                }
+                field("No. COURSE ENROLLED"; Rec."No. Course Enrolled")
+                {
                     Caption = 'No. COURSE ENROLLED', comment = 'ESP="No. CURSO MATRLADO."';
+                    ApplicationArea = All;
                 }
                 field("NAME ENROLLED STUDENT"; Rec."Name Student Enrolled")
                 {
-                    ApplicationArea = All;
                     Caption = 'NAME ENROLLED STUDENT', comment = 'ESP="NOMBRE ESTUDIANTE MATRLADO."';
+                    ApplicationArea = All;
                 }
                 field("NAME ENROLLED COURSE"; Rec."Name Enrolled Course")
                 {
-                    ApplicationArea = All;
                     Caption = 'NAME ENROLLED COURSE', comment = 'ESP="NOMBRE CURSO MATRLADO."';
+                    ApplicationArea = All;
                 }
             }
         }

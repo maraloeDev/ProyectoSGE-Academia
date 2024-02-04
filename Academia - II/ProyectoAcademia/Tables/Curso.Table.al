@@ -4,15 +4,15 @@ table 50100 "Course"
     Caption = 'Course', comment = 'ESP="Curso"';
     fields
     {
-        field(1; "Course No."; Integer)
+        field(1; "No."; Integer)
         {
-            Caption = 'COURSE NO.', comment = 'ESP="ID DEL CURSO"';
+            Caption = 'No.', comment = 'ESP="No."';
             AutoIncrement = true;
             Editable = false;
         }
-        field(3; "Course Description"; Text[50])
+        field(3; "Description"; Text[50])
         {
-            Caption = 'Course Description', comment = 'ESP="Descripción del curso"';
+            Caption = 'Description', comment = 'ESP="Descripción"';
         }
         field(4; "Total hours"; Integer)
         {
@@ -20,34 +20,36 @@ table 50100 "Course"
         }
         field(5; "Course fee"; Decimal)
         {
-            Caption = 'Course fee', comment = 'ESP="Tarifa del curso"';
+            Caption = 'Course fee', comment = 'ESP="Tarifa"';
         }
+        // Profesor: Profesor impartidor
         field(6; "Teacher No."; Integer)
         {
-            Caption = 'Teacher No.', comment = 'ESP="Profesor que imparte el curso"';
-            TableRelation = teacher."Teacher .No";
+            Caption = 'Teacher No.', comment = 'ESP="No. Profesor Imprt."';
+            TableRelation = Teacher."No.";
         }
-        field(7; "Course provider No."; Integer)
+        field(7; "Teacher Name"; Text[50])
         {
-            Caption = 'Course provider No.', comment = 'ESP="Tarifa del curso"';
-            TableRelation = Department."Department No.";
-        }
-        field(8; "Course provider name"; Text[50])
-        {
-            Caption = 'Course provider name', comment = 'ESP="Nombre del departamento ofertante"';
+            Caption = 'Teacher Name', comment = 'ESP="Nombre Profesor Imprt."';
             FieldClass = FlowField;
-            CalcFormula = lookup(Department."Department name" where("Department No." = field("Course provider No.")));
+            CalcFormula = lookup(Teacher."Name" where("No." = field("Teacher No.")));
         }
-        field(9; "Departement head name"; Text[50])
+        // Departamento: Departamento ofertador
+        field(8; "Course provider No."; Integer)
         {
-            Caption = 'Departement head name', comment = 'ESP="Nombre jefe departamento"';
+            Caption = 'Course provider No.', comment = 'ESP="No. Depart. Ofertador"';
+            TableRelation = Department."No.";
+        }
+        field(9; "Course provider Name"; Text[50])
+        {
+            Caption = 'Course provider Name', comment = 'ESP="Nombre Depart. Ofertador"';
             FieldClass = FlowField;
-            CalcFormula = lookup(teacher."Teacher Name" where("Teacher .No" = field("Teacher No.")));
+            CalcFormula = lookup(Department."Name" where("No." = field("Course provider No.")));
         }
     }
     keys
     {
-        key(pk1; "Course No.")
+        key(pk1; "No.")
         {
             Clustered = true;
         }
