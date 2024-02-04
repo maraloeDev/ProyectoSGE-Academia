@@ -26,7 +26,7 @@ table 50103 "Detail"
         field(6; "Schedule .No"; Integer)
         {
             Caption = 'Schedule .No', comment = 'ESP="Horario No."';
-            TableRelation = schedule."Schedule No.";
+            TableRelation = Schedule."No.";
         }
     }
     keys
