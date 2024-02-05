@@ -4,6 +4,8 @@ page 50100 "Course List"
     PageType = List;
     SourceTable = Course;
     Caption = 'COURSE LIST', comment = 'ESP="LISTA DE CURSOS"';
+    ApplicationArea = All;
+    UsageCategory = Lists;
 
     layout
     {
