@@ -9,13 +9,13 @@ page 50106 "Matriculación"
     {
         area(Content)
         {
-            group(Registration)
+            group(General)
             {
-                Caption = 'Registration', comment = 'ESP="Registro"';
+                Caption = 'General', comment = 'ESP="General"';
                 group(Student)
                 {
                     Caption = 'Student', comment = 'ESP="Estudiante"';
-                    part(""; "Student CardPart")
+                    part(""; "Student-Registration CardPart")
                     {
                         Caption = '', comment = 'ESP=""';
                         ApplicationArea = All;
@@ -29,7 +29,7 @@ page 50106 "Matriculación"
                         Caption = 'Course No.', comment = 'ESP="No. del Curso"';
                         ApplicationArea = All;
                     }
-                    part("Course Data"; "Course CardPart")
+                    part("Course Data"; "Course-Registration CardPart")
                     {
                         Caption = 'Course Data', comment = 'ESP="Datos del Curso"';
                         ApplicationArea = All;
@@ -48,6 +48,20 @@ page 50106 "Matriculación"
                 ApplicationArea = All;
 
                 RunObject = page "Course List";
+                Image = Report2;
+            }
+            action("Estudiante - Datos")
+            {
+                ApplicationArea = All;
+
+                RunObject = page "Student List";
+                Image = Report2;
+            }
+            action("Estudiante - Matrícula")
+            {
+                ApplicationArea = All;
+
+                RunObject = page "Registration List";
                 Image = Report2;
             }
         }
