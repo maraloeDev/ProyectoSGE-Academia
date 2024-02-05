@@ -1,0 +1,2 @@
+meter el trigger OnOpenPage para que refresque los Qes-> tabla aparte con los flowfield
+meter cogroup

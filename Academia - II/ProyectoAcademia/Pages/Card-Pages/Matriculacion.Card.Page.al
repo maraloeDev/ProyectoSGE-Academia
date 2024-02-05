@@ -1,53 +1,41 @@
-page 50106 "Matricula: Registro de Alumno"
+page 50106 "Matriculación"
 {
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
-    SourceTable = Student;
-    Caption = 'Registration', comment = 'ESP="Matricula: Registro de Alumno"';
+    SourceTable = "Registration";
+    Caption = 'Registration', comment = 'ESP="Matriculación"';
     layout
     {
         area(Content)
         {
-            group(Student)
+            group(Registration)
             {
-                Caption = 'Student', comment = 'ESP="Estudiante"';
-                field("No."; Rec."No.")
+                Caption = 'Registration', comment = 'ESP="Registro"';
+                group(Student)
                 {
-                    Caption = 'No.', comment = 'ESP="No."';
-                    ApplicationArea = All;
-                    Editable = false;
+                    Caption = 'Student', comment = 'ESP="Estudiante"';
+                    part(""; "Student CardPart")
+                    {
+                        Caption = '', comment = 'ESP=""';
+                        ApplicationArea = All;
+                    }
                 }
-                field("Name"; Rec."Name")
+                group(Course)
                 {
-                    Caption = 'Name', comment = 'ESP="Nombre"';
-                    ApplicationArea = All;
+                    Caption = 'Course', comment = 'ESP="Curso"';
+                    field("Course No."; Rec."No. Course Enrolled")
+                    {
+                        Caption = 'Course No.', comment = 'ESP="No. del Curso"';
+                        ApplicationArea = All;
+                    }
+                    part("Course Data"; "Course CardPart")
+                    {
+                        Caption = 'Course Data', comment = 'ESP="Datos del Curso"';
+                        ApplicationArea = All;
+                        SubPageLink = "No." = field("No. Course Enrolled");
+                    }
                 }
-                field("Gender"; Rec."Gender")
-                {
-                    Caption = 'Gender', comment = 'ESP="Género"';
-                    ApplicationArea = All;
-                }
-                field("Address"; Rec."Adress")
-                {
-                    Caption = 'Address', comment = 'ESP="Dirección"';
-                    ApplicationArea = All;
-                }
-                field("Phone"; Rec."Phone")
-                {
-                    Caption = 'Phone', comment = 'ESP="Teléfono"';
-                    ApplicationArea = All;
-                }
-                field("Birthdate"; Rec."Birthdate")
-                {
-                    Caption = 'Birthdate', comment = 'ESP="Fecha de nacimiento"';
-                    ApplicationArea = All;
-                }
-            }
-            part("Courso"; "Course List")
-            {
-                Caption = 'Courso', comment = 'ESP="Curso"';
-                ApplicationArea = All;
             }
         }
     }
@@ -55,14 +43,12 @@ page 50106 "Matricula: Registro de Alumno"
     {
         area(Processing)
         {
-            action(ActionName)
+            action("Información - Curso")
             {
                 ApplicationArea = All;
 
-                trigger OnAction()
-                begin
-
-                end;
+                RunObject = page "Course List";
+                Image = Report2;
             }
         }
     }
