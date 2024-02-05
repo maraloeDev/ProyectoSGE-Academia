@@ -38,7 +38,6 @@ page 50110 "Student-Registration CardPart"
             {
                 Caption = 'Birthdate', comment = 'ESP="Fecha de nacimiento"';
                 ApplicationArea = All;
-
             }
         }
     }

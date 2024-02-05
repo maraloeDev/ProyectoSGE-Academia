@@ -1,4 +1,4 @@
-page 50106 "Matriculación"
+page 50106 "Registration"
 {
     PageType = Card;
     ApplicationArea = All;
