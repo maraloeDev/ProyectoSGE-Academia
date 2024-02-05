@@ -11,7 +11,6 @@ page 50106 "Registration"
         {
             group(General)
             {
-                Caption = 'General', comment = 'ESP="General"';
                 group(Student)
                 {
                     Caption = 'Student', comment = 'ESP="Estudiante"';

@@ -1,61 +1,39 @@
-page 50108 "Curso : Tipos de cursos"
+page 50108 "Curso Card"
 {
     PageType = Card;
-    ApplicationArea = All;
-    UsageCategory = Administration;
     SourceTable = Course;
+    Caption = 'Gestión de Cursos';
 
     layout
     {
-        area(Content)
+
+        area(content)
         {
-            group(General)
+            group("General")
             {
-                Caption = 'General', comment = 'ESP="General"';
-
-                field("Course No."; Rec."No.")
-                {
-                    ApplicationArea = All;
-                }
-
-                field("Description"; Rec."Description")
+                field("Nombre del Curso"; Rec.Description)
                 {
                     ApplicationArea = All;
                 }
             }
-            group(Profesor)
+
+            group("Teacher")
             {
                 Caption = 'Teacher', comment = 'ESP="Profesor"';
-
-                field("Teacher No."; Rec."No.")
+                field("Nombre del Profesor"; Rec."Teacher Name")
                 {
                     ApplicationArea = All;
                 }
-                field("Teacher Name"; Rec."Teacher Name")
+            }
+
+            /* Juntar la tabla de profesores con la de cursos*/
+            group("Estadísticas")
+            {
+                field("Número de Alumnos"; Rec."Number of Students")
                 {
                     ApplicationArea = All;
                 }
             }
         }
     }
-
-    /* actions
-     {
-         area(Processing)
-         {
-             action(ActionName)
-             {
-                 ApplicationArea = All;
-
-                 trigger OnAction()
-                 begin
-
-                 end;
-             }
-         }
-     }
-
-     var
-         myInt: Integer;
-         */
 }

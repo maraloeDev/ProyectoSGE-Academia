@@ -46,6 +46,11 @@ table 50100 "Course"
             FieldClass = FlowField;
             CalcFormula = lookup(Department."Name" where("No." = field("Course provider No.")));
         }
+
+        field(10; "Number of Students"; Integer)
+        {
+            Caption = 'Number of Students', comment = 'ESP="Número de Estudiantes"';
+        }
     }
     keys
     {
@@ -55,3 +60,7 @@ table 50100 "Course"
         }
     }
 }
+
+
+
+
