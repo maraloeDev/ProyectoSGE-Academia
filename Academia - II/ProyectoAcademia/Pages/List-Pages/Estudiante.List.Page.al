@@ -2,7 +2,7 @@ page 50102 "Student List"
 {
     PageType = List;
     SourceTable = Student;
-    Caption = 'STUDENT LIST', comment = 'ESP="LISTA DE ESTUDIANTES"';
+    Caption = 'Student List', comment = 'ESP="Lista de Estudiantes"';
     ApplicationArea = All;
     UsageCategory = Lists;
 

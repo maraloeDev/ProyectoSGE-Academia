@@ -2,7 +2,7 @@ page 50107 "Teacher List"
 {
     PageType = Card;
     SourceTable = Teacher;
-    Caption = 'TEACHER LIST', comment = 'ESP="LISTA DE PROFESORES"';
+    Caption = 'Teacher List', comment = 'ESP="Lista de Profesores"';
     ApplicationArea = All;
     UsageCategory = Lists;
 

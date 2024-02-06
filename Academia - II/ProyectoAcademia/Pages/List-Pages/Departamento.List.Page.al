@@ -2,7 +2,7 @@ page 50101 "Department List"
 {
     PageType = List;
     SourceTable = Department;
-    Caption = 'DEPARTMENT LIST', comment = 'ESP="LISTA DE DEPARTAMENTOS"';
+    Caption = 'Department List', comment = 'ESP="Lista de Departamentos"';
     ApplicationArea = All;
     UsageCategory = Lists;
 

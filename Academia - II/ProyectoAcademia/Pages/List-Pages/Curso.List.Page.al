@@ -3,7 +3,7 @@ page 50100 "Course List"
 
     PageType = List;
     SourceTable = Course;
-    Caption = 'COURSE LIST', comment = 'ESP="LISTA DE CURSOS"';
+    Caption = 'Course List', comment = 'ESP="Lista de Cursos"';
     ApplicationArea = All;
     UsageCategory = Lists;
 

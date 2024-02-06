@@ -2,7 +2,7 @@ page 50103 "Schedule List"
 {
     PageType = List;
     SourceTable = Schedule;
-    Caption = 'SCHEDULE LIST', comment = 'ESP="LISTA DE HORARIOS"';
+    Caption = 'Schedule List', comment = 'ESP="Lista de Horarios"';
     ApplicationArea = All;
     UsageCategory = Lists;
 

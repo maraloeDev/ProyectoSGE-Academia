@@ -62,7 +62,7 @@ page 50111 "Estudiante"
             action("Navegar – Matrículas")
             {
                 ApplicationArea = All;
-                RunObject = page "Registration List";
+                RunObject = page "Matricula CardPart";
                 RunPageLink = "No. Student Enrolled" = field("No.");
             }
         }

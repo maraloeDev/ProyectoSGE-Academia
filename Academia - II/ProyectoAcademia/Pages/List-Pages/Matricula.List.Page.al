@@ -2,7 +2,7 @@ page 50104 "Registration List"
 {
     PageType = Card;
     SourceTable = Registration;
-    Caption = 'REGISTRATION LIST', comment = 'ESP="LISTA DE MATRICULAS"';
+    Caption = 'Registration List', comment = 'ESP="Lista de Matrículas"';
     ApplicationArea = All;
     UsageCategory = Lists;
 
