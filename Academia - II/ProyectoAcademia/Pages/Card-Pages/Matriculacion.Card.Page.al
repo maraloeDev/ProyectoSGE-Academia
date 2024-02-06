@@ -23,15 +23,10 @@ page 50106 "Registration"
                     {
                         Caption = '', comment = 'ESP=""';
                         ApplicationArea = All;
-
-                        trigger OnInit()
-    begin
-        IF field("Student No.") in "No. Course Enrolled" THEN
-            SubPageLink = "No." = "Student No.";
-    end;
-}
+                        SubPageLink = "No." = field("No. Student Enrolled");
+                    }
                 }
-                group(Course)
+                repeater(Course)
                 {
                     Caption = 'Course', comment = 'ESP="Curso"';
                     field("Course No."; Rec."No. Course Enrolled")
@@ -58,21 +53,21 @@ page 50106 "Registration"
                 ApplicationArea = All;
 
                 RunObject = page "Course List";
-                                Image = Report2;
+                Image = Report2;
             }
             action("Estudiante - Datos")
             {
                 ApplicationArea = All;
 
                 RunObject = page "Student List";
-                                Image = Report2;
+                Image = Report2;
             }
             action("Estudiante - Matrícula")
             {
                 ApplicationArea = All;
 
                 RunObject = page "Registration List";
-                                Image = Report2;
+                Image = Report2;
             }
         }
     }

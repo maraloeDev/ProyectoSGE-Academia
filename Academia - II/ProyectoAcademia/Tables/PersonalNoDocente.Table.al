@@ -8,6 +8,7 @@ table 50106 "Non-teaching staff"
         {
             Caption = 'No.', comment = 'ESP="No."';
             AutoIncrement = true;
+            Editable = false;
         }
         field(2; "Name"; Text[50])
         {
@@ -45,11 +46,10 @@ table 50106 "Non-teaching staff"
             Clustered = true;
         }
     }
-    /*
-    trigger OnValidate()
+    /*trigger OnInsert()
     begin
-        if "Puesto Personal" = 'Ayudante' then
-            field(6).Mandatory := true;
+        if "Position" <> 'Ayudante' then
+            FieldName("Head Studies No.").;
     end if;
-    */
+    end;*/
 }

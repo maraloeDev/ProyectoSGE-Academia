@@ -19,7 +19,7 @@ table 50102 "Student"
             Caption = 'Student Gender', comment = 'ESP="Genero"';
             OptionMembers = "MASC","FEM";
         }
-        field(4; "Adress"; Text[50])
+        field(4; "Adress"; Text[100])
         {
             Caption = 'Student Adress', comment = 'ESP="Dirección"';
         }

@@ -6,24 +6,25 @@ table 50103 "Detail"
     {
         field(1; "No."; Integer)
         {
-            AutoIncrement = true;
             Caption = 'No.', comment = 'ESP="No."';
+            AutoIncrement = true;
+            Editable = false;
         }
-        field(3; "Weekday"; Text[50])
+        field(2; "Weekday"; Text[50])
         {
             Caption = 'Weekday', comment = 'ESP="Dia Semana"';
         }
         // Horas
-        field(4; "Start Time"; Integer)
+        field(3; "Start Time"; Time)
         {
             Caption = 'Start Time', comment = 'ESP="Hora Inicio"';
         }
-        field(5; "End Time"; Integer)
+        field(4; "End Time"; Time)
         {
             Caption = 'End Time', comment = 'ESP="Hora Fin"';
         }
         // Horario
-        field(6; "Schedule .No"; Integer)
+        field(5; "Schedule .No"; Integer)
         {
             Caption = 'Schedule .No', comment = 'ESP="Horario No."';
             TableRelation = Schedule."No.";

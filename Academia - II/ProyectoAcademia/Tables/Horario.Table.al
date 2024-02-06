@@ -16,31 +16,31 @@ table 50104 "Schedule"
             Caption = 'Course No.', comment = 'ESP="Curso No."';
             TableRelation = Course."No.";
         }
-        field(6; "Course Name"; Text[50])
+        field(3; "Course Name"; Text[50])
         {
             Caption = 'Course Name', comment = 'ESP="Nombre del curso"';
             FieldClass = FlowField;
             CalcFormula = lookup(Course."Description" where("No." = field("Course No.")));
         }
         // Detalle
-        field(3; "Detail No."; Integer)
+        field(4; "Detail No."; Integer)
         {
             Caption = 'Detail No.', comment = 'ESP="Detalle No."';
             TableRelation = Detail."No.";
         }
-        field(50100; "Weekday"; Text[50])
+        field(5; "Weekday"; Text[50])
         {
             Caption = 'Weekday ', comment = 'ESP="Día de la semana"';
             FieldClass = FlowField;
             CalcFormula = lookup(Detail."Weekday" where("No." = field("Detail No.")));
         }
-        field(4; "Start Time"; Integer)
+        field(6; "Start Time"; Time)
         {
             Caption = 'Start Time', comment = 'ESP="Hora de inicio"';
             FieldClass = FlowField;
             CalcFormula = lookup(Detail."Start Time" where("No." = field("Detail No.")));
         }
-        field(5; "End Time"; Integer)
+        field(7; "End Time"; Time)
         {
             Caption = 'End Time', comment = 'ESP="Hora de fin"';
             FieldClass = FlowField;

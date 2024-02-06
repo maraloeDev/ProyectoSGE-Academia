@@ -8,6 +8,7 @@ table 50107 "Teacher"
         {
             Caption = 'No.', comment = 'ESP="No."';
             AutoIncrement = true;
+            Editable = false;
         }
         field(2; "Name"; Text[50])
         {

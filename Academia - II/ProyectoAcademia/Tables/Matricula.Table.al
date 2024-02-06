@@ -8,6 +8,7 @@ table 50105 "Registration"
         {
             Caption = 'No.', comment = 'ESP="No."';
             AutoIncrement = true;
+            Editable = false;
         }
         field(2; "Date/Time Registration"; DateTime)
         {
@@ -19,7 +20,7 @@ table 50105 "Registration"
             Caption = 'No. Student Enrolled', comment = 'ESP="No. Estudiante Matrlado."';
             TableRelation = Student."No.";
         }
-        field(6; "Name Student Enrolled"; Text[50])
+        field(4; "Name Student Enrolled"; Text[50])
         {
             Caption = 'Name Student Enrolled', comment = 'ESP="Nombre Estudiante Matrlado."';
             FieldClass = FlowField;
@@ -31,7 +32,7 @@ table 50105 "Registration"
             Caption = 'No. Course Enrolled', comment = 'ESP="No. Curso Matriculado"';
             TableRelation = Course."No.";
         }
-        field(7; "Name Enrolled Course"; Text[50])
+        field(6; "Name Enrolled Course"; Text[50])
         {
             Caption = 'Name Enrolled Course', comment = 'ESP="Nombre Curso Matriculado"';
             FieldClass = FlowField;
