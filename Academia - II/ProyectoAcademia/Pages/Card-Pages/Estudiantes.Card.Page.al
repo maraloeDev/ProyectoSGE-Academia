@@ -59,7 +59,7 @@ page 50111 "Estudiante"
                 RunObject = page "Registration List";
                 //TODO que se pueda asignar un curso al alumno para hacer una matriculacion nueva
             }
-            action(" Navegar – Matrículas")
+            action("Navegar – Matrículas")
             {
                 ApplicationArea = All;
                 RunObject = page "Registration List";

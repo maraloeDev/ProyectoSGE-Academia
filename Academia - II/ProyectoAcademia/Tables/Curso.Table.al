@@ -43,13 +43,17 @@ table 50100 "Course"
         field(9; "Course provider Name"; Text[50])
         {
             Caption = 'Course provider Name', comment = 'ESP="Nombre Depart. Ofertador"';
+            Editable = false;
             FieldClass = FlowField;
             CalcFormula = lookup(Department."Name" where("No." = field("Course provider No.")));
         }
-
+        // Matricula: Cantidad de estudiantes
         field(10; "Number of Students"; Integer)
         {
             Caption = 'Number of Students', comment = 'ESP="Número de Estudiantes"';
+            Editable = false;
+            FieldClass = FlowField;
+            CalcFormula = count(Registration where("No. Course Enrolled" = field("No.")));
         }
     }
     keys
