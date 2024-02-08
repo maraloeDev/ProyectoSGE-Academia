@@ -25,8 +25,6 @@ page 50108 "Curso Card"
                     ApplicationArea = All;
                 }
             }
-
-            /* Juntar la tabla de profesores con la de cursos*/
             group("Estadísticas")
             {
                 field("Número de Alumnos"; Rec."Number of Students")

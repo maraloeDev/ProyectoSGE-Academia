@@ -57,6 +57,7 @@ page 50111 "Student CardPage"
                 ApplicationArea = All;
                 RunObject = page "Registration List";
                 RunPageMode = Create;
+                Promoted = true;
             }
             action("Navegar - Matrículas")
             {

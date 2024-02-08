@@ -7,7 +7,7 @@ page 50110 "Secretaria/Admon. CardPage"
 
     layout
     {
-        area(Content)
+        area(content)
         {
             cuegroup(Datos)
             {

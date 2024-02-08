@@ -28,23 +28,27 @@ page 50112 "Profesor Card"
                 {
                     ApplicationArea = All;
                 }
-
                 field("Salario"; Rec.Salary)
+                {
+                    ApplicationArea = All;
+                }
+                field("No. Depart."; Rec."No. Depart. Asign.")
+                {
+                    ApplicationArea = All;
+                }
+                field("Depart. Asign."; Rec."Name Deprt. Asign.")
                 {
                     ApplicationArea = All;
                 }
             }
         }
-    }
-
-    /* factbox { 
-        area(content)
+        area(FactBoxes)
         {
-            part(Estadisticas; "Estadísticas de Profesor")
+            part("Estadisticas"; "Teacher List")
             {
                 ApplicationArea = All;
-                SubPageLink = "ID del Profesor" = field("ID del Profesor");
+                SubPageLink = "No." = field("No.");
             }
         }
-    }*/
+    }
 }
