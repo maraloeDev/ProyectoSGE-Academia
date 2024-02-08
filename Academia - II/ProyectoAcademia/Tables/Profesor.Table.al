@@ -40,9 +40,9 @@ table 50107 "Teacher"
             CalcFormula = lookup(Department."Name" where("No." = field("No. Depart. Asign.")));
         }
         // Número de asistentes de un profesor 
-        field(8; "Number of assistants"; Integer)
+        field(8; "Number of helpers"; Integer)
         {
-            Caption = 'Number of assistants', comment = 'ESP="Número de asistentes"';
+            Caption = 'Number of helpers', comment = 'ESP="Número de ayudantes"';
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = count("Non-teaching staff" where("Head Studies No." = field("No.")));

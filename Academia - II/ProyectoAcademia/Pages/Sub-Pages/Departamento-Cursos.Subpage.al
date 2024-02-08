@@ -10,17 +10,21 @@ page 50109 "Departamento - Curso Subpage"
         area(Content)
         {
             group(GroupName)
+
             {
                 field("Description"; Rec.Description)
                 {
+                    Caption = 'Description', comment = 'ESP=""Descripción""';
                     ApplicationArea = All;
                 }
                 field("Teacher"; Rec."Teacher Name")
                 {
+                    Caption = 'Teacher', comment = 'ESP="Profesor"';
                     ApplicationArea = All;
                 }
                 field("Total hours"; Rec."Total hours")
                 {
+                    Caption = 'Total hours', comment = 'ESP="Horas totales"';
                     ApplicationArea = All;
                 }
             }
@@ -33,6 +37,7 @@ page 50109 "Departamento - Curso Subpage"
         {
             action("Curso - Matrículas")
             {
+                Caption = 'Enrolled Students', comment = 'ESP="Estudiantes matriculados"';
                 ApplicationArea = All;
                 RunObject = page "Registration List";
                 RunPageLink = "No. Course Enrolled" = field("No.");
@@ -40,6 +45,7 @@ page 50109 "Departamento - Curso Subpage"
             }
             action("Curso – Datos")
             {
+                Caption = 'Course Data', comment = 'ESP="Datos del curso"';
                 ApplicationArea = All;
                 RunObject = page "Course List";
                 RunPageLink = "No." = field("No.");

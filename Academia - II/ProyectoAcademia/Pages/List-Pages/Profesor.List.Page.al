@@ -47,9 +47,9 @@ page 50107 "Teacher List"
                     Caption = 'NAME DEPRT. ASIGN.', comment = 'ESP="NOMBRE DEPARTAMENTO ASIGNADO"';
                     ApplicationArea = All;
                 }
-                field("NUMBER ASSISTANTS"; Rec."Number of assistants")
+                field("NUMBER HELPERS"; Rec."Number of Helpers")
                 {
-                    Caption = 'NUMBER ASSISTANTS', comment = 'ESP="NÚMERO DE ASISTENTES"';
+                    Caption = 'NUMBER HELPERS', comment = 'ESP="NÚMERO DE ASISTENTES"';
                     ApplicationArea = All;
                 }
                 field("NUMBER COURSES GIVEN"; Rec."Number of courses given")
