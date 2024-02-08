@@ -1,4 +1,4 @@
-page 50111 "Estudiante"
+page 50111 "Student CardPage"
 {
     PageType = Card;
     ApplicationArea = All;
@@ -15,7 +15,6 @@ page 50111 "Estudiante"
                 {
                     Caption = 'No.', comment = 'ESP="No."';
                     ApplicationArea = All;
-                    Editable = false;
                 }
                 field("Name"; Rec."Name")
                 {
@@ -57,12 +56,14 @@ page 50111 "Estudiante"
             {
                 ApplicationArea = All;
                 RunObject = page "Registration List";
+                RunPageMode = Create;
             }
-            action("Navegar – Matrículas")
+            action("Navegar - Matrículas")
             {
                 ApplicationArea = All;
-                RunObject = page "Matricula CardPart";
+                RunObject = page "Registration List";
                 RunPageLink = "No. Student Enrolled" = field("No.");
+                RunPageMode = View;
             }
         }
     }
