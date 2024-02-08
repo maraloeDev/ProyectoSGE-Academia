@@ -11,10 +11,17 @@ page 50109 "Departamento - Curso Subpage"
         {
             group(GroupName)
             {
-                field(Name; NameSource)
+                field("Description"; Rec.Description)
                 {
                     ApplicationArea = All;
-
+                }
+                field("Teacher"; Rec."Teacher Name")
+                {
+                    ApplicationArea = All;
+                }
+                field("Total hours"; Rec."Total hours")
+                {
+                    ApplicationArea = All;
                 }
             }
         }
@@ -27,15 +34,15 @@ page 50109 "Departamento - Curso Subpage"
             action("Curso - Matrículas")
             {
                 ApplicationArea = All;
-                RunObject = page "Teacher List";
-                RunPageLink = "No." = field("Head Professor No.");
+                RunObject = page "Registration List";
+                RunPageLink = "No. Course Enrolled" = field("No.");
                 RunPageMode = View;
             }
             action("Curso – Datos")
             {
                 ApplicationArea = All;
-                RunObject = page "Teacher List";
-                RunPageLink = "No." = field("Head Professor No.");
+                RunObject = page "Course List";
+                RunPageLink = "No." = field("No.");
                 RunPageMode = View;
             }
         }
