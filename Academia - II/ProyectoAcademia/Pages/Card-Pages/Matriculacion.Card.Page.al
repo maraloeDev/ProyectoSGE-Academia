@@ -14,9 +14,9 @@ page 50106 "Registration"
                 group(Student)
                 {
                     Caption = 'Student', comment = 'ESP="Estudiante"';
-                    field("Student No."; Rec."No. Course Enrolled")
+                    field("Student No."; Rec."No. Student Enrolled")
                     {
-                        Caption = 'Course No.', comment = 'ESP="No. del Curso"';
+                        Caption = 'Student No.', comment = 'ESP="No. del Alumno"';
                         ApplicationArea = All;
                     }
                     part("Student Data"; "Student-Registration CardPart")
@@ -26,7 +26,7 @@ page 50106 "Registration"
                         SubPageLink = "No." = field("No. Student Enrolled");
                     }
                 }
-                repeater(Course)
+                group(Course)
                 {
                     Caption = 'Course', comment = 'ESP="Curso"';
                     field("Course No."; Rec."No. Course Enrolled")
