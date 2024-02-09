@@ -7,10 +7,11 @@ page 50110 "Secretaria/Admon. CardPage"
 
     layout
     {
-        area(content)
+        area(Content)
         {
-            cuegroup(Datos)
+            cuegroup(Generañ)
             {
+                Caption = 'General', comment = 'ESP="General"';
                 field("Name"; Rec.Name)
                 {
                     Caption = 'Name', comment = 'ESP="Nombre"';
@@ -89,7 +90,12 @@ page 50110 "Secretaria/Admon. CardPage"
         }
 
     }
+    /*
+        trigger OnOpenPage()
+        var
+            myInt: Integer;
+        begin
 
-    var
-        myInt: Integer;
+        end;
+    */
 }

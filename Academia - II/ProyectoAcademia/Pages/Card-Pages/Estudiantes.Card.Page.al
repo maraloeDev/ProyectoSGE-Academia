@@ -11,6 +11,7 @@ page 50111 "Student CardPage"
         {
             group(General)
             {
+                Caption = 'General', comment = 'ESP="General"';
                 field("No."; Rec."No.")
                 {
                     Caption = 'No.', comment = 'ESP="No."';
@@ -34,6 +35,7 @@ page 50111 "Student CardPage"
             }
             group(Comunication)
             {
+                Caption = 'Comunication', comment = 'ESP="Comunicación"';
                 field("Address"; Rec."Adress")
                 {
                     Caption = 'Address', comment = 'ESP="Dirección"';
@@ -52,15 +54,17 @@ page 50111 "Student CardPage"
     {
         area(Processing)
         {
-            action("Acciones - Nueva matrícula")
+            action("Actions - New Enrolment")
             {
+                Caption = 'Actions - New Enrolment', comment = 'ESP="Acciones - Nueva matrícula"';
                 ApplicationArea = All;
                 RunObject = page "Registration List";
                 RunPageMode = Create;
                 Promoted = true;
             }
-            action("Navegar - Matrículas")
+            action("Browse - Enrollments")
             {
+                Caption = 'Actions - New Enrolment', comment = 'ESP="Navegar - Matrículas"';
                 ApplicationArea = All;
                 RunObject = page "Registration List";
                 RunPageLink = "No. Student Enrolled" = field("No.");
@@ -68,7 +72,4 @@ page 50111 "Student CardPage"
             }
         }
     }
-
-    var
-        myInt: Integer;
 }

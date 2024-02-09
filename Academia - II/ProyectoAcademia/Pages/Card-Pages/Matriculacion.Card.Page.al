@@ -57,7 +57,4 @@ page 50106 "Registration"
             }
         }
     }
-
-    var
-        myInt: Integer;
 }

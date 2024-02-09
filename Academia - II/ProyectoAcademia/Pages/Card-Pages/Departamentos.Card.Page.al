@@ -11,6 +11,7 @@ page 50113 "Departamento CardPage"
         {
             group(General)
             {
+                Caption = 'General', comment = 'ESP="General"';
                 field("No."; Rec."No.")
                 {
                     Caption = 'No. Depart', comment = 'ESP="No. Departamento"';
@@ -24,6 +25,7 @@ page 50113 "Departamento CardPage"
             }
             group(Comunication)
             {
+                Caption = 'Comunication', comment = 'ESP="Comunicación"';
                 field("Head Professor"; Rec."Head Professor Name")
                 {
                     Caption = 'Head Teacher', comment = 'ESP="Nombre del profesor coordinador"';
@@ -68,7 +70,4 @@ page 50113 "Departamento CardPage"
             }
         }
     }
-
-    var
-        myInt: Integer;
 }

@@ -46,12 +46,4 @@ page 50108 "Curso Card"
 
     // Incluye un FactBox “Estadísticas”, que muestra el nº de ayudantes que tiene el profesor y el
     //nº de cursos que imparte. 
-
-
-    trigger OnOpenPage();
-    begin
-        Rec."Number of Students" := 0;
-        Rec."Teacher Name" := '';
-    end;
-
 }

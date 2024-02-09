@@ -10,6 +10,7 @@ page 50112 "Profesor Card"
         {
             group("General")
             {
+                Caption = 'General', comment = 'ESP="General"';
                 field("Nombre del Profesor"; Rec.Name)
                 {
                     Caption = 'Name of Teacher', comment = 'ESP="Nombre del Profesor"';
