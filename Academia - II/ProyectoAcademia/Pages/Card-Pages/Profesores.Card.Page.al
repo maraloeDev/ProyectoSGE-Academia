@@ -23,7 +23,7 @@ page 50112 "Profesor Card"
                 }
             }
 
-            group("Laboral")
+            group("Labor")
             {
                 Caption = 'Labor', comment = 'ESP="Laboral"';
                 field("Date of hire"; Rec."Date of hire")
@@ -50,8 +50,9 @@ page 50112 "Profesor Card"
         }
         area(FactBoxes)
         {
-            part("Estadisticas"; "Teacher List")
+            part("Stadistics"; "Stadistic - Teacher SubPage")
             {
+                Caption = 'Stadistics', comment = 'ESP="Estadisticas"';
                 ApplicationArea = All;
                 SubPageLink = "No." = field("No.");
             }

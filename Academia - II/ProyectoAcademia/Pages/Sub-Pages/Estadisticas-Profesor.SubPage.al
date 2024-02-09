@@ -9,14 +9,15 @@ page 50114 "Stadistic - Teacher SubPage"
     {
         area(Content)
         {
-            group(GroupName)
+            group("Stadistics")
             {
-                field("nº de ayudantes"; Rec."Number of helpers")
+                Caption = 'Stadistics', comment = 'ESP="Estadisticas"';
+                field("Nº de ayudantes"; Rec."Number of helpers")
                 {
                     Caption = 'Number of helpers', comment = 'ESP="Numero de ayudantes"';
                     ApplicationArea = All;
                 }
-                field("nº de cursos que imparte"; Rec."Number of courses given")
+                field("Nº de cursos que imparte"; Rec."Number of courses given")
                 {
                     Caption = 'Number of courses given', comment = 'ESP="Numero de cursos que imparte"';
                     ApplicationArea = All;

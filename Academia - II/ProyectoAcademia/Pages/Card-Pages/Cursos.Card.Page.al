@@ -37,9 +37,10 @@ page 50108 "Curso Card"
         }
         area(FactBoxes)
         {
-            ChartTitle = 'Estadísticas';
+            /*ChartTitle = 'Estadísticas';
             ChartCategory = "Teacher Name";
             ChartSeries = "Number of Students";
+     */
         }
     }
 
