@@ -1,10 +1,10 @@
-page 50114 "Stadistic - Teacher SubPage"
+page 50115 "Stadistic - Teacher SubPage"
 {
     PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = Teacher;
-
+    Caption = 'Stadistic - Teacher SubPage', comment = 'ESP="Estadisticas - Profesor SubPage"';
     layout
     {
         area(Content)

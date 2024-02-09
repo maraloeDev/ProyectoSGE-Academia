@@ -1,10 +1,10 @@
-page 50109 "Departamento - Curso Subpage"
+page 50113 "Department - Course Subpage"
 {
     PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = Course;
-
+    Caption = 'Department - Course Subpage', comment = 'ESP="Departament - Course SubPage"';
     layout
     {
         area(Content)

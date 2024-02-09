@@ -1,8 +1,10 @@
-page 50112 "Profesor Card"
+page 50112 "Teacher CardPage"
 {
     PageType = Card;
     SourceTable = Teacher;
-    Caption = 'Gestión de Profesores';
+    ApplicationArea = All;
+    UsageCategory = Administration;
+    Caption = 'Teacher CardPage', comment = 'ESP="Profesor CardPage"';
 
     layout
     {

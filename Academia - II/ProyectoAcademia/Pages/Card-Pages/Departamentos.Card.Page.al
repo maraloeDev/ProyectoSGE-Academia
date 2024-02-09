@@ -1,10 +1,10 @@
-page 50113 "Departamento CardPage"
+page 50109 "Department CardPage"
 {
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = Department;
-
+    Caption = 'Department CardPage', comment = 'ESP="Departamento CardPage"';
     layout
     {
         area(Content)
@@ -64,7 +64,7 @@ page 50113 "Departamento CardPage"
             {
                 Caption = 'Courses of the Department', comment = 'ESP="Cursos Departamento"';
                 ApplicationArea = All;
-                RunObject = page "Departamento - Curso Subpage";
+                RunObject = page "Department - Course Subpage";
                 RunPageLink = "Course provider No." = field("No.");
                 RunPageMode = View;
             }

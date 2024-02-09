@@ -1,10 +1,10 @@
-page 50111 "Student CardPage"
+page 50110 "Student CardPage"
 {
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = Student;
-
+    Caption = 'Student CardPage', comment = 'ESP="Estudiante CardPage"';
     layout
     {
         area(Content)

@@ -1,10 +1,10 @@
-page 50110 "Secretaria/Admon. CardPage"
+page 50117 "Secretary/Admon. RoleCenter"
 {
     PageType = RoleCenter;
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = "Non-teaching staff";
-
+    Caption = 'Secretary/Admon. RoleCenter', comment = 'ESP="Secretaria/Admon. RoleCenter"';
     layout
     {
         area(Content)

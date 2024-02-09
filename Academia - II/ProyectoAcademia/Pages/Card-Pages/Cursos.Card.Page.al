@@ -1,9 +1,10 @@
-page 50108 "Curso Card"
+page 50108 "Course CardPage"
 {
     PageType = Card;
     SourceTable = Course;
-    Caption = 'Gestión de Cursos';
-
+    ApplicationArea = All;
+    UsageCategory = Administration;
+    Caption = 'Course CardPage', comment = 'ESP="Curso CardPage"';
     layout
     {
 

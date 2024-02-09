@@ -1,10 +1,10 @@
-page 50115 "Stadistic - Couse SubPage"
+page 50114 "Stadistic - Couse SubPage"
 {
     PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = Course;
-
+    Caption = 'Stadistic - Course SubPage', comment = 'ESP="Estadisticas - Curso SubPage"';
     layout
     {
         area(Content)

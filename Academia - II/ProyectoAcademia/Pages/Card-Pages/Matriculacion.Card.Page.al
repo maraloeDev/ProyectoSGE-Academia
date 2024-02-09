@@ -1,10 +1,10 @@
-page 50106 "Registration"
+page 50111 "Registration CardPage"
 {
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = "Registration";
-    Caption = 'Registration', comment = 'ESP="Matriculación"';
+    Caption = 'Registration CardPage', comment = 'ESP="Matriculación CardPage"';
     layout
     {
         area(Content)
