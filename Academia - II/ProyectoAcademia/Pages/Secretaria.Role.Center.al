@@ -9,7 +9,7 @@ page 50110 "Secretaria/Admon. CardPage"
     {
         area(Content)
         {
-            cuegroup(Generañ)
+            cuegroup(General)
             {
                 Caption = 'General', comment = 'ESP="General"';
                 field("Name"; Rec.Name)

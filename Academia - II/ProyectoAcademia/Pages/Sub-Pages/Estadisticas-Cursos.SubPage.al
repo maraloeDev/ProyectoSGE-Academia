@@ -1,9 +1,9 @@
-page 50114 "Stadistic - Teacher SubPage"
+page 50115 "Stadistic - Couse SubPage"
 {
     PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = Administration;
-    SourceTable = Teacher;
+    SourceTable = Course;
 
     layout
     {
@@ -12,14 +12,14 @@ page 50114 "Stadistic - Teacher SubPage"
             group("Stadistics")
             {
                 Caption = 'Stadistics', comment = 'ESP="Estadísticas"';
-                field("Number of helpers"; Rec."Number of helpers")
+                field("Number of Students"; Rec."Number of Students")
                 {
-                    Caption = 'Number of helpers', comment = 'ESP="Numero de ayudantes"';
+                    Caption = 'Number of Students', comment = 'ESP="Número de alumnos"';
                     ApplicationArea = All;
                 }
-                field("Number of courses given"; Rec."Number of courses given")
+                field("Course provider Name"; Rec."Course provider Name")
                 {
-                    Caption = 'Number of courses given', comment = 'ESP="Numero de cursos que imparte"';
+                    Caption = 'Course provider Name', comment = 'ESP="Nombre del departamento"';
                     ApplicationArea = All;
                 }
             }

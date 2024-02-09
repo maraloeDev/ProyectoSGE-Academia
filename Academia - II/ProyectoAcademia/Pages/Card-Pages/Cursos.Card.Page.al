@@ -11,6 +11,7 @@ page 50108 "Curso Card"
         {
             group("General")
             {
+                Caption = 'General', comment = 'ESP="General"';
                 field("Nombre del Curso"; Rec.Description)
                 {
                     Caption = 'Name of Curse', comment = 'ESP="Nombre del Curso"';
@@ -29,21 +30,23 @@ page 50108 "Curso Card"
             }
             group("Estadísticas")
             {
+                Caption = 'Estadísticas', comment = 'ESP="Estadísticas"';
                 field("Número de Alumnos"; Rec."Number of Students")
                 {
+                    Caption = 'Number of Students', comment = 'ESP="Número de Alumnos"';
                     ApplicationArea = All;
                 }
             }
         }
         area(FactBoxes)
         {
-            /*ChartTitle = 'Estadísticas';
-            ChartCategory = "Teacher Name";
-            ChartSeries = "Number of Students";
-     */
+            part(Stadistics; "Stadistic - Couse SubPage")
+            {
+                Caption = 'Stadistics', comment = 'ESP="Estadisticas"';
+                ApplicationArea = All;
+                SubPageLink = "No." = field("No.");
+            }
         }
     }
 
-    // Incluye un FactBox “Estadísticas”, que muestra el nº de ayudantes que tiene el profesor y el
-    //nº de cursos que imparte. 
 }
