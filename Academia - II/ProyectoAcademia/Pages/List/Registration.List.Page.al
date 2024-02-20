@@ -10,7 +10,7 @@ page 50104 "Registration List"
     {
         area(content)
         {
-            group(General)
+            repeater(General)
             {
                 field("No."; Rec."No.")
                 {

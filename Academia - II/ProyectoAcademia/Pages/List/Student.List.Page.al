@@ -10,7 +10,7 @@ page 50102 "Student List"
     {
         area(content)
         {
-            group(General)
+            repeater(General)
             {
                 field("No."; Rec."No.")
                 {

@@ -1,4 +1,4 @@
-page 50113 "Department - Course Subpage"
+page 50113 "Department - Course Subpage" // Nombre
 {
     PageType = ListPart;
     ApplicationArea = All;

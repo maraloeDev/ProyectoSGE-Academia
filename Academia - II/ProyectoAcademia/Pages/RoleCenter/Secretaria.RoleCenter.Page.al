@@ -1,40 +1,21 @@
-page 50117 "Secretary/Admon. RoleCenter"
+page 50117 "Secretary/Admon. RoleCenter" // TODO Translation
 {
     PageType = RoleCenter;
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = "Non-teaching staff";
-    Caption = 'Secretary/Admon. RoleCenter', comment = 'ESP="Secretaria/Admon. RoleCenter"';
+    Caption = 'Secretary/Admon. RoleCenter', comment = 'ESP="Secretaria/Admón. RoleCenter"';
     layout
     {
-        area(Content)
+        area(RoleCenter)
         {
-            cuegroup(General)
+            group("Informacion de interes")
             {
                 Caption = 'General', comment = 'ESP="General"';
-                field("Name"; Rec.Name)
+
+                part("Informacion del curso"; "Informacion del curso")
                 {
-                    Caption = 'Name', comment = 'ESP="Nombre"';
-                    ApplicationArea = All;
-                }
-                field("Managment"; Rec.Managment)
-                {
-                    Caption = 'Managment', comment = 'ESP="Administración"';
-                    ApplicationArea = All;
-                }
-                field("Position"; Rec.Position)
-                {
-                    Caption = 'Position', comment = 'ESP="Cargo"';
-                    ApplicationArea = All;
-                }
-                field("Head Studies"; Rec."Head Studies Name")
-                {
-                    Caption = 'Head Studies', comment = 'ESP="Jefe de Estudios"';
-                    ApplicationArea = All;
-                }
-                field("Salary"; Rec.Salary)
-                {
-                    Caption = 'Salary', comment = 'ESP="Salario"';
+                    Caption = 'Stadistics', comment = 'ESP="Informacion del curso"';
                     ApplicationArea = All;
                 }
             }
@@ -56,28 +37,28 @@ page 50117 "Secretary/Admon. RoleCenter"
             {
                 Caption = 'Teachers', comment = 'ESP="Profesores"';
                 ApplicationArea = All;
-                RunObject = page "Teacher List";
+                RunObject = page "Teacher CardPage";
                 RunPageMode = Create;
             }
             action("Students")
             {
                 Caption = 'Students', comment = 'ESP="Estudiantes"';
                 ApplicationArea = All;
-                RunObject = page "Student List";
+                RunObject = page "Student CardPage";
                 RunPageMode = Create;
             }
             action("Departments")
             {
                 Caption = 'Departments', comment = 'ESP="Departamentos"';
                 ApplicationArea = All;
-                RunObject = page "Department List";
+                RunObject = page "Department CardPage";
                 RunPageMode = Create;
             }
             action("Courses")
             {
                 Caption = 'Courses', comment = 'ESP="Cursos"';
                 ApplicationArea = All;
-                RunObject = page "Course List";
+                RunObject = page "Course CardPage";
                 RunPageMode = Create;
             }
             action("Schedules")
@@ -85,6 +66,13 @@ page 50117 "Secretary/Admon. RoleCenter"
                 Caption = 'Schedules', comment = 'ESP="Horarios"';
                 ApplicationArea = All;
                 RunObject = page "Schedule List";
+                RunPageMode = Create;
+            }
+            action("Registration")
+            {
+                Caption = 'Registration', comment = 'ESP="Personal no docente"';
+                ApplicationArea = All;
+                RunObject = page "Registration CardPage";
                 RunPageMode = Create;
             }
         }

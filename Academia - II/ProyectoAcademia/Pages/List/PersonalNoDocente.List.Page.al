@@ -10,7 +10,7 @@ page 50105 "Non-teaching staff List"
     {
         area(content)
         {
-            group(General)
+            repeater(General)
             {
                 field("No."; Rec."No.")
                 {

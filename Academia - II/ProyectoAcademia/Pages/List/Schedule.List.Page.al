@@ -10,7 +10,7 @@ page 50103 "Schedule List"
     {
         area(content)
         {
-            group(General)
+            repeater(General)
             {
                 field("SCHEDULE No."; Rec."No.")
                 {

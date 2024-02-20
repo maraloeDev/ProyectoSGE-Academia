@@ -9,18 +9,27 @@ page 50111 "Registration CardPage"
     {
         area(Content)
         {
-            part("Student"; "Student SubPage")
+            group(Student)
             {
-                Caption = 'Student', comment = 'ESP="Estudiante"';
-                ApplicationArea = All;
-                SubPageLink = "No." = field("No. Student Enrolled");
+                field("No. Student"; Rec."No. Student Enrolled")
+                {
+                    ApplicationArea = All;
+                }
+                field("Name of Student"; Rec."Name Student Enrolled")
+                {
+                    ApplicationArea = All;
+                }
             }
-
-            part("Course"; "Course SubPage")
+            group(Course)
             {
-                Caption = 'Course Data', comment = 'ESP="Datos del Curso"';
-                ApplicationArea = All;
-                SubPageLink = "No." = field("No. Course Enrolled");
+                field("No. Course"; Rec."No. Course Enrolled")
+                {
+                    ApplicationArea = All;
+                }
+                field("Name of course"; Rec."Name Enrolled Course")
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
@@ -32,7 +41,7 @@ page 50111 "Registration CardPage"
             {
                 Caption = 'Information - Course', comment = 'ESP="Información - Curso"';
                 ApplicationArea = All;
-                RunObject = page "Course List";
+                RunObject = page "Course CardPage";
                 RunPageLink = "No." = field("No. Course Enrolled");
                 RunPageMode = View;
                 Image = Report2;
@@ -41,7 +50,7 @@ page 50111 "Registration CardPage"
             {
                 Caption = 'Student - Data', comment = 'ESP="Estudiante - Datos"';
                 ApplicationArea = All;
-                RunObject = page "Student List";
+                RunObject = page "Student CardPage";
                 RunPageLink = "No." = field("No. Student Enrolled");
                 RunPageMode = View;
                 Image = Report2;
