@@ -53,7 +53,4 @@ page 50113 "Department - Course Subpage"
             }
         }
     }
-
-    var
-        myInt: Integer;
 }

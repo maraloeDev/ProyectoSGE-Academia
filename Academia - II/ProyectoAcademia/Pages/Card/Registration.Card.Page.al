@@ -9,14 +9,14 @@ page 50111 "Registration CardPage"
     {
         area(Content)
         {
-            part("Student"; "Student List")
+            part("Student"; "Student SubPage")
             {
                 Caption = 'Student', comment = 'ESP="Estudiante"';
                 ApplicationArea = All;
                 SubPageLink = "No." = field("No. Student Enrolled");
             }
 
-            part("Course"; "Course List")
+            part("Course"; "Course SubPage")
             {
                 Caption = 'Course Data', comment = 'ESP="Datos del Curso"';
                 ApplicationArea = All;
