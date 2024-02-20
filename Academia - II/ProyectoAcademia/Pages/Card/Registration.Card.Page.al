@@ -4,7 +4,7 @@ page 50111 "Registration CardPage"
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = "Registration";
-    Caption = 'Registration CardPage', comment = 'ESP="Matriculación CardPage"';
+    Caption = 'Registration CardPage', comment = 'ESP="Ficha de Matrícula"';
     layout
     {
         area(Content)

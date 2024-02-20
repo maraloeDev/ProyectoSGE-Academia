@@ -1,7 +1,7 @@
 table 50101 "Department"
 {
     DataClassification = ToBeClassified;
-    Caption = 'Departement', comment = 'ESP="DEPARTAMENTO"';
+    Caption = 'Departement', comment = 'ESP="Departamento"';
     fields
     {
         field(1; "No."; Integer)
@@ -18,7 +18,6 @@ table 50101 "Department"
         {
             Caption = 'Assigned office', comment = 'ESP="Despacho asignado"';
         }
-        // Profesor: Jefe de departamento
         field(4; "Head Professor No."; Integer)
         {
             Caption = 'Head Professor No.', comment = 'ESP="No. Jefe Depart."';
@@ -30,7 +29,6 @@ table 50101 "Department"
             FieldClass = FlowField;
             CalcFormula = lookup(Teacher."Name" where("No." = field("Head Professor No.")));
         }
-        // Promedio de Tarifas de los cursos que ofrecen
         field(6; "Average fees"; Decimal)
         {
             Caption = 'Average fees', comment = 'ESP="Promedio de tarifas"';

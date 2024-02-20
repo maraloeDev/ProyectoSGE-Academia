@@ -26,7 +26,6 @@ table 50107 "Teacher"
         {
             Caption = 'Salary', comment = 'ESP="Salario"';
         }
-        // Departamento: Departamento donde pertenece
         field(6; "No. Depart. Asign."; Integer)
         {
             Caption = 'No. Depart. Asign.', comment = 'ESP="No. Departamento Asign."';

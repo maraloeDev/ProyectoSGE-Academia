@@ -4,7 +4,7 @@ page 50109 "Department CardPage"
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = Department;
-    Caption = 'Department CardPage', comment = 'ESP="Departamento CardPage"';
+    Caption = 'Department CardPage', comment = 'ESP="Ficha de Departamento"';
     layout
     {
         area(Content)
@@ -44,7 +44,7 @@ page 50109 "Department CardPage"
     {
         area(Processing)
         {
-            action("Navegar - Profesores")
+            action("Browse - Teachers")
             {
                 Caption = 'Browse - Teachers', comment = 'ESP="Navegar - Profesores"';
                 ApplicationArea = All;
@@ -52,7 +52,7 @@ page 50109 "Department CardPage"
                 RunPageLink = "No. Depart. Asign." = field("No.");
                 RunPageMode = View;
             }
-            action("Navegar - Coordenador")
+            action("Browse - Coordinator")
             {
                 Caption = 'Browse - Coordinator', comment = 'ESP="Navegar - Coordinador"';
                 ApplicationArea = All;
@@ -60,7 +60,7 @@ page 50109 "Department CardPage"
                 RunPageLink = "No." = field("Head Professor No.");
                 RunPageMode = View;
             }
-            action("Cursos del Departamento")
+            action("Courses of the Department")
             {
                 Caption = 'Courses of the Department', comment = 'ESP="Cursos Departamento"';
                 ApplicationArea = All;

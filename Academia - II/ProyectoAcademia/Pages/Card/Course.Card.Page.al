@@ -4,7 +4,7 @@ page 50108 "Course CardPage"
     SourceTable = Course;
     ApplicationArea = All;
     UsageCategory = Administration;
-    Caption = 'Course CardPage', comment = 'ESP="Curso CardPage"';
+    Caption = 'Course CardPage', comment = 'ESP="Ficha de Curso"';
     layout
     {
 

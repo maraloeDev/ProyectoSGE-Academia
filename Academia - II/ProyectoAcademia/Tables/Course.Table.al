@@ -22,7 +22,6 @@ table 50100 "Course"
         {
             Caption = 'Course fee', comment = 'ESP="Tarifa"';
         }
-        // Profesor: Profesor impartidor
         field(5; "Teacher No."; Integer)
         {
             Caption = 'Teacher No.', comment = 'ESP="No. Profesor Imprt."';

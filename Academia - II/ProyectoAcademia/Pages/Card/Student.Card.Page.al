@@ -4,7 +4,7 @@ page 50110 "Student CardPage"
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = Student;
-    Caption = 'Student CardPage', comment = 'ESP="Estudiante CardPage"';
+    Caption = 'Student CardPage', comment = 'ESP="Ficha de estudiantes"';
     layout
     {
         area(Content)

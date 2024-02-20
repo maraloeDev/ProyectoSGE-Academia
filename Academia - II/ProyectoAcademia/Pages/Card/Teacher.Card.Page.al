@@ -4,7 +4,7 @@ page 50112 "Teacher CardPage"
     SourceTable = Teacher;
     ApplicationArea = All;
     UsageCategory = Administration;
-    Caption = 'Teacher CardPage', comment = 'ESP="Profesor CardPage"';
+    Caption = 'Teacher CardPage', comment = 'ESP="Ficha de Profesor"';
 
     layout
     {
