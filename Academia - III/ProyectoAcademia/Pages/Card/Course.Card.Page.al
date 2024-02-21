@@ -13,9 +13,19 @@ page 50108 "Course CardPage"
             group("General")
             {
                 Caption = 'General', comment = 'ESP="General"';
-                field("Nombre del Curso"; Rec.Description)
+                field("Name of Curse"; Rec.Description)
                 {
                     Caption = 'Name of Curse', comment = 'ESP="Nombre del Curso"';
+                    ApplicationArea = All;
+                }
+                field("Course provider No."; Rec."Course provider No.")
+                {
+                    Caption = 'Course provider No.', comment = 'ESP="No. Prov. del curso"';
+                    ApplicationArea = All;
+                }
+                field("Course provider Name"; Rec."Course provider Name")
+                {
+                    Caption = 'Course provider Name', comment = 'ESP="Nombre prov. del curso"';
                     ApplicationArea = All;
                 }
             }
@@ -23,7 +33,12 @@ page 50108 "Course CardPage"
             group("Teacher")
             {
                 Caption = 'Teacher', comment = 'ESP="Profesor"';
-                field("Nombre del Profesor"; Rec."Teacher Name")
+                field("Teacher No."; Rec."Teacher No.")
+                {
+                    Caption = 'Teacher No.', comment = 'ESP="No. del Profesor"';
+                    ApplicationArea = All;
+                }
+                field("Teacher name"; Rec."Teacher Name")
                 {
                     Caption = 'Teacher name', comment = 'ESP="Nombre del Profesor"';
                     ApplicationArea = All;
@@ -32,9 +47,14 @@ page 50108 "Course CardPage"
             group("Estadísticas")
             {
                 Caption = 'Estadísticas', comment = 'ESP="Estadísticas"';
-                field("Número de Alumnos"; Rec."Number of Students")
+                field("Number of Students"; Rec."Number of Students")
                 {
                     Caption = 'Number of Students', comment = 'ESP="Número de Alumnos"';
+                    ApplicationArea = All;
+                }
+                field("Total hours"; Rec."Total hours")
+                {
+                    Caption = 'Total hours', comment = 'ESP="Horas totales"';
                     ApplicationArea = All;
                 }
             }

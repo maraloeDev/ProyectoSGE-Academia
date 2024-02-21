@@ -42,6 +42,11 @@ page 50101 "Department List"
                     Caption = 'AVERAGE FEES', comment = 'ESP="PROMEDIO TARIFAS"';
                     ApplicationArea = All;
                 }
+                field("No. TEACHERS"; Rec."Number of teachers")
+                {
+                    Caption = 'No. TEACHERS', comment = 'ESP="No. PROFESORES"';
+                    ApplicationArea = All;
+                }
             }
         }
     }

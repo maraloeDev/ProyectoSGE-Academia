@@ -36,6 +36,13 @@ table 50101 "Department"
             FieldClass = FlowField;
             CalcFormula = average(Course."Course fee" where("Course provider No." = field("No.")));
         }
+        field(7; "Number of teachers"; Integer)
+        {
+            Caption = 'Number of teachers', comment = 'ESP="Número de profesores"';
+            Editable = false;
+            FieldClass = FlowField;
+            CalcFormula = count(Teacher where("No. Depart. Asign." = field("No.")));
+        }
     }
     keys
     {

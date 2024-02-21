@@ -14,12 +14,22 @@ page 50109 "Department CardPage"
                 Caption = 'General', comment = 'ESP="General"';
                 field("No."; Rec."No.")
                 {
-                    Caption = 'No. Depart', comment = 'ESP="No. Departamento"';
+                    Caption = 'No. Depart.', comment = 'ESP="No. Depart."';
                     ApplicationArea = All;
                 }
                 field("Name"; Rec.Name)
                 {
-                    Caption = 'Nombre del departamento', comment = 'ESP="Name Department"';
+                    Caption = 'Name', comment = 'ESP="Nombre"';
+                    ApplicationArea = All;
+                }
+                field("Average fees"; Rec."Average fees")
+                {
+                    Caption = 'Average fees', comment = 'ESP="Promedio de tarifas"';
+                    ApplicationArea = All;
+                }
+                field("Number of teachers"; Rec."Number of teachers")
+                {
+                    Caption = 'Number of teachers', comment = 'ESP="Numero de profesores"';
                     ApplicationArea = All;
                 }
             }
