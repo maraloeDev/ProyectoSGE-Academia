@@ -1,29 +1,39 @@
-page 50116 "Lista de profesor"
+page 50119 "Teacher Shortlist"
 {
     PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Teacher;
+    Caption = 'Teacher Shortlist', comment = 'ESP="Lista Corta de Profesores"';
+
     layout
     {
         area(Content)
         {
             repeater(GroupName)
             {
+                Caption = 'Teacher Shortlist', comment = 'ESP="Lista Corta de Profesores"';
+                Description = 'This list part displays a shortlist of teachers.';
+
                 field("No."; Rec."No.")
                 {
                     Caption = 'No.', comment = 'ESP="No."';
                     ApplicationArea = All;
+                    Description = 'The identification number of the teacher.';
                 }
-                field("NAME"; Rec."Name")
+
+                field("Name"; Rec."Name")
                 {
-                    Caption = 'NAME', comment = 'ESP="NOMBRE"';
+                    Caption = 'Name', comment = 'ESP="Nombre"';
                     ApplicationArea = All;
+                    Description = 'The name of the teacher.';
                 }
-                field("NAME DEPRT. ASIGN."; Rec."Name Deprt. Asign.")
+
+                field("Department Assigned Name"; Rec."Department Name")
                 {
-                    Caption = 'NAME DEPRT. ASIGN.', comment = 'ESP="NOMBRE DEPARTAMENTO ASIGNADO"';
+                    Caption = 'Department Assigned Name', comment = 'ESP="Nombre del Departamento Asignado"';
                     ApplicationArea = All;
+                    Description = 'The name of the department assigned to the teacher.';
                 }
             }
         }

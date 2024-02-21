@@ -1,4 +1,4 @@
-table 50102 "Student"
+table 50106 "Student"
 {
     DataClassification = ToBeClassified;
     Caption = 'Student', comment = 'ESP="Estudiante"';
@@ -6,7 +6,7 @@ table 50102 "Student"
     {
         field(1; "No."; Integer)
         {
-            Caption = 'Student No.', comment = 'ESP="No."';
+            Caption = 'Student No.', comment = 'ESP="Número de Estudiante"';
             AutoIncrement = true;
             Editable = false;
         }
@@ -16,12 +16,12 @@ table 50102 "Student"
         }
         field(3; "Gender"; Option)
         {
-            Caption = 'Student Gender', comment = 'ESP="Genero"';
+            Caption = 'Student Gender', comment = 'ESP="Género"';
             OptionMembers = "MASC","FEM";
         }
-        field(4; "Adress"; Text[100])
+        field(4; "Address"; Text[100])
         {
-            Caption = 'Student Adress', comment = 'ESP="Dirección"';
+            Caption = 'Student Address', comment = 'ESP="Dirección"';
         }
         field(5; "Phone"; Integer)
         {

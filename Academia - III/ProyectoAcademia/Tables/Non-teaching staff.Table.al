@@ -1,4 +1,4 @@
-table 50106 "Non-teaching staff"
+table 50103 "Non-teaching staff"
 {
     DataClassification = ToBeClassified;
     Caption = 'Non-teaching staff', comment = 'ESP="Personal no docente"';
@@ -6,7 +6,7 @@ table 50106 "Non-teaching staff"
     {
         field(1; "No."; Integer)
         {
-            Caption = 'No.', comment = 'ESP="No."';
+            Caption = 'No.', comment = 'ESP="Número"';
             AutoIncrement = true;
             Editable = false;
         }
@@ -14,9 +14,9 @@ table 50106 "Non-teaching staff"
         {
             Caption = 'Name', comment = 'ESP="Nombre"';
         }
-        field(3; "Managment"; Text[50])
+        field(3; "Management"; Text[50])
         {
-            Caption = 'Managment', comment = 'ESP="Dirección"';
+            Caption = 'Management', comment = 'ESP="Dirección"';
         }
         field(4; "Salary"; Decimal)
         {
@@ -24,19 +24,19 @@ table 50106 "Non-teaching staff"
         }
         field(5; "Position"; Text[50])
         {
-            Caption = 'Position', comment = 'ESP="Position"';
+            Caption = 'Position', comment = 'ESP="Posición"';
         }
-        // Profesor: Jefe de Estudio
-        field(6; "Head Studies No."; Integer)
+        // Profesor: Jefe de Estudios
+        field(6; "Head of Studies No."; Integer)
         {
-            Caption = 'Head Studies No.', comment = 'ESP="Jefe Estudios No."';
+            Caption = 'Head of Studies No.', comment = 'ESP="Número de Jefe de Estudios"';
             TableRelation = Teacher."No.";
         }
-        field(7; "Head Studies Name"; Text[50])
+        field(7; "Head of Studies Name"; Text[50])
         {
-            Caption = 'Head Studies Name', comment = 'ESP="Nombre Jefe Estudios"';
+            Caption = 'Head of Studies Name', comment = 'ESP="Nombre del Jefe de Estudios"';
             FieldClass = FlowField;
-            CalcFormula = lookup(Teacher."Name" where("No." = field("Head Studies No.")));
+            CalcFormula = lookup(Teacher."Name" where("No." = field("Head of Studies No.")));
         }
     }
     keys
@@ -46,10 +46,4 @@ table 50106 "Non-teaching staff"
             Clustered = true;
         }
     }
-    /*trigger OnInsert()
-    begin
-        if "Position" <> 'Ayudante' then
-            FieldName("Head Studies No.").;
-    end if;
-    end;*/
 }

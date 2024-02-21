@@ -1,4 +1,4 @@
-table 50104 "Schedule"
+table 50105 "Schedule"
 {
     DataClassification = ToBeClassified;
     Caption = 'Schedule', comment = 'ESP="Horario"';
@@ -13,7 +13,7 @@ table 50104 "Schedule"
         // Curso
         field(2; "Course No."; Integer)
         {
-            Caption = 'Course No.', comment = 'ESP="Curso No."';
+            Caption = 'Course No.', comment = 'ESP="Número de Curso"';
             TableRelation = Course."No.";
         }
         field(3; "Course Name"; Text[50])
@@ -25,7 +25,7 @@ table 50104 "Schedule"
         // Detalle
         field(4; "Detail No."; Integer)
         {
-            Caption = 'Detail No.', comment = 'ESP="Detalle No."';
+            Caption = 'Detail No.', comment = 'ESP="Número de Detalle"';
             TableRelation = Detail."No.";
         }
         field(5; "Weekday"; Text[50])

@@ -1,43 +1,51 @@
-page 50117 "Secretary/Admon. RoleCenter" // TODO Traducir todo y derivados (part)
+page 50112 "Secretary/Admon. RoleCenter"
 {
     PageType = RoleCenter;
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = "Non-teaching staff";
-    Caption = 'Secretary/Admon. RoleCenter', comment = 'ESP="Secretaria/Admón. RoleCenter"';
+    Caption = 'Secretary/Admon. RoleCenter', comment = 'ESP="RoleCenter Secretaría/Admón."';
+    Description = 'This RoleCenter provides an overview of information for secretaries and administrators.';
 
     layout
     {
         area(RoleCenter)
         {
-            group("Informacion de interes")
+            group("Interest Information")
             {
-                Caption = 'General', comment = 'ESP="General"';
+                Caption = 'Interest Information', comment = 'ESP="Información de interés"';
 
-                part("Informacion del curso"; "Informacion del curso")
+                part("Course Information"; "Course Information")
                 {
-                    Caption = 'Stadistics', comment = 'ESP="Informacion del curso"';
+                    Caption = 'Course Information', comment = 'ESP="Información del curso"';
                     ApplicationArea = All;
+                    Description = 'Summary of information about available courses.';
                 }
-                part("Informacion del departamento"; "Informacion del Departamento")
+
+                part("Department Information"; "Department Information")
                 {
-                    Caption = 'Stadistics', comment = 'ESP="Informacion del curso"';
+                    Caption = 'Department Information', comment = 'ESP="Información del Departamento"';
                     ApplicationArea = All;
+                    Description = 'Summary of information about departments.';
                 }
             }
-            group("Listas del personal")
-            {
-                Caption = 'General', comment = 'ESP="General"';
 
-                part("ShortList de Non-teeaching"; "Lista de Non-teaching")
+            group("Staff Lists")
+            {
+                Caption = 'Staff Lists', comment = 'ESP="Listas del personal"';
+
+                part("Non-teaching Shortlist"; "Non-teaching Shortlist")
                 {
-                    Caption = 'Stadistics', comment = 'ESP="Informacion del curso"';
+                    Caption = 'Non-teaching List', comment = 'ESP="Lista de Personal no docente"';
                     ApplicationArea = All;
+                    Description = 'Summary of information about non-teaching staff.';
                 }
-                part("ShortList de profesor"; "Lista de profesor")
+
+                part("Teacher Shortlist"; "Teacher Shortlist")
                 {
-                    Caption = 'Stadistics', comment = 'ESP="Informacion del curso"';
+                    Caption = 'Teacher List', comment = 'ESP="Lista de Profesores"';
                     ApplicationArea = All;
+                    Description = 'Summary of information about teachers.';
                 }
             }
         }
@@ -51,53 +59,57 @@ page 50117 "Secretary/Admon. RoleCenter" // TODO Traducir todo y derivados (part
             {
                 Caption = 'Courses', comment = 'ESP="Cursos"';
                 ApplicationArea = All;
+                Description = 'Access to course management.';
                 RunObject = page "Course CardPage";
             }
+
             action("Departments")
             {
                 Caption = 'Departments', comment = 'ESP="Departamentos"';
                 ApplicationArea = All;
+                Description = 'Access to department management.';
                 RunObject = page "Department CardPage";
             }
-            action("Non-Teaching staff")
+
+            action("Non-Teaching Staff")
             {
-                Caption = 'Non-Teaching staff', comment = 'ESP="Personal no docente"';
+                Caption = 'Non-Teaching Staff', comment = 'ESP="Personal no docente"';
                 ApplicationArea = All;
+                Description = 'Access to non-teaching staff management.';
                 RunObject = page "Non-teaching staff List";
             }
-            action("Registration")
+
+            action("Registrations")
             {
-                Caption = 'Registration', comment = 'ESP="Personal no docente"';
+                Caption = 'Registrations', comment = 'ESP="Matrículas"';
                 ApplicationArea = All;
+                Description = 'Access to registration management.';
                 RunObject = page "Registration CardPage";
             }
+
             action("Schedules")
             {
                 Caption = 'Schedules', comment = 'ESP="Horarios"';
                 ApplicationArea = All;
+                Description = 'Access to schedule management.';
                 RunObject = page "Schedule List";
             }
+
             action("Students")
             {
                 Caption = 'Students', comment = 'ESP="Estudiantes"';
                 ApplicationArea = All;
+                Description = 'Access to student management.';
                 RunObject = page "Student CardPage";
             }
+
             action("Teachers")
             {
                 Caption = 'Teachers', comment = 'ESP="Profesores"';
                 ApplicationArea = All;
+                Description = 'Access to teacher management.';
                 RunObject = page "Teacher CardPage";
             }
         }
-
     }
-    /*
-        trigger OnOpenPage()
-        var
-            myInt: Integer;
-        begin
-
-        end;
-    */
 }

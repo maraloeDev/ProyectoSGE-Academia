@@ -1,9 +1,10 @@
-page 50106 "Lista de Non-teaching"
+page 50118 "Non-teaching Shortlist"
 {
     PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "Non-teaching staff";
+    Caption = 'Non-teaching Shortlist', comment = 'ESP="Lista Corta de Personal No Docente"';
 
     layout
     {
@@ -11,25 +12,35 @@ page 50106 "Lista de Non-teaching"
         {
             repeater(General)
             {
+                Caption = 'Non-teaching Shortlist', comment = 'ESP="Lista Corta de Personal No Docente"';
+                Description = 'This list part displays a shortlist of non-teaching staff.';
+
                 field("No."; Rec."No.")
                 {
                     Caption = 'No.', comment = 'ESP="No."';
                     ApplicationArea = All;
+                    Description = 'The identification number of the staff member.';
                 }
-                field("NAME"; Rec."Name")
+
+                field("Name"; Rec."Name")
                 {
-                    Caption = 'NAME', comment = 'ESP="NOMBRE"';
+                    Caption = 'Name', comment = 'ESP="Nombre"';
                     ApplicationArea = All;
+                    Description = 'The name of the staff member.';
                 }
-                field("POSITION"; Rec."Position")
+
+                field("Position"; Rec."Position")
                 {
-                    Caption = 'POSITION', comment = 'ESP="PUESTO"';
+                    Caption = 'Position', comment = 'ESP="Puesto"';
                     ApplicationArea = All;
+                    Description = 'The position or role of the staff member.';
                 }
-                field("HEAD DEPARTMENT NAME"; Rec."Head Studies Name")
+
+                field("Head Department Name"; Rec."Head of Studies Name")
                 {
-                    Caption = 'HEAD DEPARTMENT NAME', comment = 'ESP="NOMBRE JEFE DE DEPART."';
+                    Caption = 'Head Department Name', comment = 'ESP="Nombre del Jefe de Departamento"';
                     ApplicationArea = All;
+                    Description = 'The name of the head of the department where the staff member works.';
                 }
             }
         }

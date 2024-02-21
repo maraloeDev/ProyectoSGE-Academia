@@ -1,4 +1,4 @@
-table 50103 "Detail"
+table 50102 "Detail"
 {
     DataClassification = ToBeClassified;
     Caption = 'Detail', comment = 'ESP="Detalle"';
@@ -6,27 +6,27 @@ table 50103 "Detail"
     {
         field(1; "No."; Integer)
         {
-            Caption = 'No.', comment = 'ESP="No."';
+            Caption = 'No.', comment = 'ESP="Número"';
             AutoIncrement = true;
             Editable = false;
         }
         field(2; "Weekday"; Text[50])
         {
-            Caption = 'Weekday', comment = 'ESP="Dia Semana"';
+            Caption = 'Weekday', comment = 'ESP="Día de la Semana"';
         }
         // Horas
         field(3; "Start Time"; Time)
         {
-            Caption = 'Start Time', comment = 'ESP="Hora Inicio"';
+            Caption = 'Start Time', comment = 'ESP="Hora de Inicio"';
         }
         field(4; "End Time"; Time)
         {
-            Caption = 'End Time', comment = 'ESP="Hora Fin"';
+            Caption = 'End Time', comment = 'ESP="Hora de Fin"';
         }
         // Horario
-        field(5; "Schedule .No"; Integer)
+        field(5; "Schedule No."; Integer)
         {
-            Caption = 'Schedule .No', comment = 'ESP="Horario No."';
+            Caption = 'Schedule No.', comment = 'ESP="Número de Horario"';
             TableRelation = Schedule."No.";
         }
     }

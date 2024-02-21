@@ -6,7 +6,7 @@ table 50107 "Teacher"
     {
         field(1; "No."; Integer)
         {
-            Caption = 'No.', comment = 'ESP="No."';
+            Caption = 'No.', comment = 'ESP="Número"';
             AutoIncrement = true;
             Editable = false;
         }
@@ -26,17 +26,17 @@ table 50107 "Teacher"
         {
             Caption = 'Salary', comment = 'ESP="Salario"';
         }
-        field(6; "No. Depart. Asign."; Integer)
+        field(6; "Department No."; Integer)
         {
-            Caption = 'No. Depart. Asign.', comment = 'ESP="No. Departamento Asign."';
+            Caption = 'Department No.', comment = 'ESP="Número de Departamento Asignado"';
             TableRelation = Department."No.";
         }
-        field(7; "Name Deprt. Asign."; Text[50])
+        field(7; "Department Name"; Text[50])
         {
-            Caption = 'Name Deprt. Asign.', comment = 'ESP="Nombre Departamento Asign."';
+            Caption = 'Department Name', comment = 'ESP="Nombre del Departamento Asignado"';
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = lookup(Department."Name" where("No." = field("No. Depart. Asign.")));
+            CalcFormula = lookup(Department."Name" where("No." = field("Department No.")));
         }
         // Número de asistentes de un profesor 
         field(8; "Number of helpers"; Integer)
@@ -44,12 +44,12 @@ table 50107 "Teacher"
             Caption = 'Number of helpers', comment = 'ESP="Número de ayudantes"';
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count("Non-teaching staff" where("Head Studies No." = field("No.")));
+            CalcFormula = count("Non-teaching staff" where("Head of Studies No." = field("No.")));
         }
         // Número de cursos que imparte 
         field(9; "Number of courses given"; Integer)
         {
-            Caption = 'Number of courses given', comment = 'ESP="Número Cursos Impart."';
+            Caption = 'Number of courses given', comment = 'ESP="Número de cursos impartidos"';
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = count(Course where("Teacher No." = field("No.")));
