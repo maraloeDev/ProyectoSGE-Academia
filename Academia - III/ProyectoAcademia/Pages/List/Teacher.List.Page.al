@@ -1,71 +1,70 @@
 page 50106 "Teacher List"
 {
-    PageType = Card;
+    PageType = List;
     SourceTable = Teacher;
-    Caption = 'Teacher List', comment = 'ESP="Lista de Profesores"';
-    Description = 'This page displays a list of teachers employed by the academy.';
+    UsageCategory = Administration;
     ApplicationArea = All;
-    UsageCategory = Lists;
-
+    Caption = 'Teacher List', comment = 'ESP="Lista de Profesores"';
     layout
     {
         area(content)
         {
             repeater(General)
             {
+                Caption = 'General', comment = 'ESP="General"';
                 field("No."; Rec."No.")
                 {
                     Caption = 'No.', comment = 'ESP="No."';
+                    Tooltip = 'The unique identifier of the teacher.', comment = 'ESP="El identificador único del profesor."';
                     ApplicationArea = All;
-                    Description = 'The unique identifier of the teacher.';
                 }
                 field("NAME"; Rec."Name")
                 {
                     Caption = 'NAME', comment = 'ESP="NOMBRE"';
+                    Tooltip = 'The name of the teacher.', comment = 'ESP="El nombre del profesor."';
                     ApplicationArea = All;
-                    Description = 'The name of the teacher.';
                 }
                 field("ADDRESS"; Rec."Address")
                 {
                     Caption = 'ADDRESS', comment = 'ESP="DIRECCIÓN"';
+                    Tooltip = 'The address of the teacher.', comment = 'ESP="La dirección del profesor."';
                     ApplicationArea = All;
-                    Description = 'The address of the teacher.';
                 }
                 field("DATE OF HIRE"; Rec."Date of Hire")
                 {
                     Caption = 'DATE OF HIRE', comment = 'ESP="FECHA DE CONTRATACIÓN"';
+                    Tooltip = 'The date when the teacher was hired.', comment = 'ESP="La fecha en que el profesor fue contratado."';
                     ApplicationArea = All;
-                    Description = 'The date when the teacher was hired.';
                 }
                 field("SALARY"; Rec."Salary")
                 {
                     Caption = 'SALARY', comment = 'ESP="SALARIO"';
+                    Tooltip = 'The salary of the teacher.', comment = 'ESP="El salario del profesor."';
                     ApplicationArea = All;
-                    Description = 'The salary of the teacher.';
                 }
                 field("No. DEPART. ASIGN."; Rec."Department No.")
                 {
                     Caption = 'No. DEPART. ASIGN.', comment = 'ESP="No. DEPARTAMENTO ASIGNADO"';
+                    Tooltip = 'The number of the department assigned to the teacher.', comment = 'ESP="El número del departamento asignado al profesor."';
                     ApplicationArea = All;
-                    Description = 'The number of the department assigned to the teacher.';
                 }
                 field("NAME DEPRT. ASIGN."; Rec."Department Name")
                 {
                     Caption = 'NAME DEPRT. ASIGN.', comment = 'ESP="NOMBRE DEPARTAMENTO ASIGNADO"';
+                    Tooltip = 'The name of the department assigned to the teacher.', comment = 'ESP="El nombre del departamento asignado al profesor."';
                     ApplicationArea = All;
-                    Description = 'The name of the department assigned to the teacher.';
                 }
                 field("NUMBER HELPERS"; Rec."Number of helpers")
                 {
                     Caption = 'NUMBER HELPERS', comment = 'ESP="NÚMERO DE ASISTENTES"';
+                    Tooltip = 'The number of assistants working under the teacher.', comment = 'ESP="El número de asistentes que trabajan bajo el profesor."';
                     ApplicationArea = All;
-                    Description = 'The number of assistants working under the teacher.';
                 }
                 field("NUMBER COURSES GIVEN"; Rec."Number of courses given")
                 {
                     Caption = 'NUMBER COURSES GIVEN', comment = 'ESP="NÚMERO CURSOS IMPARTIDOS"';
+                    Tooltip = 'The number of courses taught by the teacher.', comment = 'ESP="El número de cursos impartidos por el profesor."';
                     ApplicationArea = All;
-                    Description = 'The number of courses taught by the teacher.';
                 }
             }
         }

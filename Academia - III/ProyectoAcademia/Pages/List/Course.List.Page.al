@@ -2,65 +2,64 @@ page 50100 "Course List"
 {
     PageType = List;
     SourceTable = Course;
-    Caption = 'Course List', comment = 'ESP="Lista de Cursos"';
-    Description = 'This page displays a list of courses available in the academy.';
+    UsageCategory = Administration;
     ApplicationArea = All;
-    UsageCategory = Lists;
-
+    Caption = 'Course List', comment = 'ESP="Lista de Cursos"';
     layout
     {
         area(content)
         {
             repeater(General)
             {
+                Caption = 'General', comment = 'ESP="General"';
                 field("No."; Rec."No.")
                 {
                     Caption = 'No.', comment = 'ESP="No."';
-                    Editable = false;
+                    Tooltip = 'The unique identifier of the course.', comment = 'ESP="El identificador único del curso."';
                     ApplicationArea = All;
-                    Description = 'The unique identifier of the course.';
+                    Editable = false;
                 }
                 field("DESCRIPTION"; Rec."Description")
                 {
                     Caption = 'DESCRIPTION', comment = 'ESP="DESCRIPCIÓN"';
+                    Tooltip = 'A brief description of the course.', comment = 'ESP="Una breve descripción del curso."';
                     ApplicationArea = All;
-                    Description = 'A brief description of the course.';
                 }
                 field("TOTAL HOURS"; Rec."Total hours")
                 {
                     Caption = 'TOTAL HOURS', comment = 'ESP="HORAS TOTALES"';
+                    Tooltip = 'The total number of hours for the course.', comment = 'ESP="El número total de horas para el curso."';
                     ApplicationArea = All;
-                    Description = 'The total number of hours for the course.';
                 }
                 field("COURSE FEE"; Rec."Course fee")
                 {
                     Caption = 'COURSE FEE', comment = 'ESP="TARIFA"';
+                    Tooltip = 'The fee for the course.', comment = 'ESP="La tarifa del curso."';
                     ApplicationArea = All;
-                    Description = 'The fee for the course.';
                 }
                 field("TEACHER No."; Rec."Teacher No.")
                 {
                     Caption = 'TEACHER No.', comment = 'ESP="No. PROFESOR"';
+                    Tooltip = 'The identifier of the teacher for the course.', comment = 'ESP="El identificador del profesor para el curso."';
                     ApplicationArea = All;
-                    Description = 'The identifier of the teacher for the course.';
                 }
                 field("TEACHER NAME"; Rec."Teacher Name")
                 {
                     Caption = 'TEACHER NAME', comment = 'ESP="NOMBRE PROFESOR"';
+                    Tooltip = 'The name of the teacher for the course.', comment = 'ESP="El nombre del profesor para el curso."';
                     ApplicationArea = All;
-                    Description = 'The name of the teacher for the course.';
                 }
                 field("COURSE PROV. No."; Rec."Course provider No.")
                 {
                     Caption = 'COURSE PROV. No.', comment = 'ESP="No. DEPART. OFERT."';
+                    Tooltip = 'The identifier of the department offering the course.', comment = 'ESP="El identificador del departamento que ofrece el curso."';
                     ApplicationArea = All;
-                    Description = 'The identifier of the department offering the course.';
                 }
                 field("COURSE PROV. NAME"; Rec."Course provider name")
                 {
                     Caption = 'COURSE PROV. NAME', comment = 'ESP="NOMBRE DEPART. OFERT."';
+                    Tooltip = 'The name of the department offering the course.', comment = 'ESP="El nombre del departamento que ofrece el curso."';
                     ApplicationArea = All;
-                    Description = 'The name of the department offering the course.';
                 }
             }
         }

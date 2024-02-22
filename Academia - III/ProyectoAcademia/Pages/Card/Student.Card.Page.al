@@ -1,12 +1,10 @@
 page 50110 "Student CardPage"
 {
     PageType = Card;
-    ApplicationArea = All;
-    UsageCategory = Administration;
     SourceTable = Student;
+    UsageCategory = Administration;
+    ApplicationArea = All;
     Caption = 'Student CardPage', comment = 'ESP="Ficha de Estudiante"';
-    Description = 'This card page displays detailed information about a student.';
-
     layout
     {
         area(Content)
@@ -14,54 +12,50 @@ page 50110 "Student CardPage"
             group(General)
             {
                 Caption = 'General', comment = 'ESP="General"';
-                Description = 'General information about the student.';
-
                 field("No."; Rec."No.")
                 {
                     Caption = 'No.', comment = 'ESP="No."';
+                    Tooltip = 'The identification number of the student.', comment = 'ESP="El número de identificación del estudiante."';
                     ApplicationArea = All;
-                    Description = 'The identification number of the student.';
                 }
 
                 field("Name"; Rec."Name")
                 {
                     Caption = 'Name', comment = 'ESP="Nombre"';
+                    Tooltip = 'The name of the student.', comment = 'ESP="El nombre del estudiante."';
                     ApplicationArea = All;
-                    Description = 'The name of the student.';
                 }
 
                 field("Gender"; Rec."Gender")
                 {
                     Caption = 'Gender', comment = 'ESP="Género"';
+                    Tooltip = 'The gender of the student.', comment = 'ESP="El género del estudiante."';
                     ApplicationArea = All;
-                    Description = 'The gender of the student.';
                 }
 
                 field("Birthdate"; Rec."Birthdate")
                 {
                     Caption = 'Birthdate', comment = 'ESP="Fecha de Nacimiento"';
+                    Tooltip = 'The birthdate of the student.', comment = 'ESP="La fecha de nacimiento del estudiante."';
                     ApplicationArea = All;
-                    Description = 'The birthdate of the student.';
                 }
             }
 
             group(Communication)
             {
                 Caption = 'Communication', comment = 'ESP="Comunicación"';
-                Description = 'Communication-related information for the student.';
-
                 field("Address"; Rec."Address")
                 {
                     Caption = 'Address', comment = 'ESP="Dirección"';
+                    Tooltip = 'The address of the student.', comment = 'ESP="La dirección del estudiante."';
                     ApplicationArea = All;
-                    Description = 'The address of the student.';
                 }
 
                 field("Phone"; Rec."Phone")
                 {
                     Caption = 'Phone', comment = 'ESP="Teléfono"';
+                    Tooltip = 'The phone number of the student.', comment = 'ESP="El número de teléfono del estudiante."';
                     ApplicationArea = All;
-                    Description = 'The phone number of the student.';
                 }
             }
         }
@@ -74,8 +68,8 @@ page 50110 "Student CardPage"
             action("Actions - New Enrolment")
             {
                 Caption = 'Actions - New Enrolment', comment = 'ESP="Acciones - Nueva Matrícula"';
+                Tooltip = 'Create a new enrollment for this student.', comment = 'ESP="Crear una nueva matrícula para este estudiante."';
                 ApplicationArea = All;
-                Description = 'Create a new enrollment for this student.';
                 RunObject = page "Registration List";
                 RunPageMode = Create;
                 Promoted = true;
@@ -84,8 +78,8 @@ page 50110 "Student CardPage"
             action("Browse - Enrollments")
             {
                 Caption = 'Browse - Enrollments', comment = 'ESP="Navegar - Matrículas"';
+                Tooltip = 'View enrollments for this student.', comment = 'ESP="Ver matrículas de este estudiante."';
                 ApplicationArea = All;
-                Description = 'View enrollments for this student.';
                 RunObject = page "Registration List";
                 RunPageLink = "No. Student Enrolled" = field("No.");
                 RunPageMode = View;

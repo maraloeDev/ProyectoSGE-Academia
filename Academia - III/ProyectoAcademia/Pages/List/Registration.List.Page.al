@@ -1,53 +1,52 @@
 page 50103 "Registration List"
 {
-    PageType = Card;
+    PageType = List;
     SourceTable = Registration;
-    Caption = 'Registration List', comment = 'ESP="Lista de Matrículas"';
-    Description = 'This page displays a list of registrations in the academy.';
+    UsageCategory = Administration;
     ApplicationArea = All;
-    UsageCategory = Lists;
-
+    Caption = 'Registration List', comment = 'ESP="Lista de Matrículas"';
     layout
     {
         area(content)
         {
             repeater(General)
             {
+                Caption = 'General', comment = 'ESP="General"';
                 field("No."; Rec."No.")
                 {
                     Caption = 'No.', comment = 'ESP="No."';
+                    Tooltip = 'The unique identifier of the registration.', comment = 'ESP="El identificador único de la matrícula."';
                     ApplicationArea = All;
-                    Description = 'The unique identifier of the registration.';
                 }
                 field("DATE/TIME REGISTRATION"; Rec."Date/Time Registration")
                 {
                     Caption = 'DATE/TIME REGISTRATION', comment = 'ESP="FECHA MATRICULA"';
+                    Tooltip = 'The date and time of the registration.', comment = 'ESP="La fecha y hora de la matrícula."';
                     ApplicationArea = All;
-                    Description = 'The date and time of the registration.';
                 }
                 field("No. STUDENT ENROLLED"; Rec."No. Student Enrolled")
                 {
                     Caption = 'No. STUDENT ENROLLED', comment = 'ESP="No. ESTUDIANTE MATRLADO."';
+                    Tooltip = 'The identifier of the enrolled student.', comment = 'ESP="El identificador del estudiante matriculado."';
                     ApplicationArea = All;
-                    Description = 'The identifier of the enrolled student.';
                 }
                 field("No. COURSE ENROLLED"; Rec."No. Course Enrolled")
                 {
                     Caption = 'No. COURSE ENROLLED', comment = 'ESP="No. CURSO MATRLADO."';
+                    Tooltip = 'The identifier of the enrolled course.', comment = 'ESP="El identificador del curso matriculado."';
                     ApplicationArea = All;
-                    Description = 'The identifier of the enrolled course.';
                 }
                 field("NAME ENROLLED STUDENT"; Rec."Name Student Enrolled")
                 {
                     Caption = 'NAME ENROLLED STUDENT', comment = 'ESP="NOMBRE ESTUDIANTE MATRLADO."';
+                    Tooltip = 'The name of the enrolled student.', comment = 'ESP="El nombre del estudiante matriculado."';
                     ApplicationArea = All;
-                    Description = 'The name of the enrolled student.';
                 }
                 field("NAME ENROLLED COURSE"; Rec."Name Enrolled Course")
                 {
                     Caption = 'NAME ENROLLED COURSE', comment = 'ESP="NOMBRE CURSO MATRLADO."';
+                    Tooltip = 'The name of the enrolled course.', comment = 'ESP="El nombre del curso matriculado."';
                     ApplicationArea = All;
-                    Description = 'The name of the enrolled course.';
                 }
             }
         }

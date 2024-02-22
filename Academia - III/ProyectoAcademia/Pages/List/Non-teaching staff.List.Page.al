@@ -1,59 +1,58 @@
 page 50102 "Non-teaching staff List"
 {
-    PageType = Card;
+    PageType = List;
     SourceTable = "Non-teaching staff";
-    Caption = 'Non-teaching staff List', comment = 'ESP="Lista de Personal No Docente"';
-    Description = 'This page displays a list of non-teaching staff in the academy.';
+    UsageCategory = Administration;
     ApplicationArea = All;
-    UsageCategory = Lists;
-
+    Caption = 'Non-teaching staff List', comment = 'ESP="Lista de Personal No Docente"';
     layout
     {
         area(content)
         {
             repeater(General)
             {
+                Caption = 'General', comment = 'ESP="General"';
                 field("No."; Rec."No.")
                 {
                     Caption = 'No.', comment = 'ESP="No."';
+                    Tooltip = 'The unique identifier of the non-teaching staff.', comment = 'ESP="El identificador único del personal no docente."';
                     ApplicationArea = All;
-                    Description = 'The unique identifier of the non-teaching staff.';
                 }
                 field("NAME"; Rec."Name")
                 {
                     Caption = 'NAME', comment = 'ESP="NOMBRE"';
+                    Tooltip = 'The name of the non-teaching staff.', comment = 'ESP="El nombre del personal no docente."';
                     ApplicationArea = All;
-                    Description = 'The name of the non-teaching staff.';
                 }
                 field("MANAGEMENT"; Rec."Management")
                 {
                     Caption = 'MANAGEMENT', comment = 'ESP="DIRECCION"';
+                    Tooltip = 'The management of the non-teaching staff.', comment = 'ESP="La dirección del personal no docente."';
                     ApplicationArea = All;
-                    Description = 'The management of the non-teaching staff.';
                 }
                 field("SALARY"; Rec."Salary")
                 {
                     Caption = 'SALARY', comment = 'ESP="SALARIO"';
+                    Tooltip = 'The salary of the non-teaching staff.', comment = 'ESP="El salario del personal no docente."';
                     ApplicationArea = All;
-                    Description = 'The salary of the non-teaching staff.';
                 }
                 field("POSITION"; Rec."Position")
                 {
                     Caption = 'POSITION', comment = 'ESP="PUESTO"';
+                    Tooltip = 'The position of the non-teaching staff.', comment = 'ESP="El puesto del personal no docente."';
                     ApplicationArea = All;
-                    Description = 'The position of the non-teaching staff.';
                 }
                 field("HEAD DEPARTMENT No."; Rec."Head of Studies No.")
                 {
                     Caption = 'HEAD DEPARTMENT No.', comment = 'ESP="No. JEFE DE DEPART."';
+                    Tooltip = 'The identifier of the head of studies for the non-teaching staff.', comment = 'ESP="El identificador del jefe de estudios para el personal no docente."';
                     ApplicationArea = All;
-                    Description = 'The identifier of the head of studies for the non-teaching staff.';
                 }
                 field("HEAD DEPARTMENT NAME"; Rec."Head of Studies Name")
                 {
-                    Caption = 'HEAD DEPARTMENT NAME', comment = 'ESP="NOMBRE JEFE DE DEPART."';
+                    Caption = 'HEAD DEPARTMENT NAME', comment = 'ESP="NOMBRE JEFE DEPART."';
+                    Tooltip = 'The name of the head of studies for the non-teaching staff.', comment = 'ESP="El nombre del jefe de estudios para el personal no docente."';
                     ApplicationArea = All;
-                    Description = 'The name of the head of studies for the non-teaching staff.';
                 }
             }
         }

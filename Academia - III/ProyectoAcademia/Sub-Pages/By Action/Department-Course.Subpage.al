@@ -1,12 +1,10 @@
 page 50113 "Department - Course Subpage"
 {
     PageType = ListPart;
-    ApplicationArea = All;
-    UsageCategory = Administration;
     SourceTable = Course;
+    UsageCategory = Administration;
+    ApplicationArea = All;
     Caption = 'Department - Course Subpage', comment = 'ESP="Subpágina de Curso de Departamento"';
-    Description = 'This subpage displays detailed information about courses.';
-
     layout
     {
         area(Content)
@@ -18,22 +16,22 @@ page 50113 "Department - Course Subpage"
                 field("Description"; Rec.Description)
                 {
                     Caption = 'Description', comment = 'ESP="Descripción"';
+                    Tooltip = 'Description of the course.', comment = 'ESP="Descripción del curso."';
                     ApplicationArea = All;
-                    Description = 'Description of the course.';
                 }
 
                 field("Teacher"; Rec."Teacher Name")
                 {
                     Caption = 'Teacher', comment = 'ESP="Profesor"';
+                    Tooltip = 'Name of the teacher for the course.', comment = 'ESP="Nombre del profesor del curso."';
                     ApplicationArea = All;
-                    Description = 'Name of the teacher for the course.';
                 }
 
                 field("Total hours"; Rec."Total hours")
                 {
                     Caption = 'Total hours', comment = 'ESP="Horas totales"';
+                    Tooltip = 'Total hours of the course.', comment = 'ESP="Horas totales del curso."';
                     ApplicationArea = All;
-                    Description = 'Total hours of the course.';
                 }
             }
         }
@@ -46,8 +44,8 @@ page 50113 "Department - Course Subpage"
             action("Enrolled Students")
             {
                 Caption = 'Enrolled Students', comment = 'ESP="Estudiantes matriculados"';
+                Tooltip = 'View students enrolled in this course.', comment = 'ESP="Ver estudiantes matriculados en este curso."';
                 ApplicationArea = All;
-                Description = 'View students enrolled in this course.';
                 RunObject = page "Registration List";
                 RunPageLink = "No. Course Enrolled" = field("No.");
                 RunPageMode = View;
@@ -56,8 +54,8 @@ page 50113 "Department - Course Subpage"
             action("Course Data")
             {
                 Caption = 'Course Data', comment = 'ESP="Datos del curso"';
+                Tooltip = 'View detailed data about this course.', comment = 'ESP="Ver datos detallados sobre este curso."';
                 ApplicationArea = All;
-                Description = 'View detailed data about this course.';
                 RunObject = page "Course List";
                 RunPageLink = "No." = field("No.");
                 RunPageMode = View;

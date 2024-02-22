@@ -2,11 +2,9 @@ page 50111 "Teacher CardPage"
 {
     PageType = Card;
     SourceTable = Teacher;
-    ApplicationArea = All;
     UsageCategory = Administration;
+    ApplicationArea = All;
     Caption = 'Teacher CardPage', comment = 'ESP="Ficha de Profesor"';
-    Description = 'This card page displays detailed information about a teacher.';
-
     layout
     {
         area(content)
@@ -14,54 +12,50 @@ page 50111 "Teacher CardPage"
             group("General")
             {
                 Caption = 'General', comment = 'ESP="General"';
-                Description = 'General information about the teacher.';
-
                 field("Nombre del Profesor"; Rec.Name)
                 {
                     Caption = 'Name of Teacher', comment = 'ESP="Nombre del Profesor"';
+                    Tooltip = 'The name of the teacher.', comment = 'ESP="El nombre del profesor."';
                     ApplicationArea = All;
-                    Description = 'The name of the teacher.';
                 }
 
                 field("Direccion del Profesor"; Rec.Address)
                 {
                     Caption = 'Address of Teacher', comment = 'ESP="Dirección del Profesor"';
+                    Tooltip = 'The address of the teacher.', comment = 'ESP="La dirección del profesor."';
                     ApplicationArea = All;
-                    Description = 'The address of the teacher.';
                 }
             }
 
             group("Labor")
             {
                 Caption = 'Labor', comment = 'ESP="Laboral"';
-                Description = 'Employment-related information for the teacher.';
-
                 field("Date of hire"; Rec."Date of hire")
                 {
                     Caption = 'Date of hire', comment = 'ESP="Fecha de Contratación"';
+                    Tooltip = 'The date when the teacher was hired.', comment = 'ESP="La fecha en que el profesor fue contratado."';
                     ApplicationArea = All;
-                    Description = 'The date when the teacher was hired.';
                 }
 
                 field("Salario"; Rec.Salary)
                 {
                     Caption = 'Salary', comment = 'ESP="Salario"';
+                    Tooltip = 'The salary of the teacher.', comment = 'ESP="El salario del profesor."';
                     ApplicationArea = All;
-                    Description = 'The salary of the teacher.';
                 }
 
                 field("No. Depart."; Rec."Department No.")
                 {
                     Caption = 'No. Depart.', comment = 'ESP="No. Departamento Asignado"';
+                    Tooltip = 'The identification number of the assigned department.', comment = 'ESP="El número de identificación del departamento asignado."';
                     ApplicationArea = All;
-                    Description = 'The identification number of the assigned department.';
                 }
 
                 field("Depart. Asign."; Rec."Department Name")
                 {
                     Caption = 'Depart. Asign.', comment = 'ESP="Departamento Asignado"';
+                    Tooltip = 'The name of the assigned department.', comment = 'ESP="El nombre del departamento asignado."';
                     ApplicationArea = All;
-                    Description = 'The name of the assigned department.';
                 }
             }
         }
@@ -71,7 +65,7 @@ page 50111 "Teacher CardPage"
             part("Stadistics"; "Statistic - Teacher SubPage")
             {
                 Caption = 'Stadistics', comment = 'ESP="Estadísticas"';
-                Description = 'Detailed statistics for the teacher.';
+                Tooltip = 'Detailed statistics for the teacher.', comment = 'ESP="Estadísticas detalladas del profesor."';
                 ApplicationArea = All;
                 SubPageLink = "No." = field("No.");
             }
