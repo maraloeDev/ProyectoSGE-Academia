@@ -5,5 +5,5 @@ Proyecto de SGE, realizado por Eduardo Martín-Sonseca y Mario Ortuñez Sanz.
 
 Para más información sobre este proyecto, por favor contactar a:
 
-    Eduardo Martín-Sonseca: [correo electrónico]
-    Mario Ortuñez Sanz: [correo electrónico]
+    Eduardo Martín-Sonseca: martinsonsecaeduardo@gmail.com
+    Mario Ortuñez Sanz: 
