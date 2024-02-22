@@ -41,4 +41,12 @@ page 50116 "Course Information"
             }
         }
     }
+    trigger OnOpenPage();
+    begin
+        Rec.Reset();
+        if not Rec.Get() then begin
+            Rec.Init();
+            Rec.Insert();
+        end;
+    end;
 }

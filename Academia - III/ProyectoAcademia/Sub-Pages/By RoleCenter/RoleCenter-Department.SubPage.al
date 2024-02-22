@@ -33,4 +33,12 @@ page 50117 "Department Information"
             }
         }
     }
+    trigger OnOpenPage();
+    begin
+        Rec.Reset();
+        if not Rec.Get() then begin
+            Rec.Init();
+            Rec.Insert();
+        end;
+    end;
 }
