@@ -1,4 +1,4 @@
-codeunit 50100 "CodeUnit-Date"
+/*codeunit 50100 "CodeUnit-Date"
 {
     trigger OnRun()
     begin
@@ -14,9 +14,11 @@ codeunit 50100 "CodeUnit-Date"
     begin
         Age := Today - Birthdate;
 
-        if Age >= 6570 then // Sacado de internet, los dias para 18 years
+        if Age >= 6570 then
             exit(true)
         else
             exit(false);
     end;
-}
+
+
+}*/

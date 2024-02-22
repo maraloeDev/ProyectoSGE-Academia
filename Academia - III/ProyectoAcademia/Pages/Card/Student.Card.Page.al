@@ -56,6 +56,14 @@ page 50112 "Student CardPage"
                     Caption = 'Phone', comment = 'ESP="Teléfono"';
                     Tooltip = 'The phone number of the student.', comment = 'ESP="El número de teléfono del estudiante."';
                     ApplicationArea = All;
+
+                    trigger OnValidate()
+                    var
+                        codeunit: Codeunit "ValidatePhoneNumber";
+
+                    begin
+                        codeunit.ValidatePhoneNumber(Format(Rec."Phone"));
+                    end;
                 }
             }
         }

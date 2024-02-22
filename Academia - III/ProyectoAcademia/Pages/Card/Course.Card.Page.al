@@ -72,7 +72,7 @@ page 50107 "Course CardPage"
             }
         }
 
-        area(FactBoxes)
+        area(FactBoxes) //Las que aparecen en la parte izquierda de la card y contiene informacion adicional del curso
         {
             part("Statistics - Course"; "Statistics - Course SubPage")
             {
@@ -83,9 +83,9 @@ page 50107 "Course CardPage"
             }
         }
     }
-    local procedure isExist()
+    /* local procedure isExist()
 
-    begin
+     begin
 
-    end;
+     end;*/
 }
