@@ -52,8 +52,10 @@ table 50103 "Non-teaching staff"
         Staff: Record "Non-teaching staff";
     begin
         case (Staff.Position.Contains('Ayudante')) of
+            true:
+                "Head of Studies No." := Staff."Head of Studies No.";
             false:
-                "Head of Studies No." := '-';
+                "Head of Studies No." := 0;
         end;
     end;
 
