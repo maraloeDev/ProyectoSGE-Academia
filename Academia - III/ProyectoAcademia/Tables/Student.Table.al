@@ -17,7 +17,7 @@ table 50106 "Student"
         field(3; "Gender"; Option)
         {
             Caption = 'Student Gender', comment = 'ESP="Género"';
-            OptionMembers = "M (♂)","F (♀)","NB","No especifed","Other";
+            OptionMembers = "M (♂)","F (♀)","NB","Unspecified","Other";
         }
         field(4; "Address"; Text[100])
         {
