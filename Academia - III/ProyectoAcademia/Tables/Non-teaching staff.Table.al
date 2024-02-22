@@ -25,6 +25,11 @@ table 50103 "Non-teaching staff"
         field(5; "Position"; Text[50])
         {
             Caption = 'Position', comment = 'ESP="Posición"';
+            trigger OnValidate()
+
+            begin
+                isHelp();
+            end;
         }
         // Profesor: Jefe de Estudios
         field(6; "Head of Studies No."; Integer)
@@ -52,20 +57,11 @@ table 50103 "Non-teaching staff"
         Staff: Record "Non-teaching staff";
     begin
         if (Staff.Position.Contains('Ayudante')) then begin
-            "Head of Studies No." := "Head of Studies No.";
+            Staff."Head of Studies No." := Staff."Head of Studies No.";
         end else begin
-            "Head of Studies No." := 0;
+            Staff."Head of Studies No." := 0;
         end;
-    end;
 
-    trigger OnInsert()
-    begin
-        isHelp();
+        Staff.Modify();
     end;
-
-    trigger OnModify()
-    begin
-        isHelp();
-    end;
-
 }
