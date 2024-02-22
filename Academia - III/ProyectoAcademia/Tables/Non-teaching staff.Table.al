@@ -51,11 +51,10 @@ table 50103 "Non-teaching staff"
     var
         Staff: Record "Non-teaching staff";
     begin
-        case (Staff.Position.Contains('Ayudante')) of
-            true:
-                "Head of Studies No." := Staff."Head of Studies No.";
-            false:
-                "Head of Studies No." := 0;
+        if (Staff.Position.Contains('Ayudante')) then begin
+            "Head of Studies No." := "Head of Studies No.";
+        end else begin
+            "Head of Studies No." := 0;
         end;
     end;
 
