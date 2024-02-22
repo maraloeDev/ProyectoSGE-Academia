@@ -1,4 +1,4 @@
-page 50117 "Department Information"
+page 50119 "Department Information"
 {
     PageType = CardPart;
     SourceTable = Department;
@@ -12,18 +12,10 @@ page 50117 "Department Information"
             cuegroup("Department Information")
             {
                 Caption = 'Department Information', comment = 'ESP="Información del Departamento"';
-                field("Average fees"; Rec."Average fees")
+                field("Number of teachers"; Rec.TotalTeachersInAllDepartments())
                 {
-                    Caption = 'Average fees', comment = 'ESP="Tarifas Promedio"';
-                    Tooltip = 'The average fees of the department.', comment = 'ESP="Las tarifas promedio del departamento."';
-                    ApplicationArea = All;
-                    DrillDownPageId = "Course List";
-                }
-
-                field("Number of teachers"; Rec."Number of teachers")
-                {
-                    Caption = 'Number of teachers', comment = 'ESP="Número de Profesores"';
-                    Tooltip = 'The total number of teachers in the department.', comment = 'ESP="El número total de profesores en el departamento."';
+                    Caption = 'Number of Teachers', comment = 'ESP="Número de Profesores"';
+                    Tooltip = 'The total number of teachers in all departments.', comment = 'ESP="El número total de profesores en todos los departamentos."';
                     ApplicationArea = All;
                     DrillDownPageId = "Teacher List";
                 }

@@ -1,4 +1,4 @@
-page 50119 "Teacher Shortlist"
+page 50121 "Teacher Shortlist"
 {
     PageType = ListPart;
     SourceTable = Teacher;

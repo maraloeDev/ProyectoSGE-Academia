@@ -1,4 +1,4 @@
-page 50116 "Course Information"
+page 50118 "Course Information"
 {
     PageType = CardPart;
     SourceTable = Course;
@@ -12,7 +12,7 @@ page 50116 "Course Information"
             cuegroup("Course Information")
             {
                 Caption = 'Course Information', comment = 'ESP="Información del Curso"';
-                field("Number of Students"; Rec."Number of Students")
+                field("Number of Students"; Rec.GetTotalEnrolledStudents())
                 {
                     Caption = 'Number of Students', comment = 'ESP="Número de Estudiantes"';
                     Tooltip = 'The total number of students enrolled in the course.', comment = 'ESP="El número total de estudiantes matriculados en el curso."';
@@ -20,20 +20,20 @@ page 50116 "Course Information"
                     DrillDownPageId = "Student List";
                 }
 
-                field("Course fee"; Rec."Course fee")
+                field("Lowest Fee Course"; Rec.LowestFeeCourseName())
                 {
-                    Caption = 'Course fee', comment = 'ESP="Tarifa del Curso"';
-                    Tooltip = 'The fee associated with the course.', comment = 'ESP="La tarifa asociada al curso."';
+                    Caption = 'Lowest Fee Course', comment = 'ESP="Curso con la Tarifa Más Baja"';
+                    Tooltip = 'The course with the lowest fee offered.', comment = 'ESP="El curso con la tarifa más baja ofrecida."';
                     ApplicationArea = All;
                     DrillDownPageId = "Course List";
                 }
 
-                field("Total hours"; Rec."Total hours")
+                field("Highest Fee Course"; Rec.HighestFeeCourseName())
                 {
-                    Caption = 'Total hours', comment = 'ESP="Horas Totales"';
-                    Tooltip = 'The total number of hours for the course.', comment = 'ESP="El número total de horas del curso."';
+                    Caption = 'Highest Fee Course', comment = 'ESP="Curso con la Tarifa Más Alta"';
+                    Tooltip = 'The course with the highest fee offered.', comment = 'ESP="El curso con la tarifa más alta ofrecida."';
                     ApplicationArea = All;
-                    DrillDownPageId = "Schedule List";
+                    DrillDownPageId = "Course List";
                 }
             }
         }

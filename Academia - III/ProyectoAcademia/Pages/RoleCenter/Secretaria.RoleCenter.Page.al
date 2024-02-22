@@ -1,4 +1,4 @@
-page 50112 "Secretary/Admon. RoleCenter"
+page 50114 "Secretary/Admon. RoleCenter"
 {
     PageType = RoleCenter;
     SourceTable = "Non-teaching staff";

@@ -1,4 +1,4 @@
-page 50114 "Statistic - Teacher SubPage"
+page 50116 "Statistic - Teacher SubPage"
 {
     PageType = ListPart;
     SourceTable = Teacher;

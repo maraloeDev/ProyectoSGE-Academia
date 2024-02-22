@@ -1,4 +1,4 @@
-page 50111 "Teacher CardPage"
+page 50113 "Teacher CardPage"
 {
     PageType = Card;
     SourceTable = Teacher;

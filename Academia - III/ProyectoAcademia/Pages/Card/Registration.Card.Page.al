@@ -1,4 +1,4 @@
-page 50109 "Registration CardPage"
+page 50110 "Registration CardPage"
 {
     PageType = Card;
     SourceTable = "Registration";

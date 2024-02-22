@@ -51,4 +51,23 @@ table 50101 "Department"
             Clustered = true;
         }
     }
+    procedure TotalTeachersInAllDepartments(): Integer
+    var
+        TotalTeachers: Integer;
+        Department: Record "Department";
+    begin
+        TotalTeachers := 0;
+
+        Department.RESET;
+        Department.SETRANGE("No.", 0, Department.Count);
+
+        repeat
+            if Department.NEXT = 0 then begin
+                TotalTeachers += Department."Number of teachers";
+            end;
+        until Department.NEXT = 0;
+
+        exit(TotalTeachers);
+    end;
+
 }

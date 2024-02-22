@@ -1,4 +1,4 @@
-page 50115 "Statistics - Course SubPage"
+page 50117 "Statistics - Course SubPage"
 {
     PageType = ListPart;
     SourceTable = Course;
