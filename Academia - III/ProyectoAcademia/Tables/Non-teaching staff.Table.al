@@ -31,6 +31,15 @@ table 50103 "Non-teaching staff"
         {
             Caption = 'Head of Studies No.', comment = 'ESP="Número de Jefe de Estudios"';
             TableRelation = Teacher."No.";
+
+            trigger OnValidate()
+            var
+                myInt: Integer;
+            begin
+                if (myInt = 0) then begin
+                    "Head of Studies Name" := '(No ayudante)';
+                end;
+            end;
         }
         field(7; "Head of Studies Name"; Text[50])
         {
@@ -52,10 +61,12 @@ table 50103 "Non-teaching staff"
         Staff: Record "Non-teaching staff";
     begin
         if (Staff.Position.Contains('Ayudante')) then begin
-            "Head of Studies No." := "Head of Studies No.";
+            Staff."Head of Studies No." := Staff."Head of Studies No.";
         end else begin
-            "Head of Studies No." := 0;
+            Staff."Head of Studies No." := 0;
         end;
+
+        Staff.Modify();
     end;
 
     trigger OnInsert()
