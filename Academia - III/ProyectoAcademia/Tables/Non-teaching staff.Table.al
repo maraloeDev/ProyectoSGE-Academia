@@ -46,4 +46,25 @@ table 50103 "Non-teaching staff"
             Clustered = true;
         }
     }
+
+    local procedure isHelp()
+    var
+        Staff: Record "Non-teaching staff";
+    begin
+        case (Staff.Position.Contains('Ayudante')) of
+            false:
+                "Head of Studies No." := '-';
+        end;
+    end;
+
+    trigger OnInsert()
+    begin
+        isHelp();
+    end;
+
+    trigger OnModify()
+    begin
+        isHelp();
+    end;
+
 }
