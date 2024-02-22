@@ -62,4 +62,20 @@ table 50100 "Course"
             Clustered = true;
         }
     }
+
+    local procedure AlumnosInscritos(): Integer
+    var
+        TotalSuma: Decimal;
+        Curso: Record "Course";
+    begin
+        TotalSuma := 0;
+
+        Curso.RESET;
+
+        foreach curso in Curso do begin
+            TotalSuma := curso."Number of Students";
+        end;
+
+        exit(TotalSuma);
+    end;
 }

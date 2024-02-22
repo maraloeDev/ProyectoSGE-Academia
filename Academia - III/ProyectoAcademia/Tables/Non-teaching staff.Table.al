@@ -25,11 +25,6 @@ table 50103 "Non-teaching staff"
         field(5; "Position"; Text[50])
         {
             Caption = 'Position', comment = 'ESP="Posición"';
-            trigger OnValidate()
-
-            begin
-                isHelp();
-            end;
         }
         // Profesor: Jefe de Estudios
         field(6; "Head of Studies No."; Integer)
@@ -51,17 +46,4 @@ table 50103 "Non-teaching staff"
             Clustered = true;
         }
     }
-
-    local procedure isHelp()
-    var
-        Staff: Record "Non-teaching staff";
-    begin
-        if (Staff.Position.Contains('Ayudante')) then begin
-            Staff."Head of Studies No." := Staff."Head of Studies No.";
-        end else begin
-            Staff."Head of Studies No." := 0;
-        end;
-
-        Staff.Modify();
-    end;
 }
