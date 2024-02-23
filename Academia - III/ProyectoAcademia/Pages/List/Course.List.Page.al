@@ -5,6 +5,7 @@ page 50100 "Course List"
     UsageCategory = Administration;
     ApplicationArea = All;
     Caption = 'Course List', comment = 'ESP="Lista de Cursos"';
+    
     layout
     {
         area(content)
