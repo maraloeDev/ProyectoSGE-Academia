@@ -1,0 +1,3 @@
+Flowfield vinculados a sus listas filtradas,
+llamada a los procedures,
+La pagina del curso tiene que tener horario
