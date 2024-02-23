@@ -5,6 +5,8 @@ page 50105 "Student List"
     UsageCategory = Administration;
     ApplicationArea = All;
     Caption = 'Student List', comment = 'ESP="Lista de Estudiantes"';
+    Editable = false;
+    CardPageId = "Student CardPage";
     layout
     {
         area(content)

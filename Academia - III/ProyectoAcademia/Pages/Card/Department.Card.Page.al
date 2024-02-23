@@ -2,8 +2,7 @@ page 50108 "Department CardPage"
 {
     PageType = Card;
     SourceTable = Department;
-    UsageCategory = Administration;
-    ApplicationArea = All;
+    UsageCategory = None;
     Caption = 'Department CardPage', comment = 'ESP="Ficha de Departamento"';
     layout
     {

@@ -2,6 +2,8 @@ table 50104 "Registration"
 {
     DataClassification = ToBeClassified;
     Caption = 'Registration', comment = 'ESP="Matrícula"';
+    DrillDownPageId = "Student List";
+    LookupPageId = "Student List";
     fields
     {
         field(1; "No."; Integer)

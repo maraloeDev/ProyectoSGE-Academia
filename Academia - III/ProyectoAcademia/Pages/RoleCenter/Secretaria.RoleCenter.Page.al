@@ -9,43 +9,49 @@ page 50114 "Secretary/Admon. RoleCenter"
     {
         area(RoleCenter)
         {
-            group("Interest Information")
+
+            part("Secretary Stadistics"; "Secretary Stadistics")
             {
-                Caption = 'Interest Information', comment = 'ESP="Información de interés"';
-
-                part("Course Information"; "Course Information")
-                {
-                    Caption = 'Course Information', comment = 'ESP="Información del curso"';
-                    Tooltip = 'Summary of information about available courses.', comment = 'ESP="Resumen de información sobre los cursos disponibles."';
-                    ApplicationArea = All;
-                }
-
-                part("Department Information"; "Department Information")
-                {
-                    Caption = 'Department Information', comment = 'ESP="Información del Departamento"';
-                    Tooltip = 'Summary of information about departments.', comment = 'ESP="Resumen de información sobre los departamentos."';
-                    ApplicationArea = All;
-                }
+                Caption = 'Secretary Stadistics', comment = 'ESP="Estadísticas de Secretaría"';
+                ApplicationArea = All;
             }
+            /* group("Interest Information")
+             {
+                 Caption = 'Interest Information', comment = 'ESP="Información de interés"';
 
-            group("Staff Lists")
-            {
-                Caption = 'Staff Lists', comment = 'ESP="Listas del personal"';
+                 part("Course Information"; "Course Information")
+                 {
+                     Caption = 'Course Information', comment = 'ESP="Información del curso"';
+                     Tooltip = 'Summary of information about available courses.', comment = 'ESP="Resumen de información sobre los cursos disponibles."';
+                     ApplicationArea = All;
+                 }
 
-                part("Non-teaching Shortlist"; "Non-teaching Shortlist")
-                {
-                    Caption = 'Non-teaching List', comment = 'ESP="Lista de Personal no docente"';
-                    Tooltip = 'Summary of information about non-teaching staff.', comment = 'ESP="Resumen de información sobre el personal no docente."';
-                    ApplicationArea = All;
-                }
+                 part("Department Information"; "Department Information")
+                 {
+                     Caption = 'Department Information', comment = 'ESP="Información del Departamento"';
+                     Tooltip = 'Summary of information about departments.', comment = 'ESP="Resumen de información sobre los departamentos."';
+                     ApplicationArea = All;
+                 }
+             }
 
-                part("Teacher Shortlist"; "Teacher Shortlist")
-                {
-                    Caption = 'Teacher List', comment = 'ESP="Lista de Profesores"';
-                    Tooltip = 'Summary of information about teachers.', comment = 'ESP="Resumen de información sobre los profesores."';
-                    ApplicationArea = All;
-                }
-            }
+             group("Staff Lists")
+             {
+                 Caption = 'Staff Lists', comment = 'ESP="Listas del personal"';
+
+                 part("Non-teaching Shortlist"; "Non-teaching Shortlist")
+                 {
+                     Caption = 'Non-teaching List', comment = 'ESP="Lista de Personal no docente"';
+                     Tooltip = 'Summary of information about non-teaching staff.', comment = 'ESP="Resumen de información sobre el personal no docente."';
+                     ApplicationArea = All;
+                 }
+
+                 part("Teacher Shortlist"; "Teacher Shortlist")
+                 {
+                     Caption = 'Teacher List', comment = 'ESP="Lista de Profesores"';
+                     Tooltip = 'Summary of information about teachers.', comment = 'ESP="Resumen de información sobre los profesores."';
+                     ApplicationArea = All;
+                 }
+             }*/
         }
     }
 

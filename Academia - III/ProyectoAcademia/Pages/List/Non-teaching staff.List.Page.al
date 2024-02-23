@@ -5,6 +5,9 @@ page 50102 "Non-teaching staff List"
     UsageCategory = Administration;
     ApplicationArea = All;
     Caption = 'Non-teaching staff List', comment = 'ESP="Lista de Personal No Docente"';
+    Editable = false;
+    CardPageId = "Non-teaching staff CardPage";
+
     layout
     {
         area(content)

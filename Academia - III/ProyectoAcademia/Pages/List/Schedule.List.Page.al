@@ -5,6 +5,8 @@ page 50104 "Schedule List"
     UsageCategory = Administration;
     ApplicationArea = All;
     Caption = 'Schedule List', comment = 'ESP="Lista de Horarios"';
+    Editable = false;
+    CardPageId = "Schedule CardPage";
     layout
     {
         area(content)

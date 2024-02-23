@@ -2,6 +2,8 @@ table 50101 "Department"
 {
     DataClassification = ToBeClassified;
     Caption = 'Departament', comment = 'ESP="Departamento"';
+    DrillDownPageId = "Department List";
+    LookupPageId = "Department List";
     fields
     {
         field(1; "No."; Integer)

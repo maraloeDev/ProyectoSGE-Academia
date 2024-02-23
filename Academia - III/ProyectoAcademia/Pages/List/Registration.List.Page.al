@@ -5,6 +5,8 @@ page 50103 "Registration List"
     UsageCategory = Administration;
     ApplicationArea = All;
     Caption = 'Registration List', comment = 'ESP="Lista de Matrículas"';
+    Editable = false;
+    CardPageId = "Registration CardPage";
     layout
     {
         area(content)

@@ -2,8 +2,7 @@ page 50107 "Course CardPage"
 {
     PageType = Card;
     SourceTable = Course;
-    UsageCategory = Administration;
-    ApplicationArea = All;
+    UsageCategory = None;
     Caption = 'Course CardPage', comment = 'ESP="Ficha de Curso"';
     layout
     {
@@ -53,22 +52,12 @@ page 50107 "Course CardPage"
                 }
             }
 
-            group("Statistics")
-            {
-                Caption = 'Statistics', comment = 'ESP="Estadísticas"';
-                field("Number of Students"; Rec."Number of Students")
-                {
-                    Caption = 'Number of Students', comment = 'ESP="Número de Alumnos"';
-                    Tooltip = 'The total number of students enrolled in the course.', comment = 'ESP="El número total de estudiantes inscritos en el curso."';
-                    ApplicationArea = All;
-                }
 
-                field("Total hours"; Rec."Total hours")
-                {
-                    Caption = 'Total hours', comment = 'ESP="Horas totales"';
-                    Tooltip = 'The total number of hours for the course.', comment = 'ESP="El número total de horas para el curso."';
-                    ApplicationArea = All;
-                }
+            part("Detail schedule"; "Detail-Schedule SubPage")
+            {
+                Caption = 'Detail schedule', comment = 'ESP="Detalle del horario"';
+                ApplicationArea = All;
+                SubPageLink = "No." = field("No.");
             }
         }
 

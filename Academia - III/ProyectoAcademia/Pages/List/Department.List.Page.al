@@ -5,6 +5,8 @@ page 50101 "Department List"
     UsageCategory = Administration;
     ApplicationArea = All;
     Caption = 'Department List', comment = 'ESP="Lista de Departamentos"';
+    Editable = false;
+    CardPageId = "Department CardPage";
     layout
     {
         area(content)

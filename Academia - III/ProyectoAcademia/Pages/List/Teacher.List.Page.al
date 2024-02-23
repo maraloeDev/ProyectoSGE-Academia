@@ -5,6 +5,9 @@ page 50106 "Teacher List"
     UsageCategory = Administration;
     ApplicationArea = All;
     Caption = 'Teacher List', comment = 'ESP="Lista de Profesores"';
+    Editable = false;
+    CardPageId = "Teacher CardPage";
+
     layout
     {
         area(content)

@@ -2,6 +2,8 @@ table 50102 "Detail"
 {
     DataClassification = ToBeClassified;
     Caption = 'Detail', comment = 'ESP="Detalle"';
+    DrillDownPageId = "Detail List";
+    LookupPageId = "Detail List";
     fields
     {
         field(1; "No."; Integer)

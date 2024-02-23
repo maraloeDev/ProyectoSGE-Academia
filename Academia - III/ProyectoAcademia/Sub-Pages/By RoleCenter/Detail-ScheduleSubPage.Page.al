@@ -1,17 +1,14 @@
-page 50122 "Detail List"
+page 50123 "Detail-Schedule SubPage"
 {
-    PageType = List;
+    PageType = ListPart;
     SourceTable = Detail;
-    UsageCategory = Administration;
-    ApplicationArea = All;
-    Caption = 'Detail List', comment = 'ESP="Lista de Detalles"';
-    Editable = false;
+    Caption = 'Detalle horario', comment = 'ESP="Detail schedule"';
 
     layout
     {
-        area(content)
+        area(Content)
         {
-            repeater(General)
+            repeater(GroupName)
             {
                 field("No."; Rec."No.")
                 {

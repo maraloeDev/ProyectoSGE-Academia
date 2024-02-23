@@ -2,8 +2,7 @@ page 50113 "Teacher CardPage"
 {
     PageType = Card;
     SourceTable = Teacher;
-    UsageCategory = Administration;
-    ApplicationArea = All;
+    UsageCategory = None;
     Caption = 'Teacher CardPage', comment = 'ESP="Ficha de Profesor"';
     layout
     {

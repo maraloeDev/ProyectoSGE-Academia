@@ -2,8 +2,7 @@ page 50110 "Registration CardPage"
 {
     PageType = Card;
     SourceTable = "Registration";
-    UsageCategory = Administration;
-    ApplicationArea = All;
+    UsageCategory = None;
     Caption = 'Registration CardPage', comment = 'ESP="Ficha de Matrícula"';
     layout
     {

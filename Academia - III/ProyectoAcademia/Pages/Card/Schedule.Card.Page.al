@@ -2,8 +2,7 @@ page 50111 "Schedule CardPage"
 {
     PageType = Card;
     SourceTable = Schedule;
-    UsageCategory = Administration;
-    ApplicationArea = All;
+    UsageCategory = None;
     Caption = 'Schedule CardPage', comment = 'ESP="Página de Tarjeta de Horario"';
     layout
     {

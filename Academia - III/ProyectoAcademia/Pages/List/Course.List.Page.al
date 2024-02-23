@@ -5,7 +5,9 @@ page 50100 "Course List"
     UsageCategory = Administration;
     ApplicationArea = All;
     Caption = 'Course List', comment = 'ESP="Lista de Cursos"';
-    
+    Editable = false;
+    CardPageId = "Course CardPage";
+
     layout
     {
         area(content)

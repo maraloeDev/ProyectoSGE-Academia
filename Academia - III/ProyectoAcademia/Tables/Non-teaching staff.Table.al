@@ -2,6 +2,7 @@ table 50103 "Non-teaching staff"
 {
     DataClassification = ToBeClassified;
     Caption = 'Non-teaching staff', comment = 'ESP="Personal no docente"';
+    
     fields
     {
         field(1; "No."; Integer)

@@ -2,6 +2,9 @@ table 50100 "Course"
 {
     DataClassification = ToBeClassified;
     Caption = 'Course', comment = 'ESP="Curso"';
+    DrillDownPageId = "Course List";
+    LookupPageId = "Course List";
+
     fields
     {
         field(1; "No."; Integer)

@@ -1,8 +1,8 @@
 page 50109 "Non-teaching staff CardPage"
 {
     PageType = Card;
-    ApplicationArea = All;
-    UsageCategory = Administration;
+
+    UsageCategory = None;
     SourceTable = "Non-teaching staff";
     Caption = 'Non-teaching staff CardPage', comment = 'ESP="Página de Tarjeta de Personal No Docente"';
     layout

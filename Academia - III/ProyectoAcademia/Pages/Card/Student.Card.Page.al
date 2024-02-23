@@ -2,8 +2,7 @@ page 50112 "Student CardPage"
 {
     PageType = Card;
     SourceTable = Student;
-    UsageCategory = Administration;
-    ApplicationArea = All;
+    UsageCategory = None;
     Caption = 'Student CardPage', comment = 'ESP="Ficha de Estudiante"';
     layout
     {
