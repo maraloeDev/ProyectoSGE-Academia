@@ -108,6 +108,14 @@ page 50114 "Secretary/Admon. RoleCenter"
                 ApplicationArea = All;
                 RunObject = page "Teacher List";
             }
+
+            action("Detail")
+            {
+                Caption = 'Detail', comment = 'ESP="Detalle"';
+                Tooltip = 'Access to detail management.', comment = 'ESP="Acceso a la gestión de detalles."';
+                ApplicationArea = All;
+                RunObject = page "Detail List";
+            }
         }
     }
 }

@@ -28,7 +28,7 @@ table 50105 "Schedule"
             Caption = 'Detail No.', comment = 'ESP="Número de Detalle"';
             TableRelation = Detail."No.";
         }
-        field(5; "Weekday"; Text[50])
+        field(5; "Weekday"; Enum Weekday)
         {
             Caption = 'Weekday ', comment = 'ESP="Día de la semana"';
             FieldClass = FlowField;

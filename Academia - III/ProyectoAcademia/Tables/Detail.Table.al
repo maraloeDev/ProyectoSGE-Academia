@@ -10,7 +10,7 @@ table 50102 "Detail"
             AutoIncrement = true;
             Editable = false;
         }
-        field(2; "Weekday"; Text[50])
+        field(2; "Weekday"; Enum "Weekday")
         {
             Caption = 'Weekday', comment = 'ESP="Día de la Semana"';
         }
@@ -22,12 +22,6 @@ table 50102 "Detail"
         field(4; "End Time"; Time)
         {
             Caption = 'End Time', comment = 'ESP="Hora de Fin"';
-        }
-        // Horario
-        field(5; "Schedule No."; Integer)
-        {
-            Caption = 'Schedule No.', comment = 'ESP="Número de Horario"';
-            TableRelation = Schedule."No.";
         }
     }
     keys

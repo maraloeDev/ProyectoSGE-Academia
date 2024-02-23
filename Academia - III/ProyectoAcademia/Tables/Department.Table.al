@@ -69,5 +69,4 @@ table 50101 "Department"
 
         exit(TotalTeachers);
     end;
-
 }
