@@ -12,11 +12,11 @@ page 50119 "Department Information"
             cuegroup("Department Information")
             {
                 Caption = 'Department Information', comment = 'ESP="Información del Departamento"';
-                field("Number of teachers"; Rec.TotalTeachersInAllDepartments())
+                field("Number of teachers"; Rec."Number of teachers")
                 {
+                    ApplicationArea = All;
                     Caption = 'Number of Teachers', comment = 'ESP="Número de Profesores"';
                     Tooltip = 'The total number of teachers in all departments.', comment = 'ESP="El número total de profesores en todos los departamentos."';
-                    ApplicationArea = All;
                     DrillDownPageId = "Teacher List";
                 }
             }
