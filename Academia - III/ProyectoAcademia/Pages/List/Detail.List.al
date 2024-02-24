@@ -5,7 +5,7 @@ page 50122 "Detail List"
     UsageCategory = Administration;
     ApplicationArea = All;
     Caption = 'Detail List', comment = 'ESP="Lista de Detalles"';
-    Editable = false;
+    Editable = true;
 
     layout
     {

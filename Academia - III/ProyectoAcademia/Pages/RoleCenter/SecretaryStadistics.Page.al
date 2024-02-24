@@ -1,7 +1,7 @@
 page 50124 "Secretary Stadistics"
 {
     PageType = CardPart;
-    SourceTable = Course;
+    SourceTable = "Secretary/Admon. Table";
 
     layout
     {
@@ -9,21 +9,24 @@ page 50124 "Secretary Stadistics"
         {
             cuegroup(Stadistics)
             {
-
                 field("Number of Students"; Rec."Number of Students")
                 {
-                    Caption = 'Number of Students', comment = 'ESP="Número de Estudiantes"';
-                    Tooltip = 'The total number of students enrolled in the course.', comment = 'ESP="El número total de estudiantes matriculados en el curso."';
-                    ApplicationArea = All;
+                    Caption = 'Number of Students', comment = 'ESP="Número total de Estudiantes Matriculados"';
                     DrillDownPageId = "Student List";
+                    ApplicationArea = ALL;
                 }
-
-                field("Lowest Fee Course"; Rec."Total hours")
+                field("Lowest Fee Course"; Rec."Lowest Fee Course")
                 {
                     Caption = 'Lowest Fee Course', comment = 'ESP="Curso con la Tarifa Más Baja"';
-                    Tooltip = 'The course with the lowest fee offered.', comment = 'ESP="El curso con la tarifa más baja ofrecida."';
-                    ApplicationArea = All;
                     DrillDownPageId = "Course List";
+                    ApplicationArea = ALL;
+                }
+                field("Number of teachers"; Rec."Number of teachers")
+                {
+                    Caption = 'Number of teachers', comment = 'ESP="Número de profesores"';
+                    DrillDownPageId = "Teacher List";
+                    ApplicationArea = ALL;
+
                 }
             }
         }

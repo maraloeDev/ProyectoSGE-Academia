@@ -1,7 +1,7 @@
 page 50114 "Secretary/Admon. RoleCenter"
 {
     PageType = RoleCenter;
-    SourceTable = "Non-teaching staff";
+    SourceTable = "Secretary/Admon. Table";
     UsageCategory = Administration;
     ApplicationArea = All;
     Caption = 'Secretary/Admon. RoleCenter', comment = 'ESP="RoleCenter Secretaría/Admón."';
@@ -10,60 +10,189 @@ page 50114 "Secretary/Admon. RoleCenter"
         area(RoleCenter)
         {
 
+            part("Headline RC Secretaria"; "Headline RC Secretaria")
+            {
+                Caption = 'Cabecera Secretaria', comment = 'ENG="Secretary HeadLine"';
+                ApplicationArea = all;
+            }
+
             part("Secretary Stadistics"; "Secretary Stadistics")
             {
                 Caption = 'Secretary Stadistics', comment = 'ESP="Estadísticas de Secretaría"';
                 ApplicationArea = All;
             }
-            /* group("Interest Information")
-             {
-                 Caption = 'Interest Information', comment = 'ESP="Información de interés"';
 
-                 part("Course Information"; "Course Information")
-                 {
-                     Caption = 'Course Information', comment = 'ESP="Información del curso"';
-                     Tooltip = 'Summary of information about available courses.', comment = 'ESP="Resumen de información sobre los cursos disponibles."';
-                     ApplicationArea = All;
-                 }
+            group("Staff Lists")
+            {
+                Caption = 'Staff Lists', comment = 'ESP="Listas del personal"';
 
-                 part("Department Information"; "Department Information")
-                 {
-                     Caption = 'Department Information', comment = 'ESP="Información del Departamento"';
-                     Tooltip = 'Summary of information about departments.', comment = 'ESP="Resumen de información sobre los departamentos."';
-                     ApplicationArea = All;
-                 }
-             }
+                part("Non-teaching Shortlist"; "Non-teaching Shortlist")
+                {
+                    Caption = 'Non-teaching List', comment = 'ESP="Lista de Personal no docente"';
+                    Tooltip = 'Summary of information about non-teaching staff.', comment = 'ESP="Resumen de información sobre el personal no docente."';
+                    ApplicationArea = All;
+                }
 
-             group("Staff Lists")
-             {
-                 Caption = 'Staff Lists', comment = 'ESP="Listas del personal"';
-
-                 part("Non-teaching Shortlist"; "Non-teaching Shortlist")
-                 {
-                     Caption = 'Non-teaching List', comment = 'ESP="Lista de Personal no docente"';
-                     Tooltip = 'Summary of information about non-teaching staff.', comment = 'ESP="Resumen de información sobre el personal no docente."';
-                     ApplicationArea = All;
-                 }
-
-                 part("Teacher Shortlist"; "Teacher Shortlist")
-                 {
-                     Caption = 'Teacher List', comment = 'ESP="Lista de Profesores"';
-                     Tooltip = 'Summary of information about teachers.', comment = 'ESP="Resumen de información sobre los profesores."';
-                     ApplicationArea = All;
-                 }
-             }*/
+                part("Teacher Shortlist"; "Teacher Shortlist")
+                {
+                    Caption = 'Teacher List', comment = 'ESP="Lista de Profesores"';
+                    Tooltip = 'Summary of information about teachers.', comment = 'ESP="Resumen de información sobre los profesores."';
+                    ApplicationArea = All;
+                }
+            }
         }
+
     }
 
     actions
     {
         area(Creation)
         {
+            action("New Course")
+            {
+                Caption = 'New Course', comment = 'ESP="Nuevo Curso"';
+                Tooltip = 'Access to course management.', comment = 'ESP="Acceso a la gestión de cursos."';
+                RunObject = page "Course CardPage";
+                RunPageMode = Create;
+            }
+
+            action("New Department")
+            {
+                Caption = 'New Department', comment = 'ESP="Nuevo Departamento"';
+                Tooltip = 'Access to department management.', comment = 'ESP="Acceso a la gestión de departamentos."';
+                RunObject = page "Department CardPage";
+                RunPageMode = Create;
+
+            }
+
+            action("New Non-Teaching Staff")
+            {
+                Caption = 'New Non-Teaching Staff', comment = 'ESP="Nuevo Personal no docente"';
+                Tooltip = 'Access to non-teaching staff management.', comment = 'ESP="Acceso a la gestión de personal no docente."';
+                ApplicationArea = All;
+                RunObject = page "Non-teaching staff List";
+                RunPageMode = Create;
+            }
+
+            action("New Registration")
+            {
+                Caption = 'New Registration', comment = 'ESP="Nueva Matrícula"';
+                Tooltip = 'Access to registration management.', comment = 'ESP="Acceso a la gestión de matrículas."';
+                ApplicationArea = All;
+                RunObject = page "Registration CardPage";
+                RunPageMode = Create;
+
+            }
+
+            action("New Schedule")
+            {
+                Caption = 'New Schedule', comment = 'ESP="Nuevo Horario"';
+                Tooltip = 'Access to schedule management.', comment = 'ESP="Acceso a la gestión de horarios."';
+                ApplicationArea = All;
+                RunObject = page "Schedule List";
+                RunPageMode = Create;
+            }
+
+            action("New Student")
+            {
+                Caption = 'New Student', comment = 'ESP="Nuevo Estudiante"';
+                Tooltip = 'Access to student management.', comment = 'ESP="Acceso a la gestión de estudiantes."';
+                ApplicationArea = All;
+                RunObject = page "Student CardPage";
+                RunPageMode = Create;
+
+            }
+
+            action("New Teacher")
+            {
+                Caption = 'Teachers', comment = 'ESP="Nuevo Profesor"';
+                Tooltip = 'Access to teacher management.', comment = 'ESP="Acceso a la gestión de profesores."';
+                ApplicationArea = All;
+                RunObject = page "Teacher CardPage";
+                RunPageMode = Create;
+
+            }
+
+            action("New Detail")
+            {
+                Caption = 'Detail', comment = 'ESP="Nuevo Detalle"';
+                Tooltip = 'Access to detail management.', comment = 'ESP="Acceso a la gestión de detalles."';
+                ApplicationArea = All;
+                RunObject = page "Detail List";
+                RunPageMode = Create;
+            }
+        }
+        area(Sections)
+        {
+            group(ActionCourses)
+            {
+                Caption = 'Courses', comment = 'ESP="Cursos"';
+                action(ActionCourses1)
+                {
+                    Tooltip = 'Access to course management.', comment = 'ESP="Acceso a la gestión de cursos."';
+                    RunObject = Page "Course List";
+                }
+            }
+            group(ActionDeparments)
+            {
+                Caption = 'Departments', comment = 'ESP="Departamentos"';
+                action(ActionDeparments1)
+                {
+                    Tooltip = 'Access to department management.', comment = 'ESP="Acceso a la gestión de departamentos."';
+                    ApplicationArea = All;
+                    RunObject = page "Department List";
+                }
+            }
+
+            group(ActionRegistrations)
+            {
+                Caption = 'Registrations', comment = 'ESP="Matrículas"';
+                action(ActionRegistrations1)
+                {
+                    Tooltip = 'Access to registration management.', comment = 'ESP="Acceso a la gestión de matrículas."';
+                    ApplicationArea = All;
+                    RunObject = page "Registration List";
+                }
+            }
+            group(ActionSchedules)
+            {
+                Caption = 'Schedules', comment = 'ESP="Horarios"';
+                action(ActionSchedules1)
+                {
+                    Tooltip = 'Access to schedule management.', comment = 'ESP="Acceso a la gestión de horarios."';
+                    ApplicationArea = All;
+                    RunObject = page "Schedule List";
+                }
+            }
+            group(ActionStudents)
+            {
+                Caption = 'Students', comment = 'ESP="Estudiantes"';
+                action(ActionStudents1)
+                {
+                    Tooltip = 'Access to student management.', comment = 'ESP="Acceso a la gestión de estudiantes."';
+                    ApplicationArea = All;
+                    RunObject = page "Student List";
+                }
+            }
+            group(ActionTeachers)
+            {
+                Caption = 'Teachers', comment = 'ESP="Profesores"';
+                action(ActionTeachers1)
+                {
+                    Tooltip = 'Access to teacher management.', comment = 'ESP="Acceso a la gestión de profesores."';
+                    ApplicationArea = All;
+                    RunObject = page "Teacher List";
+                }
+            }
+
+
+        }
+        area(Embedding)
+        {
             action("Courses")
             {
                 Caption = 'Courses', comment = 'ESP="Cursos"';
                 Tooltip = 'Access to course management.', comment = 'ESP="Acceso a la gestión de cursos."';
-                ApplicationArea = All;
                 RunObject = page "Course List";
             }
 
@@ -71,7 +200,6 @@ page 50114 "Secretary/Admon. RoleCenter"
             {
                 Caption = 'Departments', comment = 'ESP="Departamentos"';
                 Tooltip = 'Access to department management.', comment = 'ESP="Acceso a la gestión de departamentos."';
-                ApplicationArea = All;
                 RunObject = page "Department List";
             }
 
@@ -79,7 +207,6 @@ page 50114 "Secretary/Admon. RoleCenter"
             {
                 Caption = 'Non-Teaching Staff', comment = 'ESP="Personal no docente"';
                 Tooltip = 'Access to non-teaching staff management.', comment = 'ESP="Acceso a la gestión de personal no docente."';
-                ApplicationArea = All;
                 RunObject = page "Non-teaching staff List";
             }
 
@@ -87,7 +214,6 @@ page 50114 "Secretary/Admon. RoleCenter"
             {
                 Caption = 'Registrations', comment = 'ESP="Matrículas"';
                 Tooltip = 'Access to registration management.', comment = 'ESP="Acceso a la gestión de matrículas."';
-                ApplicationArea = All;
                 RunObject = page "Registration List";
             }
 
@@ -95,7 +221,6 @@ page 50114 "Secretary/Admon. RoleCenter"
             {
                 Caption = 'Schedules', comment = 'ESP="Horarios"';
                 Tooltip = 'Access to schedule management.', comment = 'ESP="Acceso a la gestión de horarios."';
-                ApplicationArea = All;
                 RunObject = page "Schedule List";
             }
 
@@ -103,7 +228,6 @@ page 50114 "Secretary/Admon. RoleCenter"
             {
                 Caption = 'Students', comment = 'ESP="Estudiantes"';
                 Tooltip = 'Access to student management.', comment = 'ESP="Acceso a la gestión de estudiantes."';
-                ApplicationArea = All;
                 RunObject = page "Student List";
             }
 
@@ -111,7 +235,6 @@ page 50114 "Secretary/Admon. RoleCenter"
             {
                 Caption = 'Teachers', comment = 'ESP="Profesores"';
                 Tooltip = 'Access to teacher management.', comment = 'ESP="Acceso a la gestión de profesores."';
-                ApplicationArea = All;
                 RunObject = page "Teacher List";
             }
 
@@ -119,7 +242,6 @@ page 50114 "Secretary/Admon. RoleCenter"
             {
                 Caption = 'Detail', comment = 'ESP="Detalle"';
                 Tooltip = 'Access to detail management.', comment = 'ESP="Acceso a la gestión de detalles."';
-                ApplicationArea = All;
                 RunObject = page "Detail List";
             }
         }

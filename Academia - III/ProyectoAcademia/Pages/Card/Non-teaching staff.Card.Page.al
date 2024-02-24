@@ -24,12 +24,7 @@ page 50109 "Non-teaching staff CardPage"
                     Tooltip = 'The name of the non-teaching staff.', comment = 'ESP="El nombre del personal no docente."';
                     ApplicationArea = All;
                 }
-                field(Management; Rec.Management)
-                {
-                    Caption = 'Management', comment = 'ESP="Gestión"';
-                    Tooltip = 'The management details of the non-teaching staff.', comment = 'ESP="Los detalles de gestión del personal no docente."';
-                    ApplicationArea = All;
-                }
+
                 field(Salary; Rec.Salary)
                 {
                     Caption = 'Salary', comment = 'ESP="Salario"';
