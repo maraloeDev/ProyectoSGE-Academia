@@ -4,35 +4,35 @@ enum 50100 "Weekday"
 
     value(0; " ")
     {
-        Caption = '', comment = 'ES=" "';
+        Caption = ' ', comment = 'ES=" "';
     }
 
     value(1; Monday)
     {
-        Caption = 'Lunes';
+        Caption = 'Monday', comment = 'ES="Lunes"';
     }
     value(2; Tuesday)
     {
-        Caption = 'Martes';
+        Caption = 'Tuesday', comment = 'ES="Martes"';
     }
     value(3; Wednesday)
     {
-        Caption = 'Miércoles';
+        Caption = 'Wednesday', comment = 'ES="Miércoles"';
     }
     value(4; Thursday)
     {
-        Caption = 'Jueves';
+        Caption = 'Thursday', comment = 'ES="Jueves"';
     }
     value(5; Friday)
     {
-        Caption = 'Viernes';
+        Caption = 'Friday', comment = 'ES="Viernes"';
     }
     value(6; Saturday)
     {
-        Caption = 'Sábado';
+        Caption = 'Saturday', comment = 'ES="Sábado"';
     }
     value(7; Sunday)
     {
-        Caption = 'Domingo';
+        Caption = 'Sunday', comment = 'ES="Domingo"';
     }
 }
