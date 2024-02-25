@@ -72,9 +72,4 @@ page 50107 "Course CardPage"
             }
         }
     }
-    /* local procedure isExist()
-
-     begin
-
-     end;*/
 }

@@ -72,4 +72,27 @@ page 50106 "Teacher List"
             }
         }
     }
+
+    actions
+    {
+
+        area(Navigation)
+        {
+            action("Total Salario")
+            {
+                ApplicationArea = All;
+                trigger OnAction()
+
+                begin
+                    Teacher.TotalSalariosProfesores();
+                end;
+            }
+
+        }
+
+    }
+
+
+    var
+        Teacher: Codeunit "Total salarios de profesores";
 }

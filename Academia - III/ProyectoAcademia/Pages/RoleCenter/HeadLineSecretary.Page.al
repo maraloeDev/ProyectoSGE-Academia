@@ -1,4 +1,4 @@
-page 50125 "Headline RC Secretaria"
+page 50125 "Headline Secretary"
 {
 
     Caption = 'Cabecera', comment = 'ENG="Headline"';
@@ -16,7 +16,7 @@ page 50125 "Headline RC Secretaria"
                 field(GreetingText; RCHeadlinesPageCommon.GetGreetingText())
                 {
                     ApplicationArea = Basic, Suite;
-                    Caption = 'Titulo de Saludo', comment = 'ENG="Greeting headline"';
+                    Caption = 'Saludo', comment = 'ENG="Greeting"';
                     Editable = false;
                 }
             }
@@ -42,7 +42,7 @@ page 50125 "Headline RC Secretaria"
 
     trigger OnOpenPage()
     begin
-        RCHeadlinesPageCommon.HeadlineOnOpenPage(Page::"Headline RC Secretaria");
+        RCHeadlinesPageCommon.HeadlineOnOpenPage(Page::"Headline Secretary");
         DefaultFieldsVisible := RCHeadlinesPageCommon.AreDefaultFieldsVisible();
         UserGreetingVisible := RCHeadlinesPageCommon.IsUserGreetingVisible();
     end;

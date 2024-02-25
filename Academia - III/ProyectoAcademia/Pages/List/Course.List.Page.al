@@ -64,7 +64,46 @@ page 50100 "Course List"
                     Tooltip = 'The name of the department offering the course.', comment = 'ESP="El nombre del departamento que ofrece el curso."';
                     ApplicationArea = All;
                 }
+                field("Number of Students"; Rec."Number of Students")
+                {
+                    Caption = 'Number of Students', comment = 'ESP="Número total de Estudiantes Matriculados"';
+                    ApplicationArea = All;
+                }
             }
         }
     }
+    actions
+    {
+
+        area(Navigation)
+        {
+            action("Total estudiantes")
+            {
+                ApplicationArea = All;
+                trigger OnAction()
+
+                begin
+                    estudiantes.GetTotalEnrolledStudents(Rec);
+                end;
+            }
+            action("Beneficios del curso")
+            {
+                ApplicationArea = All;
+
+                trigger OnAction()
+                var
+                    courses: Record Course;
+                begin
+                    CurrPage.SetSelectionFilter(courses);
+                    cursos.getBenefits(courses);
+                end;
+            }
+        }
+
+    }
+
+
+    var
+        cursos: Codeunit "Total Beneficios Cursos";
+        estudiantes: Codeunit "Total Estudiantes";
 }

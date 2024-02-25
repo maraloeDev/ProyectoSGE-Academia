@@ -10,13 +10,13 @@ page 50114 "Secretary/Admon. RoleCenter"
         area(RoleCenter)
         {
 
-            part("Headline RC Secretaria"; "Headline RC Secretaria")
+            part("Headline Secretary"; "Headline Secretary") //Para que aparezco Buenos días, Buenas tardes, Buenas noches
             {
                 Caption = 'Cabecera Secretaria', comment = 'ENG="Secretary HeadLine"';
                 ApplicationArea = all;
             }
 
-            part("Secretary Stadistics"; "Secretary Stadistics")
+            part("Secretary Stadistics"; "Secretary Stadistics") // Te recupera los CUE group de la pagina estadisticas
             {
                 Caption = 'Secretary Stadistics', comment = 'ESP="Estadísticas de Secretaría"';
                 ApplicationArea = All;
@@ -122,7 +122,8 @@ page 50114 "Secretary/Admon. RoleCenter"
                 RunPageMode = Create;
             }
         }
-        area(Sections)
+
+        area(Sections) //La parte de arriba de la pagina (NMenu de navegación fijo)
         {
             group(ActionCourses)
             {
@@ -187,7 +188,7 @@ page 50114 "Secretary/Admon. RoleCenter"
 
 
         }
-        area(Embedding)
+        area(Embedding) // Es el menu que hay abaajo de la navegacion fija
         {
             action("Courses")
             {

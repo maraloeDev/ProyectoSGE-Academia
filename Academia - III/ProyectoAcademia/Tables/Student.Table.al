@@ -25,7 +25,7 @@ table 50106 "Student"
         {
             Caption = 'Student Address', comment = 'ESP="Dirección"';
         }
-        field(5; "Phone"; Integer)
+        field(5; "Phone"; Text[30])
         {
             Caption = 'Student Phone', comment = 'ESP="Teléfono"';
         }

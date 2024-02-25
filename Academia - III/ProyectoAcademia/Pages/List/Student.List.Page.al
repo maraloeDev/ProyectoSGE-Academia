@@ -43,14 +43,6 @@ page 50105 "Student List"
                     Caption = 'PHONE', comment = 'ESP="TELÉFONO"';
                     Tooltip = 'The phone number of the student.', comment = 'ESP="El número de teléfono del estudiante."';
                     ApplicationArea = All;
-
-                    trigger OnValidate()
-                    var
-                        codeunit: Codeunit "ValidatePhoneNumber";
-
-                    begin
-                        codeunit.ValidatePhoneNumber(Format(Rec."Phone"));
-                    end;
                 }
                 field("BIRTHDATE"; Rec."Birthdate")
                 {
@@ -61,35 +53,4 @@ page 50105 "Student List"
             }
         }
     }
-
-    // Comentado por que estas implementandolo desde el codeunit
-
-    /*
-        procedure ValidatePhoneNumber(PhoneNumber: Text[20]): Boolean
-        var
-            IsValid: Boolean;
-            i: Integer;
-        begin
-            IsValid := true;
-            if PhoneNumber = '' then begin
-                IsValid := false;
-            end
-            else begin
-                for i := 1 to StrLen(PhoneNumber) do begin
-                    if not (PhoneNumber[i] >= '0') and (PhoneNumber[i] <= '9') and (PhoneNumber[i] <> '-') then begin
-                        IsValid := false;
-                        exit;
-                    end;
-                end;
-            end;
-
-            if IsValid then begin
-                exit(IsValid);
-            end else begin
-                Error('The phone number you entered is incorrect. Check it out.');
-            end;
-        end;
-
-        */
-
 }
