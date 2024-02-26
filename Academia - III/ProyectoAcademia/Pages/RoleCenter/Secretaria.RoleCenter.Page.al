@@ -130,6 +130,7 @@ page 50114 "Secretary/Admon. RoleCenter"
                 Caption = 'Courses', comment = 'ESP="Cursos"';
                 action(ActionCourses1)
                 {
+                    Caption = 'Courses', comment = 'ESP="Cursos"';
                     Tooltip = 'Access to course management.', comment = 'ESP="Acceso a la gestión de cursos."';
                     RunObject = Page "Course List";
                 }
@@ -139,6 +140,7 @@ page 50114 "Secretary/Admon. RoleCenter"
                 Caption = 'Departments', comment = 'ESP="Departamentos"';
                 action(ActionDeparments1)
                 {
+                    Caption = 'Departments', comment = 'ESP="Departamentos"';
                     Tooltip = 'Access to department management.', comment = 'ESP="Acceso a la gestión de departamentos."';
                     ApplicationArea = All;
                     RunObject = page "Department List";
@@ -150,6 +152,7 @@ page 50114 "Secretary/Admon. RoleCenter"
                 Caption = 'Registrations', comment = 'ESP="Matrículas"';
                 action(ActionRegistrations1)
                 {
+                    Caption = 'Registrations', comment = 'ESP="Matrículas"';
                     Tooltip = 'Access to registration management.', comment = 'ESP="Acceso a la gestión de matrículas."';
                     ApplicationArea = All;
                     RunObject = page "Registration List";
