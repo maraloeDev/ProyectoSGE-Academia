@@ -4,21 +4,21 @@ page 50114 "Secretary/Admon. RoleCenter"
     SourceTable = "Secretary/Admon. Table";
     UsageCategory = Administration;
     ApplicationArea = All;
-    Caption = 'Secretary/Admon. RoleCenter', comment = 'ESP="RoleCenter Secretaría/Admón."';
+    Caption = 'RoleCenter Secretaría/Admón.', comment = 'ESP="RoleCenter Secretaría/Admón."';
+
     layout
     {
         area(RoleCenter)
         {
-
             part("Headline Secretary"; "Headline Secretary") //Para que aparezco Buenos días, Buenas tardes, Buenas noches
             {
-                Caption = 'Cabecera Secretaria', comment = 'ENG="Secretary HeadLine"';
+                Caption = 'Secretary Header', comment = 'ESP="Cabecera del Secretario"';
                 ApplicationArea = all;
             }
 
             part("Secretary Stadistics"; "Secretary Stadistics") // Te recupera los CUE group de la pagina estadisticas
             {
-                Caption = 'Secretary Stadistics', comment = 'ESP="Estadísticas de Secretaría"';
+                Caption = 'Secretary Statistics', comment = 'ESP="Estadísticas de Secretaría"';
                 ApplicationArea = All;
             }
 
@@ -105,7 +105,7 @@ page 50114 "Secretary/Admon. RoleCenter"
 
             action("New Teacher")
             {
-                Caption = 'Teachers', comment = 'ESP="Nuevo Profesor"';
+                Caption = 'New Teacher', comment = 'ESP="Nuevo Profesor"';
                 Tooltip = 'Access to teacher management.', comment = 'ESP="Acceso a la gestión de profesores."';
                 ApplicationArea = All;
                 RunObject = page "Teacher CardPage";
@@ -115,7 +115,7 @@ page 50114 "Secretary/Admon. RoleCenter"
 
             action("New Detail")
             {
-                Caption = 'Detail', comment = 'ESP="Nuevo Detalle"';
+                Caption = 'New Detail', comment = 'ESP="Nuevo Detalle"';
                 Tooltip = 'Access to detail management.', comment = 'ESP="Acceso a la gestión de detalles."';
                 ApplicationArea = All;
                 RunObject = page "Detail List";
@@ -160,6 +160,7 @@ page 50114 "Secretary/Admon. RoleCenter"
                 Caption = 'Schedules', comment = 'ESP="Horarios"';
                 action(ActionSchedules1)
                 {
+                    Caption = 'Schedules', comment = 'ESP="Horarios"';
                     Tooltip = 'Access to schedule management.', comment = 'ESP="Acceso a la gestión de horarios."';
                     ApplicationArea = All;
                     RunObject = page "Schedule List";
@@ -170,6 +171,7 @@ page 50114 "Secretary/Admon. RoleCenter"
                 Caption = 'Students', comment = 'ESP="Estudiantes"';
                 action(ActionStudents1)
                 {
+                    Caption = 'Students', comment = 'ESP="Estudiantes"';
                     Tooltip = 'Access to student management.', comment = 'ESP="Acceso a la gestión de estudiantes."';
                     ApplicationArea = All;
                     RunObject = page "Student List";
@@ -180,13 +182,12 @@ page 50114 "Secretary/Admon. RoleCenter"
                 Caption = 'Teachers', comment = 'ESP="Profesores"';
                 action(ActionTeachers1)
                 {
+                    Caption = 'Teachers', comment = 'ESP="Profesores"';
                     Tooltip = 'Access to teacher management.', comment = 'ESP="Acceso a la gestión de profesores."';
                     ApplicationArea = All;
                     RunObject = page "Teacher List";
                 }
             }
-
-
         }
         area(Embedding) // Es el menu que hay abaajo de la navegacion fija
         {

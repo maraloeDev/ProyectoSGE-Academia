@@ -1,7 +1,7 @@
 page 50125 "Headline Secretary"
 {
 
-    Caption = 'Cabecera', comment = 'ENG="Headline"';
+    Caption = 'Headline Secretary', comment = 'ESP="Cabecera del Secretario"';
     PageType = HeadlinePart;
     RefreshOnActivate = true;
 
@@ -16,7 +16,7 @@ page 50125 "Headline Secretary"
                 field(GreetingText; RCHeadlinesPageCommon.GetGreetingText())
                 {
                     ApplicationArea = Basic, Suite;
-                    Caption = 'Saludo', comment = 'ENG="Greeting"';
+                    Caption = 'Greeting', comment = 'ESP="Saludo"';
                     Editable = false;
                 }
             }
@@ -27,7 +27,7 @@ page 50125 "Headline Secretary"
                 field(DocumentationText; RCHeadlinesPageCommon.GetDocumentationText())
                 {
                     ApplicationArea = Basic, Suite;
-                    Caption = 'Titulo de la documentación', comment = 'ENG="Documentation headline"';
+                    Caption = 'Documentation Title', comment = 'ESP="Título de la documentación"';
                     DrillDown = true;
                     Editable = false;
 
