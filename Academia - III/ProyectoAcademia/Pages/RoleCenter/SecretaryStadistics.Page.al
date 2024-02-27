@@ -9,7 +9,7 @@ page 50124 "Secretary Stadistics"
         {
             cuegroup(Stadistics)
             {
-                field("Number of Students"; Rec."Number of Students")
+                field("Number of Students"; Rec."Total Number of Students")
                 {
                     Caption = 'Number of Students', comment = 'ESP="Número total de Estudiantes Matriculados"';
                     DrillDownPageId = "Student List";
@@ -18,8 +18,8 @@ page 50124 "Secretary Stadistics"
                 field("Lowest Fee Course"; Rec."Lowest Fee Course")
                 {
                     Caption = 'Lowest Fee Course', comment = 'ESP="Curso con la Tarifa Más Baja"';
-                    DrillDownPageId = "Course List";
                     ApplicationArea = ALL;
+                    DrillDownPageId = "Course with the lowest fee";
                 }
                 field("Number of teachers"; Rec."Number of teachers")
                 {

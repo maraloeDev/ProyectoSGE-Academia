@@ -57,7 +57,7 @@ page 50107 "Course CardPage"
             {
                 Caption = 'Detail schedule', comment = 'ESP="Detalle del horario"';
                 ApplicationArea = All;
-                SubPageLink = "No." = field("No.");
+                SubPageLink = "Course No." = field("No.");
             }
         }
 

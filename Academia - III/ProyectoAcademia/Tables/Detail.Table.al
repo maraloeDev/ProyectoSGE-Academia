@@ -25,6 +25,12 @@ table 50102 "Detail"
         {
             Caption = 'End Time', comment = 'ESP="Hora de Fin"';
         }
+        field(5; "Course No."; Integer)
+        {
+            Caption = 'Total Hours', comment = 'ESP="Horas Totales"';
+            FieldClass = FlowField;
+            CalcFormula = lookup(Schedule."Course No." where("Detail No." = field("No.")));
+        }
     }
     keys
     {

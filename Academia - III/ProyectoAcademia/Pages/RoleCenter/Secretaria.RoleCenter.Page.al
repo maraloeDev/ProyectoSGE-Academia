@@ -70,7 +70,7 @@ page 50114 "Secretary/Admon. RoleCenter"
                 Caption = 'New Non-Teaching Staff', comment = 'ESP="Nuevo Personal no docente"';
                 Tooltip = 'Access to non-teaching staff management.', comment = 'ESP="Acceso a la gestión de personal no docente."';
                 ApplicationArea = All;
-                RunObject = page "Non-teaching staff List";
+                RunObject = page "Non-teaching staff CardPage";
                 RunPageMode = Create;
             }
 
@@ -89,7 +89,7 @@ page 50114 "Secretary/Admon. RoleCenter"
                 Caption = 'New Schedule', comment = 'ESP="Nuevo Horario"';
                 Tooltip = 'Access to schedule management.', comment = 'ESP="Acceso a la gestión de horarios."';
                 ApplicationArea = All;
-                RunObject = page "Schedule List";
+                RunObject = page "Schedule CardPage";
                 RunPageMode = Create;
             }
 
@@ -112,15 +112,15 @@ page 50114 "Secretary/Admon. RoleCenter"
                 RunPageMode = Create;
 
             }
-
-            action("New Detail")
-            {
-                Caption = 'New Detail', comment = 'ESP="Nuevo Detalle"';
-                Tooltip = 'Access to detail management.', comment = 'ESP="Acceso a la gestión de detalles."';
-                ApplicationArea = All;
-                RunObject = page "Detail List";
-                RunPageMode = Create;
-            }
+            /*
+                        action("New Detail")
+                        {
+                            Caption = 'New Detail', comment = 'ESP="Nuevo Detalle"';
+                            Tooltip = 'Access to detail management.', comment = 'ESP="Acceso a la gestión de detalles."';
+                            ApplicationArea = All;
+                            RunObject = page "Detail CardPage";
+                            RunPageMode = Create;
+                        }*/
         }
 
         area(Sections) //La parte de arriba de la pagina (NMenu de navegación fijo)

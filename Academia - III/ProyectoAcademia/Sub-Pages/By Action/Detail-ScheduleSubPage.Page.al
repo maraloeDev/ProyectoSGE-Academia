@@ -3,7 +3,6 @@ page 50123 "Detail-Schedule SubPage"
     PageType = ListPart;
     SourceTable = Detail;
     Caption = 'Detalle horario', comment = 'ESP="Detail schedule"';
-
     layout
     {
         area(Content)
@@ -15,7 +14,13 @@ page 50123 "Detail-Schedule SubPage"
                     ApplicationArea = All;
                     Caption = 'No.', comment = 'ESP="Número"';
                     ToolTip = 'Detail number', comment = 'ESP="Número de detalle"';
-                }
+                }/*
+                field("Detail No."; Rec."Detail No.")
+                {
+                    ApplicationArea = All;
+                    Caption = 'No. Detalle', comment = 'ESP="Número"';
+                    ToolTip = 'Detail number', comment = 'ESP="Número de detalle"';
+                }*/
                 field("Weekday"; Rec."Weekday")
                 {
                     ApplicationArea = All;
